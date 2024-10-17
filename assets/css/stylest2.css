@@ -1,0 +1,41 @@
+div.tab {
+    margin: auto;
+    width: auto;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  div.tab button.active {
+    background-color: #ccc;
+  }
+  div.tab button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 16px;
+  }
+  [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+  }
+  [type=button], [type=reset], [type=submit], button {
+    -webkit-appearance: button;
+  }
+  button, select {
+    text-transform: none;
+  }
+  button, input {
+    overflow: visible;
+  }
+  
+  button {
+    border-radius: 0;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  .shadow{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
