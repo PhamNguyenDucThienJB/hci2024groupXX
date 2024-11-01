@@ -4,7 +4,7 @@
 
 Thành Viên Nhóm môn Giao Tiếp Người_Máy:
 
-    20130410 Phạm Nguyễn Đức Thiện
+    20130410 Phạm Nguyễn Đức Thiện (Nhóm Trưởng)
     21130643 Bùi Nguyễn Thiên Tài
     23130228 Lê Đăng Tuấn Phát
     23130351 Nguyễn Quang Trực
