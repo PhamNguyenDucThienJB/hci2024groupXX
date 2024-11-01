@@ -14,7 +14,7 @@ Thành Viên Nhóm môn Giao Tiếp Người_Máy:
 
 
 ---------------------------------------------------
-## Tham Khỏa
+## Tham Khảo Trên
 # Thanks for downloading this template!
       Template Name: Sailor
 # Template URL: 
