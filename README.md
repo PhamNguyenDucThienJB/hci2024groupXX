@@ -1,5 +1,5 @@
 ## Bài tập Giao Tiếp Người Máy nhóm 08
-
+## GV: Trần Thị Thanh Nga
 # hci2025group08
 
 Thành Viên Nhóm môn Giao Tiếp Người_Máy:
