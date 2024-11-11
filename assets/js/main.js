@@ -199,3 +199,49 @@ function openCity(evt, cityName) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+
+
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+
+
+
+function openContent(evt, contentId) {
+  // Ẩn tất cả các phần tử có class="tabcontent"
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Loại bỏ class "choised" khỏi tất cả các liên kết và thêm class "notchoise"
+  tablinks = document.querySelectorAll(".choised, .notchoise");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].classList.remove("choised");
+    tablinks[i].classList.add("notchoise");
+  }
+
+  // Hiển thị nội dung tab được chọn và thêm class "choised" vào tab đó
+  document.getElementById(contentId).style.display = "block";
+  evt.currentTarget.classList.add("choised");
+  evt.currentTarget.classList.remove("notchoise");
+}
+
+// Hiển thị phần Requirement khi tải trang lần đầu
+document.querySelector('[onclick="openContent(event, \'requirement\')"]').click();

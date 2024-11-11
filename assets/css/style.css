@@ -2192,3 +2192,103 @@ section {
 #footer .credits a:hover {
   color: white;
 }
+
+
+
+
+.tab a.choised {
+  background-color: #e03a3c; /* Màu nền đỏ */
+  color: #ffffff; /* Chữ màu trắng */
+}
+
+/* Tab không được chọn */
+.tab a.notchoise {
+  background-color: #f1f1f1; /* Nền xám nhạt */
+  color: black; /* Chữ màu đen */
+}
+    .tab {
+      float: left;
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+      width: 20%;
+      height: 100%;
+    }
+
+    .tab button {
+      display: block;
+      background-color: inherit;
+      color: black;
+      padding: 20px 16px;
+      width: 100%;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      font-size: 17px;
+      transition: 0.3s;
+    }
+
+    .tab button:hover {
+      background-color: #2cfff7;
+    }
+
+    .tab button.active {
+      background-color: #27e1ce;
+    }
+
+    .tabcontent {
+      float: left;
+      padding: 0px 12px;
+      width: 80%;
+      height: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid black;
+      text-align: center;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f7f7f7;
+    }
+
+    .choised {
+      border: 2px solid #e03a3c;
+      background-color: #e03a3c;
+      color: #ffffff;
+      padding: 5px 25px;
+      border-radius: 15px;
+      text-align: center;
+    }
+
+    .notchoise {
+      padding: 5px 25px;
+      font-size: 15px;
+      border-radius: 20px;
+      margin: 0 8px;
+      border: 1.5px solid #242b29;
+      color: #000;
+    }
+
+
+
+
+    .download {
+      border: none;
+      background-color: red;
+      color: white;
+      font-size: 20px;
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+
+    .box {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
