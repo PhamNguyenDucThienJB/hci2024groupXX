@@ -2276,3 +2276,17 @@ section {
       justify-content: center;
       padding: 10px;
     }
+    .download {
+      border: none;
+      background-color: red;
+      color: white;
+      font-size: 20px;
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+
+    .box {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
