@@ -15,7 +15,7 @@ https://phamnguyenducthienjb.github.io/hci2025group08/Project_Group/index.html
 
 
 ---------------------------------------------------
-#Rule:
+# Rule:
 + Nhánh main sẽ chỉ chứa code của trang web giới thiệu của nhóm.
 + Nhánh thành viên, mỗi thành viên tự tạo nhánh tương ứng với thông tin của bản thân theo cấu trúc như sau: MSSV_HoVaTen. Ví dụ: 20130410_PhamNguyenDucThien.
 + Không tự động merge các nhánh của repository lại với nhau.
