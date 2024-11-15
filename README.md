@@ -15,6 +15,13 @@ https://phamnguyenducthienjb.github.io/hci2025group08/Project_Group/index.html
 
 
 ---------------------------------------------------
+#Rule:
++ Nhánh main sẽ chỉ chứa code của trang web giới thiệu của nhóm.
++ Nhánh thành viên, mỗi thành viên tự tạo nhánh tương ứng với thông tin của bản thân theo cấu trúc như sau: MSSV_HoVaTen. Ví dụ: 20130410_PhamNguyenDucThien.
++ Không tự động merge các nhánh của repository lại với nhau.
++ Không hoàn thành nhiệm vụ sẽ bị cảnh cáo. Cảnh cáo tới lần thứ 3 sẽ báo cáo với giảng viên.
++ Nếu gặp vấn đề gì cần hỗ trợ, trao đổi hãy phát biểu. Mọi ý kiến đều phải mang tính xây dựng.
+---------------------------------------------------
 ## Tham Khảo:
 # Thanks for downloading this template!
       Template Name: Sailor
