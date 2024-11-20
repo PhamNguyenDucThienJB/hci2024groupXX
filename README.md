@@ -2,6 +2,7 @@
 ## GV: Trần Thị Thanh Nga
 # hci2025group08
 
+
 Thành Viên Nhóm môn Giao Tiếp Người_Máy:
 
     20130410 Phạm Nguyễn Đức Thiện (Nhóm Trưởng)
