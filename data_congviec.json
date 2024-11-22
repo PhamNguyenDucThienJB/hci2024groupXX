@@ -1,0 +1,101 @@
+[
+  {
+    "stt": 1,
+    "trang": "Groupdiary",
+    "deXuat": "Phạm Nguyễn Đức Thiện",
+    "thietKe": "Phạm Nguyễn Đức Thiện",
+    "thucHien": "Phạm Nguyễn Đức Thiện",
+    "thoiGian": "14/11/2024",
+    "hoanThien": 100
+  },
+  {
+    "stt": 2,
+    "trang": "Menu Projects",
+    "deXuat": "Phạm Nguyễn Đức Thiện",
+    "thietKe": "Phạm Nguyễn Đức Thiện",
+    "thucHien": "Phạm Nguyễn Đức Thiện",
+    "thoiGian": "14/11/2024",
+    "hoanThien": 100
+  },
+  {
+    "stt": 3,
+    "trang": "Đăng Nhập",
+    "deXuat": "Phạm Nguyễn Đức Thiện",
+    "thietKe": "Nguyễn Đình Tiến",
+    "thucHien": "Nguyễn Đình Tiến",
+    "thoiGian": "14/11/2024",
+    "hoanThien": 70
+  },
+  {
+    "stt": 4,
+    "trang": "Quên Mật Khẩu, Trang liên hệ",
+    "deXuat": "Phạm Nguyễn Đức Thiện",
+    "thietKe": "Nguyễn Quang Trực",
+    "thucHien": "Nguyễn Quang Trực",
+    "thoiGian": "14/11/2024",
+    "hoanThien": 70
+  },
+  {
+    "stt": 5,
+    "trang": "Đăng Ký",
+    "deXuat": "Phạm Nguyễn Đức Thiện",
+    "thietKe": "Bùi Nguyễn Thiên Tài",
+    "thucHien": "Bùi Nguyễn Thiên Tài",
+    "thoiGian": "14/11/2024",
+    "hoanThien": 100
+  },
+  {
+    "stt": 6,
+    "trang": "Trang chủ web nhóm",
+    "deXuat": "Phạm Nguyễn Đức Thiện",
+    "thietKe": "Lê Đăng Tuấn Phát",
+    "thucHien": "Lê Đăng Tuấn Phát",
+    "thoiGian": "14/11/2024",
+    "hoanThien": 70
+  },
+  {
+    "stt": 7,
+    "trang": "Dashboard",
+    "deXuat": "Phạm Nguyễn Đức Thiện",
+    "thietKe": "Phạm Nguyễn Đức Thiện",
+    "thucHien": "Phạm Nguyễn Đức Thiện",
+    "thoiGian": "29/11/2024",
+    "hoanThien": 100
+  },
+  {
+    "stt": 8,
+    "trang": "Trang Danh sách nhân viên (staff), Menu (Web-Project)",
+    "deXuat": "Bùi Nguyễn Thiên Tài",
+    "thietKe": "Bùi Nguyễn Thiên Tài",
+    "thucHien": "Bùi Nguyễn Thiên Tài",
+    "thoiGian": "29/11/2024",
+    "hoanThien": 0
+  },
+  {
+    "stt": 9,
+    "trang": "Trang Danh sách order, Header (Web-Project)",
+    "deXuat": "Nguyễn Đình Tiến",
+    "thietKe": "Nguyễn Đình Tiến",
+    "thucHien": "Nguyễn Đình Tiến",
+    "thoiGian": "29/11/2024",
+    "hoanThien": 0
+  },
+  {
+    "stt": 10,
+    "trang": "Trang Danh sách khách hàng (Customers), Footer (Web-Group), Xác nhận mật khẩu",
+    "deXuat": "Nguyễn Quang Trực",
+    "thietKe": "Nguyễn Quang Trực",
+    "thucHien": "Nguyễn Quang Trực",
+    "thoiGian": "29/11/2024",
+    "hoanThien": 0
+  },
+  {
+    "stt": 11,
+    "trang": "Trang Danh sách sản phẩm (Product), Header (Web-Group)",
+    "deXuat": "Lê Đăng Tuấn Phát",
+    "thietKe": "Lê Đăng Tuấn Phát",
+    "thucHien": "Lê Đăng Tuấn Phát",
+    "thoiGian": "29/11/2024",
+    "hoanThien": 0
+  }
+]
