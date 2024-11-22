@@ -1,0 +1,185 @@
+{
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          {
+            "stt": 1,
+            "ma_sv": "2013410",
+            "ho_ten": "Phạm Nguyễn Đức Thiện (NT)",
+            "cong_viec": "Tìm Template Web Group, Lập Kế Hoạch, Làm Trang Group Diary, menu Project, Tạo Thông Tin cá nhân",
+            "ket_qua": "Hoàn Thành",
+            "tien_do": 100
+          },
+          {
+            "stt": 2,
+            "ma_sv": "21130643",
+            "ho_ten": "Bùi Nguyễn Thiên Tài",
+            "cong_viec": "Tạo Thông Tin cá nhân trên Web Nhóm, Trang đăng ký, Chức Năng Đăng Ký",
+            "ket_qua": "Hoàn Thành",
+            "tien_do": 100
+          },
+          {
+            "stt": 3,
+            "ma_sv": "23130330",
+            "ho_ten": "Nguyễn Đình Tiến",
+            "cong_viec": "Tạo Thông Tin cá nhân trên Web Nhóm, Trang Login, Chức Năng Login",
+            "ket_qua": "Hoàn Thành",
+            "tien_do": 100
+          },
+          {
+            "stt": 4,
+            "ma_sv": "23130351",
+            "ho_ten": "Nguyễn Quang Trực",
+            "cong_viec": "Tạo Thông Tin cá nhân trên Web Nhóm, Trang Quên Mật Khẩu, Chức Năng quên mật khẩu, Trang liên hệ",
+            "ket_qua": "Hoàn Thành",
+            "tien_do": 100
+          },
+          {
+            "stt": 5,
+            "ma_sv": "23130228",
+            "ho_ten": "Lê Đăng Tuấn Phát",
+            "cong_viec": "Tạo Thông Tin cá nhân trên Web Nhóm, Tạo Logo, Trang Home nhóm, đổi màu header (beige)",
+            "ket_qua": "Hoàn Thành",
+            "tien_do": 100
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          {
+            "stt": 1,
+            "ma_sv": "2013410",
+            "ho_ten": "Phạm Nguyễn Đức Thiện (NT)",
+            "cong_viec": "Lập kế hoạch, Trang Dashboard",
+            "ket_qua": "Hoàn Thành",
+            "tien_do": 100
+          },
+          {
+            "stt": 2,
+            "ma_sv": "21130643",
+            "ho_ten": "Bùi Nguyễn Thiên Tài",
+            "cong_viec": "Trang Danh sách nhân viên (staff), Menu (Web-Project)",
+            "ket_qua": "",
+            "tien_do": 0
+          },
+          {
+            "stt": 3,
+            "ma_sv": "23130330",
+            "ho_ten": "Nguyễn Đình Tiến",
+            "cong_viec": "Trang Danh sách order, Header (Web-Project)",
+            "ket_qua": "",
+            "tien_do": 0
+          },
+          {
+            "stt": 4,
+            "ma_sv": "23130351",
+            "ho_ten": "Nguyễn Quang Trực",
+            "cong_viec": "Trang Danh sách khách hàng (Customers), Footer (Web-Group)",
+            "ket_qua": "",
+            "tien_do": 0
+          },
+          {
+            "stt": 5,
+            "ma_sv": "23130228",
+            "ho_ten": "Lê Đăng Tuấn Phát",
+            "cong_viec": "Trang Danh sách sản phẩm (Product), Header (Web-Group)",
+            "ket_qua": "",
+            "tien_do": 0
+          }
+        ]
+      },
+      {
+        "week": "9-10",
+        "tasks": [
+          {
+            "stt": 1,
+            "ma_sv": "2013410",
+            "ho_ten": "Phạm Nguyễn Đức Thiện (NT)",
+            "cong_viec": "",
+            "ket_qua": "",
+            "tien_do": 0
+          },
+          {
+            "stt": 2,
+            "ma_sv": "21130643",
+            "ho_ten": "Bùi Nguyễn Thiên Tài",
+            "cong_viec": "",
+            "ket_qua": "",
+            "tien_do": 0
+          },
+          {
+            "stt": 3,
+            "ma_sv": "23130330",
+            "ho_ten": "Nguyễn Đình Tiến",
+            "cong_viec": "",
+            "ket_qua": "",
+            "tien_do": 0
+          },
+          {
+            "stt": 4,
+            "ma_sv": "23130351",
+            "ho_ten": "Nguyễn Quang Trực",
+            "cong_viec": "",
+            "ket_qua": "",
+            "tien_do": 0
+          },
+          {
+            "stt": 5,
+            "ma_sv": "23130228",
+            "ho_ten": "Lê Đăng Tuấn Phát",
+            "cong_viec": "",
+            "ket_qua": "",
+            "tien_do": 0
+          }
+        ]
+      },
+      {
+        "week": "11-12",
+        "tasks": [
+          {
+            "stt": 1,
+            "ma_sv": "2013410",
+            "ho_ten": "Phạm Nguyễn Đức Thiện (NT)",
+            "cong_viec": "",
+            "ket_qua": "",
+            "tien_do": 0
+          },
+          {
+            "stt": 2,
+            "ma_sv": "21130643",
+            "ho_ten": "Bùi Nguyễn Thiên Tài",
+            "cong_viec": "",
+            "ket_qua": "",
+            "tien_do": 0
+          },
+          {
+            "stt": 3,
+            "ma_sv": "23130330",
+            "ho_ten": "Nguyễn Đình Tiến",
+            "cong_viec": "",
+            "ket_qua": "",
+            "tien_do": 0
+          },
+          {
+            "stt": 4,
+            "ma_sv": "23130351",
+            "ho_ten": "Nguyễn Quang Trực",
+            "cong_viec": "",
+            "ket_qua": "",
+            "tien_do": 0
+          },
+          {
+            "stt": 5,
+            "ma_sv": "23130228",
+            "ho_ten": "Lê Đăng Tuấn Phát",
+            "cong_viec": "",
+            "ket_qua": "",
+            "tien_do": 0
+          }
+        ]
+      }
+    ]
+  }
+  
