@@ -13,6 +13,6 @@
     { "id": "tab-30", "title": "Trang danh sách đơn hàng", "images": [] },
     { "id": "tab-31", "title": "Trang danh sách sản phẩm", "images": ["assets/img/design/Project_Requirement.png", "assets/img/design/", "assets/img/design/Project_Implement.png"] },
     { "id": "tab-32", "title": "Trang danh sách nhân viên", "images": ["assets/img/design/contact.png"] },
-    { "id": "tab-33", "title": "Trang danh sách khách hàng", "images": ["assets/img/design/contact.png"] }
+    { "id": "tab-33", "title": "Trang danh sách khách hàng", "images": ["assets/img/design/danhsachkhachhang.png"] }
   ]
   
