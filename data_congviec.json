@@ -97,5 +97,50 @@
     "thucHien": "Lê Đăng Tuấn Phát",
     "thoiGian": "29/11/2024",
     "hoanThien": 0
+  },
+  {
+    "stt": 12,
+    "trang": "Trang Calender",
+    "deXuat": "Phạm Nguyễn Đức Thiện",
+    "thietKe": "Phạm Nguyễn Đức Thiện",
+    "thucHien": "Phạm Nguyễn Đức Thiện",
+    "thoiGian": "6/12/2024",
+    "hoanThien": 0
+  },
+  {
+    "stt": 13,
+    "trang": "Trang Thêm,sửa xoá, Danh sách nhân viên (staff)",
+    "deXuat": "Bùi Nguyễn Thiên Tài",
+    "thietKe": "Bùi Nguyễn Thiên Tài",
+    "thucHien": "Bùi Nguyễn Thiên Tài",
+    "thoiGian": "29/11/2024",
+    "hoanThien": 0
+  },
+  {
+    "stt": 14,
+    "trang": "Trang Thêm,sửa xoá,Danh sách order",
+    "deXuat": "Nguyễn Đình Tiến",
+    "thietKe": "Nguyễn Đình Tiến",
+    "thucHien": "Nguyễn Đình Tiến",
+    "thoiGian": "29/11/2024",
+    "hoanThien": 0
+  },
+  {
+    "stt": 15,
+    "trang": "Trang Thêm,sửa xoá,Danh sách khách hàng (Customers)",
+    "deXuat": "Nguyễn Quang Trực",
+    "thietKe": "Nguyễn Quang Trực",
+    "thucHien": "Nguyễn Quang Trực",
+    "thoiGian": "29/11/2024",
+    "hoanThien": 0
+  },
+  {
+    "stt": 16,
+    "trang": "Trang Thêm,sửa xoá, Danh sách sản phẩm (Product)",
+    "deXuat": "Lê Đăng Tuấn Phát",
+    "thietKe": "Lê Đăng Tuấn Phát",
+    "thucHien": "Lê Đăng Tuấn Phát",
+    "thoiGian": "29/11/2024",
+    "hoanThien": 0
   }
 ]
