@@ -90,5 +90,21 @@
       "image": "assets/img/design/thietke_danhsachkhachhang.png",
       "download": "assets/img/design/thietke_danhsachkhachhang.png"
     }
+    ,
+    {
+      "tabId": "tab-14",
+      "title": "Trang đánh giá",
+      "image": "assets/img/design/",
+      "download": "assets/img/design/"
+    }
+    ,
+    {
+      "tabId": "tab-15",
+      "title": "Trang About Web-Group",
+      "image": "assets/img/design/",
+      "download": "assets/img/design/"
+    }
+
+    
   ]
 }
