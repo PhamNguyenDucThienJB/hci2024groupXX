@@ -96,10 +96,14 @@
               <div class="tab">
                 <button class="tablinks" onclick="openTab(event, 'Week1')" id="defaultOpen">Week 1</button>
                 <button class="tablinks" onclick="openTab(event, 'Week2')">Week 2</button>
+                <button class="tablinks" onclick="openTab(event, 'Week3')">Week 3</button>
+                <button class="tablinks" onclick="openTab(event, 'Week4')">Week 4</button>
               </div>
     
               <div id="Week1" class="tabcontent"></div>
               <div id="Week2" class="tabcontent"></div>
+              <div id="Week3" class="tabcontent"></div>
+              <div id="Week4" class="tabcontent"></div>
             </div>
           </div>
         </section>
@@ -129,6 +133,8 @@
         // Render the tasks for Week 1 and Week 2
         renderWeek('Week1', data.weeks[0].tasks);
         renderWeek('Week2', data.weeks[1].tasks);
+        renderWeek('Week3', data.weeks[2].tasks);
+        renderWeek('Week4', data.weeks[3].tasks);
       });
     
     function renderWeek(weekName, weekData) {
