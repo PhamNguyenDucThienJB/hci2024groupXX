@@ -78,565 +78,244 @@
                   <a class="notchoise" onclick="openContent(event, 'implement')">Implement</a>
                 </div>
         
-              <!-- Nội dung cho Requirement -->
+             
               <!-- Nội dung cho Requirement -->
               <div id="requirement" class="tabcontent" style="display: block; width: 100%; margin-top: 20px;">
-                <table>
+                <table id="requirement-table">
+                  <thead>
                     <tr>
-                        <th>STT</th>
-                        <th>Trang</th>
-                        <th>Người đề xuất</th>
-                        <th>Người thiết kế</th>
-                        <th>Người thực hiện</th>
-                        <th>Thời gian dự kiến</th>
-                        <th>Độ Hoàn Thiện</th>
+                      <th>STT</th>
+                      <th>Trang</th>
+                      <th>Người đề xuất</th>
+                      <th>Người thiết kế</th>
+                      <th>Người thực hiện</th>
+                      <th>Thời gian dự kiến</th>
+                      <th>Độ Hoàn Thiện</th>
                     </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Groupdiary</td>
-                        <td>Phạm Nguyễn Đức Thiện</td>
-                        <td>Phạm Nguyễn Đức Thiện</td>
-                        <td>Phạm Nguyễn Đức Thiện</td>
-                        <td>14/11/2024</td>
-                        <td>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
-                            </div>
-                        </td>
-                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- Nội dung sẽ được thêm qua JavaScript -->
+                  </tbody>
+                </table>
+              </div>
+              
+                <script>
+                    // Hàm render dữ liệu vào bảng
+  function renderTable(data) {
+    const tbody = document.querySelector("#requirement-table tbody");
+    tbody.innerHTML = ""; // Xóa nội dung cũ (nếu có)
 
-                    <tr>
-                      <td>2</td>
-                      <td>Menu Projects</td>
-                      <td>Phạm Nguyễn Đức Thiện</td>
-                      <td>Phạm Nguyễn Đức Thiện </td>
-                      <td>Phạm Nguyễn Đức Thiện</td>
-                      <td>14/11/2024</td>
-                      <td>
-                        <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 90%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
-                        </div>
-                    </td>
+    data.forEach(task => {
+      const progress = `<div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: ${task.hoanThien}%;"
+                            aria-valuenow="${task.hoanThien}" aria-valuemin="0" aria-valuemax="100">${task.hoanThien}%</div>
+                        </div>`;
+      const row = `
+        <tr>
+          <td>${task.stt}</td>
+          <td>${task.trang}</td>
+          <td>${task.deXuat}</td>
+          <td>${task.thietKe}</td>
+          <td>${task.thucHien}</td>
+          <td>${task.thoiGian}</td>
+          <td>${progress}</td>
+        </tr>
+      `;
+      tbody.innerHTML += row;
+    });
+  }
 
-                    </tr>
-                    <tr>
-                      <td>3</td>
-                      <td>Đăng Nhập</td>
-                      <td>Phạm Nguyễn Đức Thiện</td>
-                      <td>Nguyễn Đình Tiến </td>
-                      <td>Nguyễn Đình Tiến</td>
-                      <td>14/11/2024</td>
-                      <td>
-                        <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 90%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
-                        </div>
-                    </td>
+  // Tải dữ liệu từ file JSON
+  fetch("data_congviec.json")
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("Không thể tải file JSON");
+      }
+      return response.json();
+    })
+    .then(data => {
+      renderTable(data); // Gọi hàm để render dữ liệu vào bảng
+    })
+    .catch(error => {
+      console.error("Lỗi khi tải file JSON:", error);
+    });
 
-                    </tr>
-                    <tr>
-                      <td>4</td>
-                      <td>Quên Mật Khẩu,Trang liên hệ</td>
-                      <td>Phạm Nguyễn Đức Thiện</td>
-                      <td>Nguyễn Quang Trực</td>
-                      <td>Nguyễn Quang Trực</td>
-                      <td>14/11/2024</td>
-                      <td>
-                        <div class="progress">
-                          <div class="progress-bar bg-success" role="progressbar" style="width: 90%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
-                        </div>
-                    </td>
-                      
+  // Hàm để chuyển đổi giữa các tab
+  function openContent(evt, tabName) {
+    // Ẩn tất cả các tab
+    const tabContents = document.querySelectorAll('.tabcontent');
+    tabContents.forEach(content => {
+      content.style.display = "none";
+    });
 
-                    </tr>
+    // Loại bỏ class 'choised' và thêm 'notchoise' cho tất cả các liên kết
+    const links = document.querySelectorAll('.container a');
+    links.forEach(link => {
+      link.classList.remove('choised');
+      link.classList.add('notchoise');
+    });
 
-                    <tr>
-                      <td>5</td>
-                      <td>Đăng Ký</td>
-                      <td>Phạm Nguyễn Đức Thiện</td>
-                      <td>Bùi Nguyễn Thiên Tài</td>
-                      <td>Bùi Nguyễn Thiên Tài</td>
-                      <td>14/11/2024</td>
-                      <td>
-                        <div class="progress">
-                          <div class="progress-bar bg-success" role="progressbar" style="width: 90%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
-                        </div>
-                    </td>
+    // Hiển thị tab được chọn
+    document.getElementById(tabName).style.display = "block";
 
-                    </tr>
-                    <tr>
-                      <td>6</td>
-                      <td>Trang chủ web nhóm</td>
-                      <td>Phạm Nguyễn Đức Thiện</td>
-                      <td>Lê Đăng Tuấn Phát</td>
-                      <td>Lê Đăng Tuấn Phát</td>
-                      <td>14/11/2024</td>
-                      <td>
-                        <div class="progress">
-                          <div class="progress-bar bg-success" role="progressbar" style="width: 90%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
-                        </div>
-                    </td>
-                    
-                    </tr>
-                    <tr>
-                      <td>7</td>
-                      <td>Dashboard</td>
-                      <td>Phạm Nguyễn Đức Thiện</td>
-                      <td>Phạm Nguyễn Đức Thiện</td>
-                      <td>Phạm Nguyễn Đức Thiện</td>
-                      <td>29/11/2024</td>
-                      <td>
-                        <div class="progress">
-                          <div class="progress-bar bg-success" role="progressbar" style="width: 90%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
-                        </div>
-                    </td>
-                      
-                    <tr>
-                      <td>8</td>
-                      <td>Trang Danh sách nhân viên (staff),Menu (Web-Project)</td>
-                      <td>Bùi Nguyễn Thiên Tài</td>
-                      <td>Bùi Nguyễn Thiên Tài</td>
-                      <td>Bùi Nguyễn Thiên Tài</td>
-                      <td>29/11/2024</td>
-                      <td>
-                        <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 90%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
-                        </div>
-                    </td>
-
-                    </tr>
-                    <tr>
-                      <td>9</td>
-                      <td>Trang Danh sách oder,Header (Web-Project)</td>
-                      <td>Nguyễn Đình Tiến</td>
-                      <td>Nguyễn Đình Tiến </td>
-                      <td>Nguyễn Đình Tiến</td>
-                      <td>29/11/2024</td>
-                      <td>
-                        <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 90%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
-                        </div>
-                    </td>
-
-                    </tr>
-                    <tr>
-                      <td>10</td>
-                      <td>Trang Danh sách khách hàng (Customers),Footer (Web-Group),Xác Nhận mật khẩu</td>
-                      <td>Nguyễn Quang Trực</td>
-                      <td>Nguyễn Quang Trực</td>
-                      <td>Nguyễn Quang Trực</td>
-                      <td>29/11/2024</td>
-                      <td>
-                        <div class="progress">
-                          <div class="progress-bar bg-success" role="progressbar" style="width: 90%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
-                        </div>
-                    </td>
-                      
-
-                    </tr>
-
-                  
-                    <tr>
-                      <td>11</td>
-                      <td>Trang Danh sách sản phẩm (Product),Header (Web-Group)</td>
-                      <td>Lê Đăng Tuấn Phát</td>
-                      <td>Lê Đăng Tuấn Phát</td>
-                      <td>Lê Đăng Tuấn Phát</td>
-                      <td>29/11/2024</td>
-                      <td>
-                        <div class="progress">
-                          <div class="progress-bar bg-success" role="progressbar" style="width: 90%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
-                        </div>
-                    </td>
-                    </tr>
-                  </table>
-
-                </div>
-                  </table>
-
-                </div>
+    // Thêm class 'choised' vào liên kết hiện tại
+    evt.currentTarget.classList.add('choised');
+  }
+                </script>    
               <!-- Nội dung cho Design -->
               
               <div id="design" class="tabcontent" style="display: none; width: 100%; margin-top: 20px;">
                 <section id="features" class="features">
-                  <div class="container">
-        
-        
-                      <style>
-                        
-                        .nav-item{
-                          border: 2px solid ;
-                        }
-                      </style>
-                    <div class="row">
-        
-                      <div class="box" style="padding-bottom: 50px;">
-                        <button class="download" onclick="downloadImages()">Download All</button>       
-                      </div>
-                      <div class="col-lg-3" >
-                        <ul class="nav nav-tabs flex-column">
-                          <ul class="nav nav-tabs flex-column">
-                            <li class="nav-item">
-                              <a class="nav-link  show" data-bs-toggle="tab" href="#" style="font-size: 20px;color: red;">Web-Group</a>
-                            </li>
-                          <li class="nav-item"style="border: 2px solid;">
-                            <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1" style="font-size: 20px;">Home</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-2" style="font-size: 20px;">About</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-3" style="font-size: 20px;">Group Diary
-                            </a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-4" style="font-size: 20px;">Project
-                            </a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-5" style="font-size: 20px;">Contact
-                            </a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link  show" data-bs-toggle="tab" href="#" style="font-size: 20px;color: red;">Web-ProJect</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-6" style="font-size: 20px;">Login</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-7" style="font-size: 20px;">Logout</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-8" style="font-size: 20px;">Forget-Password</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-9" style="font-size: 20px;">Trang Tổng Quát</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-10" style="font-size: 20px;">Trang danh sách đơn hàng</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-11" style="font-size: 20px;">Trang danh sách sản phẩm</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-12" style="font-size: 20px;">Trang danh sách nhân viên
-                              </a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-13" style="font-size: 20px;"> Trang danh sách khách hàng
-                              </a>
-                          </li>
-                          
-                        </ul>
-                      </div>
-                      <div class="col-lg-9 mt-4 mt-lg-0">
-                        <div class="tab-content">
-                          <div class="tab-pane active show" id="tab-1">
-                            <div class="row">
-                              <div class="box">
-                                <a class="download-link" href="assets/img/design/Groupdiary.jpg" download="Groupdiary.jpg">
-                                  <button class="download">Download</button>
-                                </a>
-                              </div>
-                              <div class="col-lg-4 text-center order-1 order-lg-2">
-                                <img src="assets/img/design/Groupdiary.jpg" alt="" class="" style="width: 972px;">
-                              </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="box" style="padding-bottom: 50px;">
+                                <button class="download" onclick="downloadImages()">Download All</button>
                             </div>
-                          </div>
-                          <div class="tab-pane" id="tab-2">
-                            <div class="row">
-                              <div class="box">
-                                <a class="download-link" href="assets/img/design/design_project.pdf" download="design_project.pdf">
-                                  <button class="download">Download</button>
-                                </a>
-                              </div>
-                              <div class="col-lg-4 text-center order-1 order-lg-2">
-                                
-                                <img src="assets/img/design/design_project.pdf" alt="" class="" style="width: 972px;">
-                                <!-- <img src="assets/img/design/trang chủ 2.jpg" alt="" class="" style="width: 972px;"> -->
-                              </div>
+                            <div class="col-lg-3">
+                                <ul class="nav nav-tabs flex-column" id="tabsList">
+                                    <!-- Các tab sẽ được tạo động ở đây -->
+                                </ul>
                             </div>
-                          </div>
-                          <div class="tab-pane" id="tab-3">
-                            <div class="row">
-                              <div class="box">
-                                <a class="download-link" href="assets/img/design/Groupdiary.jpg" download="Groupdiary.jpg">
-                                  <button class="download">Download</button>
-                                </a>
-                              </div>
-                              <div class="col-lg-4 text-center order-1 order-lg-2">
-                                <img src="assets/img/design/Groupdiary.jpg" alt="" class="" style="width: 972px;">
-                              </div>
+                            <div class="col-lg-9 mt-4 mt-lg-0">
+                                <div class="tab-content" id="tabsContent">
+                                    <!-- Nội dung tab sẽ được tạo động ở đây -->
+                                </div>
                             </div>
-                          </div>
-                          <div class="tab-pane" id="tab-4">
-                            <div class="row">
-                              <div class="box">
-                                <a class="download-link" href="assets/img/design/design_project_Requirment.jpg" download="design_project_Requirment.jpg">
-                                  <button class="download">Download</button>
-                                </a>
-                              </div>
-                              <div class="col-lg-4 text-center order-1 order-lg-2">
-                                <img src="assets/img/design/design_project_Requirment.jpg" alt="" class="" style="width: 972px;">
-                                <img src="assets/img/design/design_project_Ds_Imp.jpg" alt="" class="" style="width: 972px;">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="tab-pane" id="tab-5">
-                            <div class="row">
-                              <div class="box">
-                                <a class="download-link" href="assets/img/design/trang tìm kiếm mv.jpg" download="trang tìm kiếm mv.jpg">
-                                  <button class="download">Download</button>
-                                </a>
-                              </div>
-                              <div class="col-lg-4 text-center order-1 order-lg-2">
-                                <img src="assets/img/design/trang tìm kiếm mv.jpg" alt="" class="" style="width: 972px;">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="tab-pane" id="tab-6">
-                            <div class="row">
-                              <div class="box">
-                                <a class="download-link" href="assets/img/design/trang bxh.jpg" download="trang bxh.jpg">
-                                  <button class="download">Download</button>
-                                </a>
-                              </div>
-                              <div class="col-lg-4 text-center order-1 order-lg-2">
-                                <img src="assets/img/design/trang bxh.jpg" alt="" class="" style="width: 972px;">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="tab-pane" id="tab-7">
-                            <div class="row">
-                              <div class="box">
-                                <a class="download-link" href="assets/img/design/trang bài hát.jpg" download="trang bài hát.jpg">
-                                  <button class="download">Download</button>
-                                </a>
-                              </div>
-                              <div class="col-lg-4 text-center order-1 order-lg-2">
-                                <img src="assets/img/design/trang bài hát.jpg" alt="" class="" style="width: 972px;">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="tab-pane" id="tab-8">
-                            <div class="row">
-                              <div class="box">
-                                <a class="download-link" href="assets/img/design/trang mv.jpg" download="trang mv.jpg">
-                                  <button class="download">Download</button>
-                                </a>
-                              </div>
-                              <div class="col-lg-4 text-center order-1 order-lg-2">
-                                <img src="assets/img/design/trang mv.jpg" alt="" class="" style="width: 972px;">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="tab-pane" id="tab-9">
-                            <div class="row">
-                              <div class="box">
-                                <a class="download-link" href="assets/img/design/ca sĩ.jpg" download="trang ca sĩ.jpg">
-                                  <button class="download">Download</button>
-                                </a>
-                              </div>
-                              <div class="col-lg-4 text-center order-1 order-lg-2">
-                                <img src="assets/img/design/ca sĩ.jpg" alt="" class="" style="width: 972px;">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="tab-pane" id="tab-10">
-                            <div class="row">
-                              <div class="box">
-                                <a class="download-link" href="assets/img/design/dangnhap.jpg" download="dangnhap.jpg">
-                                  <button class="download">Download</button>
-                                </a>
-                              </div>
-                              <div class="col-lg-4 text-center order-1 order-lg-2">
-                                <img src="assets/img/design/dangnhap.jpg" alt="" class="" style="width: 972px;">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="tab-pane" id="tab-11">
-                            <div class="row">
-                              <div class="box">
-                                <a class="download-link" href="assets/img/design/dangki.jpg" download="dangki.jpg">
-        
-                                  <button class="download">Download</button>
-                                </a>
-                              </div>
-                              <div class="col-lg-4 text-center order-1 order-lg-2">
-                                <img src="assets/img/design/dangki.jpg" alt="" class="" style="width: 972px;">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="tab-pane" id="tab-12">
-                            <div class="row">
-                              <div class="box">
-                                <a class="download-link" href="assets/img/design/quenmatkhau.jpg" download="quenmatkhau.jpg">
-                                  <button class="download">Download</button>
-                                </a>
-                              </div>
-                              <div class="col-lg-4 text-center order-1 order-lg-2">
-                                <img src="assets/img/design/quenmatkhau.jpg" alt="" class="" style="width: 972px;">
-                              </div>
-                            </div>
-                          </div>
-        
-                          <div class="tab-pane" id="tab-13">
-                            <div class="row">
-                              <div class="box">
-                                <a class="download-link" href="assets/img/design/trang giới thiệu.jpg" download="trang giới thiệu.jpg">
-                                  <button class="download">Download</button>
-                                </a>
-                              </div>
-                              <div class="col-lg-4 text-center order-1 order-lg-2">
-                                <img src="assets/img/design/trang giới thiệu.jpg" alt="" class="" style="width: 972px;">
-                              </div>
-                            </div>
-                          </div>
-        
-                          
-        
-        
-                          <style>
-                          
-                          </style>
                         </div>
-                      </div>
                     </div>
-        
-                  </div>
-                </section><!-- End Features Section -->
-              </div>
-              <!-- Nội dung cho Implement -->
+                </section>
+            </div>
+            <script>
+// Hàm tải dữ liệu từ file JSON
+function loadTabs() {
+  // Sử dụng fetch để tải file JSON từ server
+  fetch('data_Design.json')
+    .then(response => response.json())
+    .then(data => {
+      // Lấy phần tử chứa các tab và nội dung
+      const tabsList = document.getElementById('tabsList');
+      const tabsContent = document.getElementById('tabsContent');
+
+      // Duyệt qua từng tab trong JSON và tạo các phần tử HTML tương ứng
+      data.tabs.forEach(tab => {
+        // Tạo tab trong danh sách
+        const tabLink = document.createElement('li');
+        tabLink.classList.add('nav-item');
+        tabLink.innerHTML = `<a class="nav-link" data-bs-toggle="tab" href="#${tab.tabId}" style="font-size: 20px;">${tab.title}</a>`;
+        tabsList.appendChild(tabLink);
+
+        // Tạo nội dung cho từng tab
+        const tabPane = document.createElement('div');
+        tabPane.classList.add('tab-pane');
+        tabPane.id = tab.tabId;
+        tabPane.innerHTML = `
+          <div class="row">
+            <div class="box">
+              <a class="download-link" href="${tab.download}" download="${tab.title}.jpg">
+                <button class="download">Download</button>
+              </a>
+            </div>
+            <div class="col-lg-4 text-center order-1 order-lg-2">
+              <img src="${tab.image}" alt="${tab.title}" style="width: 972px;">
+            </div>
+          </div>
+        `;
+        tabsContent.appendChild(tabPane);
+      });
+    })
+    .catch(error => {
+      console.error('Error loading the JSON file:', error);
+    });
+}
+
+// Gọi hàm loadTabs khi trang được tải
+window.onload = loadTabs;
+
+
+            </script>
               <div id="implement" class="tabcontent" style="display: none; width: 100%; margin-top: 20px;">
                 <section id="features" class="features">
                   <div class="container">
-        
-        
-        
                     <div class="row">
-        
                       <div class="box" style="padding-bottom: 50px;">
-                        <button class="download" onclick="downloadImages()">Download All</button>       
+                        <button class="download" onclick="downloadAllImages()">Download All</button>
                       </div>
                       <div class="col-lg-3">
-                        <ul class="nav nav-tabs flex-column">
-                          <li class="nav-item">
-                            <a class="nav-link  show" data-bs-toggle="tab" href="#" style="font-size: 20px;color: red;">Web-Group</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link active show" data-bs-toggle="tab" href="#tab-20" style="font-size: 20px;">Home</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-21" style="font-size: 20px;">About</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-22" style="font-size: 20px;">Group Diary</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-23" style="font-size: 20px;">ProJect</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-24" style="font-size: 20px;">Contact</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link  show" data-bs-toggle="tab" href="#" style="font-size: 20px;color: red;">Web-ProJect</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-25" style="font-size: 20px;">Login</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-26" style="font-size: 20px;">Logout</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-27" style="font-size: 20px;">Forget-Password</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-28" style="font-size: 20px;">Trang Tổng Quát</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-29" style="font-size: 20px;">Trang danh sách đơn hàng</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-30" style="font-size: 20px;">Trang danh sách sản phẩm</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-31" style="font-size: 20px;">rang danh sách nhân viên</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-32" style="font-size: 20px;">Trang danh sách khách hàng</a>
-                          </li>
+                        <ul class="nav nav-tabs flex-column" id="tab-menu">
+                          <!-- Danh sách tab sẽ được sinh tự động -->
                         </ul>
-                        
                       </div>
                       <div class="col-lg-9 mt-4 mt-lg-0">
-                        <div class="tab-content">
-                          <div class="tab-pane active show" id="tab-20">
-                            <div class="row">
-                              <div class="box">
-                                <a class="download-link" href="assets/img/design/header footer.jpg" download="header footer.jpg">
-                                  <button class="download">Download</button>
-                                </a>
-                              </div>
-                              <div class="col-lg-4 text-center order-1 order-lg-2">
-                                <img src="assets/img/design/header footer.jpg" alt="" style="width: 972px;">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="tab-pane" id="tab-21">
-                            <div class="row">
-                              <div class="box">
-                                <a class="download-link" href="assets/img/design/trang chủ 1.jpg" download="trang chủ 1.jpg">
-                                  <button class="download">Download</button>
-                                </a>
-                              </div>
-                              <div class="col-lg-4 text-center order-1 order-lg-2">
-                                <img src="assets/img/design/trang chủ 1.jpg" alt="" style="width: 972px;">
-                                <img src="assets/img/design/trang chủ 2.jpg" alt="" style="width: 972px;">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="tab-pane" id="tab-22">
-                            <div class="row">
-                              <div class="box">
-                                <a class="download-link" href="assets/img/design/Group_Diary.png" download="assets/img/design/Group_Diary.png">
-                                  <button class="download">Download</button>
-                                </a>
-                              </div>
-                              <div class="col-lg-4 text-center order-1 order-lg-2">
-                                <img src="assets/img/design/Group_Diary.png" alt="" style="width: 972px;">
-                              </div>
-                            </div>
-                          </div>
-                          <!-- Cập nhật tiếp các tab dưới đây -->
-                          <div class="tab-pane" id="tab-23">
-                            <!-- Nội dung tab-23 -->
-                            <div class="row">
-                              <div class="box">
-                                <a class="download-link" href="assets/img/design/Project_Requirement.png" download="assets/img/design/Project_Requirement.png">
-                                  <button class="download">Download</button>
-                                </a>
-                              </div>
-                              <div class="col-lg-4 text-center order-1 order-lg-2">
-                                <img src="assets/img/design/Project_Requirement.png" alt="" class="" style="width: 972px;">
-                                <img src="assets/img/design/Project_Design.png" alt="" class="" style="width: 972px;">
-                                <img src="assets/img/design/Project_Implement.png" alt="" class="" style="width: 972px;">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="tab-pane" id="tab-24">
-                            <!-- Nội dung tab-24 -->
-                          </div>
-                          <div class="tab-pane" id="tab-25">
-                            <!-- Nội dung tab-25 -->
-                          </div>
-                          <!-- Cứ thế cho đến tab-32 -->
+                        <div class="tab-content" id="tab-content">
+                          <!-- Nội dung các tab sẽ được sinh tự động -->
                         </div>
                       </div>
-                      
-                </section><!-- End Features Section -->
+                    </div>
+                  </div>
+                </section>
               </div>
+              
             </div>
         </section>
 
+<script>
+ fetch('data_implement.json')
+  .then(response => response.json())
+  .then(tabs => {
+    const tabMenu = document.getElementById("tab-menu");
+    const tabContent = document.getElementById("tab-content");
+
+    tabs.forEach((tab, index) => {
+      // Tạo tab menu
+      const menuItem = document.createElement("li");
+      menuItem.className = "nav-item";
+      menuItem.innerHTML = `
+        <a class="nav-link ${index === 0 ? "active" : ""}" data-bs-toggle="tab" href="#${tab.id}" style="font-size: 20px;">
+          ${tab.title}
+        </a>`;
+      tabMenu.appendChild(menuItem);
+
+      // Tạo nội dung tab
+      const contentItem = document.createElement("div");
+      contentItem.className = `tab-pane ${index === 0 ? "active show" : ""}`;
+      contentItem.id = tab.id;
+
+      if (tab.images.length > 0) {
+        const imageElements = tab.images.map((image) => `
+          <div class="col-lg-4">
+            <img src="${image}" alt="" class="img-fluid">
+          </div>`).join("");
+
+        contentItem.innerHTML = `
+          <div class="row">${imageElements}</div>
+          <button class="download" onclick="downloadTabImages('${tab.id}')">Download All</button>`;
+      } else {
+        contentItem.innerHTML = `<div class="row"><p>No content available.</p></div>`;
+      }
+
+      tabContent.appendChild(contentItem);
+    });
+
+    // Hàm tải xuống hình ảnh của một tab
+    function downloadTabImages(tabId) {
+      const tab = tabs.find(t => t.id === tabId);
+      if (tab) {
+        tab.images.forEach((image) => {
+          const a = document.createElement("a");
+          a.href = image;
+          a.download = image.split("/").pop();
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+        });
+      }
+    }
+  })
+  .catch(error => console.error('Error loading tabs.json:', error));
+
+
+
+</script>
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -727,25 +406,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script>
-   
-  </script>
-  <script>
-     // Đoạn mã JavaScript để tự động cập nhật width và màu sắc
-     document.querySelectorAll('.progress-bar').forEach(bar => {
-        const value = parseInt(bar.getAttribute('aria-valuenow'));
-        bar.style.width = `${value}%`;
 
-        // Thay đổi màu sắc dựa trên giá trị hoàn thiện
-        if (value >= 70) {
-            bar.classList.add('bg-success');
-        } else if (value >= 30) {
-            bar.classList.add('bg-warning');
-        } else {
-            bar.classList.add('bg-danger');
-        }
-    });
-</script>
   
 </body>
 

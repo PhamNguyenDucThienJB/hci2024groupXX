@@ -2290,3 +2290,36 @@ section {
       justify-content: center;
       padding: 10px;
     }
+
+
+              /* Đảm bảo hình ảnh không đè lên nhau */
+              .tab-content .row {
+                display: flex;
+                flex-direction: column; /* Xếp các mục theo chiều dọc */
+                gap: 10px; /* Khoảng cách giữa các mục */
+              }
+              
+              .tab-content img {
+                max-width: 250%; /* Đảm bảo hình ảnh không vượt quá chiều rộng khung chứa */
+                height: auto; /* Duy trì tỷ lệ ảnh */
+              }
+              
+              /* Nút download được căn giữa */
+              .download {
+                display: block;
+                margin: 20px auto;
+                background-color: red;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+              }
+              
+              .download:hover {
+                background-color: darkred;
+              }
+
+              .nav-item{
+                border: 2px solid ;
+              }

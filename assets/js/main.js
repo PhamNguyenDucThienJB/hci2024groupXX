@@ -245,3 +245,22 @@ function openContent(evt, contentId) {
 
 // Hiển thị phần Requirement khi tải trang lần đầu
 document.querySelector('[onclick="openContent(event, \'requirement\')"]').click();
+
+
+   // Đoạn mã JavaScript để tự động cập nhật width và màu sắc
+   document.querySelectorAll('.progress-bar').forEach(bar => {
+    const value = parseInt(bar.getAttribute('aria-valuenow'));
+    bar.style.width = `${value}%`;
+
+    // Thay đổi màu sắc dựa trên giá trị hoàn thiện
+    if (value >= 70) {
+        bar.classList.add('bg-success');
+    } else if (value >= 30) {
+        bar.classList.add('bg-warning');
+    } else {
+        bar.classList.add('bg-danger');
+    }
+});
+
+
+
