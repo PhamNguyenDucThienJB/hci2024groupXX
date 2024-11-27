@@ -14,7 +14,7 @@
     { "id": "tab-31", "title": "Trang danh sách sản phẩm", "images": ["assets/img/design/Project_Requirement.png", "assets/img/design/", "assets/img/design/Project_Implement.png"] },
     { "id": "tab-32", "title": "Trang danh sách nhân viên", "images": ["assets/img/design/contact.png"] },
     { "id": "tab-33", "title": "Trang danh sách khách hàng", "images": ["assets/img/design/danhsachkhachhang.png"] },
-    { "id": "tab-32", "title": "Trang đánh giá", "images": ["assets/img/design/review_01.png","assets/img/design/review_02.png","assets/img/design/review_03.png"] },
-    { "id": "tab-33", "title": "Trang About Web-Group", "images": ["assets/img/design/about_Webgroup.png"] }
+    { "id": "tab-34", "title": "Trang đánh giá", "images": ["assets/img/design/review_01.png","assets/img/design/review_02.png","assets/img/design/review_03.png"] },
+    { "id": "tab-35", "title": "Trang About Web-Group", "images": ["assets/img/design/about_Webgroup.png"] }
   ]
   
