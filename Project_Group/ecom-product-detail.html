@@ -1028,16 +1028,22 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
+  // Retrieve the product data from localStorage
   const productData = JSON.parse(localStorage.getItem('cartProduct'));
 
   if (productData) {
-    // Set main product image
-    document.getElementById('productImage').src = productData.image || 'default-image.jpg';
-    document.getElementById('productName').textContent = productData.name;
-    document.getElementById('productDescription').textContent = productData.description;
-    document.getElementById('productPrice').textContent = `$${productData.price.toFixed(2)}`;
+    // Set the main product image
+    const productImageElement = document.getElementById('productImage');
+    if (productImageElement && productData.image) {
+      productImageElement.src = productData.image;  // Use the main image stored in localStorage
+    }
 
-    // Check if there are images
+    // Set product details
+    document.getElementById('productName').textContent = productData.name || 'No name available';
+    document.getElementById('productDescription').textContent = productData.description || 'No description available';
+    document.getElementById('productPrice').textContent = `$${productData.price ? productData.price.toFixed(2) : '0.00'}`;
+
+    // Handle images if available (create tabs for each image)
     if (productData.images && Array.isArray(productData.images)) {
       const imageTabsContainer = document.querySelector('.nav.slide-item-list');
       const tabContent = document.querySelector('.tab-content');
@@ -1068,9 +1074,10 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   } else {
-    console.log('No product data found!');
+    console.log('No product data found in localStorage');
   }
 });
+
 </script>
 </body>
 
