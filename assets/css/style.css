@@ -165,7 +165,7 @@ h6 {
 #header .logo img {
   max-height: 40px;        /* Set max-height to 40px to limit the size */
   width: auto;             /* Maintain aspect ratio */
-  transform: scale(1.9);   /* Scale up the logo visually by 1.5x */
+  transform: scale(1.7);   /* Scale up the logo visually by 1.5x */
   transform-origin: center; /* Keep scaling centered */
 }
 /*--------------------------------------------------------------
