@@ -10,7 +10,7 @@
   },
   {
     "stt": 2,
-    "trang": "Menu Projects",
+    "trang": "Menu projects",
     "deXuat": "Phạm Nguyễn Đức Thiện",
     "thietKe": "Phạm Nguyễn Đức Thiện",
     "thucHien": "Phạm Nguyễn Đức Thiện",
@@ -19,7 +19,7 @@
   },
   {
     "stt": 3,
-    "trang": "Đăng Nhập",
+    "trang": "Đăng nhập",
     "deXuat": "Phạm Nguyễn Đức Thiện",
     "thietKe": "Nguyễn Đình Tiến",
     "thucHien": "Nguyễn Đình Tiến",
@@ -28,7 +28,7 @@
   },
   {
     "stt": 4,
-    "trang": "Quên Mật Khẩu, Trang liên hệ",
+    "trang": "Quên mật khẩu, Trang liên hệ",
     "deXuat": "Phạm Nguyễn Đức Thiện",
     "thietKe": "Nguyễn Quang Trực",
     "thucHien": "Nguyễn Quang Trực",
@@ -37,7 +37,7 @@
   },
   {
     "stt": 5,
-    "trang": "Đăng Ký",
+    "trang": "Đăng ký",
     "deXuat": "Phạm Nguyễn Đức Thiện",
     "thietKe": "Bùi Nguyễn Thiên Tài",
     "thucHien": "Bùi Nguyễn Thiên Tài",
@@ -64,7 +64,7 @@
   },
   {
     "stt": 8,
-    "trang": "Trang Danh sách nhân viên (staff), Menu (Web-Project)",
+    "trang": "Trang danh sách nhân viên (staff), Menu (Web-project)",
     "deXuat": "Bùi Nguyễn Thiên Tài",
     "thietKe": "Bùi Nguyễn Thiên Tài",
     "thucHien": "Bùi Nguyễn Thiên Tài",
@@ -73,7 +73,7 @@
   },
   {
     "stt": 9,
-    "trang": "Trang Danh sách order, Header (Web-Project)",
+    "trang": "Trang danh sách order, Header (Web-project)",
     "deXuat": "Nguyễn Đình Tiến",
     "thietKe": "Nguyễn Đình Tiến",
     "thucHien": "Nguyễn Đình Tiến",
@@ -82,7 +82,7 @@
   },
   {
     "stt": 10,
-    "trang": "Trang Danh sách khách hàng (Customers), Footer (Web-Group), Xác nhận mật khẩu",
+    "trang": "Trang danh sách khách hàng (Customers), Footer (Web-group), Xác nhận mật khẩu",
     "deXuat": "Nguyễn Quang Trực",
     "thietKe": "Nguyễn Quang Trực",
     "thucHien": "Nguyễn Quang Trực",
@@ -91,7 +91,7 @@
   },
   {
     "stt": 11,
-    "trang": "Trang Danh sách sản phẩm (Product), Header (Web-Group)",
+    "trang": "Trang danh sách sản phẩm (Product), Header (Web-group)",
     "deXuat": "Lê Đăng Tuấn Phát",
     "thietKe": "Lê Đăng Tuấn Phát",
     "thucHien": "Lê Đăng Tuấn Phát",
@@ -100,7 +100,7 @@
   },
   {
     "stt": 12,
-    "trang": "Trang Calender",
+    "trang": "Trang calendar",
     "deXuat": "Phạm Nguyễn Đức Thiện",
     "thietKe": "Phạm Nguyễn Đức Thiện",
     "thucHien": "Phạm Nguyễn Đức Thiện",
@@ -109,7 +109,7 @@
   },
   {
     "stt": 13,
-    "trang": "Trang Thêm,sửa xoá, Danh sách nhân viên (staff)",
+    "trang": "Trang thêm, sửa xoá, Danh sách nhân viên (staff)",
     "deXuat": "Bùi Nguyễn Thiên Tài",
     "thietKe": "Bùi Nguyễn Thiên Tài",
     "thucHien": "Bùi Nguyễn Thiên Tài",
@@ -118,16 +118,16 @@
   },
   {
     "stt": 14,
-    "trang": "Trang Thêm,sửa xoá,Danh sách order",
+    "trang": "Trang thêm, sửa xoá, Danh sách order",
     "deXuat": "Nguyễn Đình Tiến",
     "thietKe": "Nguyễn Đình Tiến",
     "thucHien": "Nguyễn Đình Tiến",
-    "thoiGian": "29/11/2024",
+    "thoiGian": "29/11/2022024",
     "hoanThien": 0
   },
   {
     "stt": 15,
-    "trang": "Trang Thêm,sửa xoá,Danh sách khách hàng (Customers)",
+    "trang": "Trang thêm, sửa xoá, Danh sách khách hàng (Customers)",
     "deXuat": "Nguyễn Quang Trực",
     "thietKe": "Nguyễn Quang Trực",
     "thucHien": "Nguyễn Quang Trực",
@@ -136,7 +136,7 @@
   },
   {
     "stt": 16,
-    "trang": "Trang Thêm,sửa xoá, Danh sách sản phẩm (Product)",
+    "trang": "Trang thêm, sửa xoá, Danh sách sản phẩm (Product)",
     "deXuat": "Lê Đăng Tuấn Phát",
     "thietKe": "Lê Đăng Tuấn Phát",
     "thucHien": "Lê Đăng Tuấn Phát",
