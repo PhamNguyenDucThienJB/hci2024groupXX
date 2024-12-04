@@ -11,9 +11,10 @@ Thành Viên Nhóm môn Giao Tiếp Người_Máy:
     23130351 Nguyễn Quang Trực
     23130330 Nguyễn Đình Tiến
 
-# hci2025group08: Website Project
+# hci2025group08: Website Project ADMIN
 https://phamnguyenducthienjb.github.io/hci2025group08/Project_Group/index.html
-
+# hci2025group08: Website Project USER
+https://phamnguyenducthienjb.github.io/hci2025group08/Project_web_user/index.html
 
 ---------------------------------------------------
 # Rule:
