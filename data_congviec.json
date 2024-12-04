@@ -142,5 +142,50 @@
     "thucHien": "Lê Đăng Tuấn Phát",
     "thoiGian": "29/11/2024",
     "hoanThien": 0
+  },
+  {
+    "stt": 17,
+    "trang": "Tìm Tempalte USER",
+    "deXuat": "Phạm Nguyễn Đức Thiện",
+    "thietKe": "Phạm Nguyễn Đức Thiện",
+    "thucHien": "Phạm Nguyễn Đức Thiện",
+    "thoiGian": "6/12/2024",
+    "hoanThien": 0
+  },
+  {
+    "stt": 18,
+    "trang": "Trang Book_Table (USER)",
+    "deXuat": "Bùi Nguyễn Thiên Tài",
+    "thietKe": "Bùi Nguyễn Thiên Tài",
+    "thucHien": "Bùi Nguyễn Thiên Tài",
+    "thoiGian": "29/11/2024",
+    "hoanThien": 0
+  },
+  {
+    "stt": 19,
+    "trang": "Trang HOME (USER)",
+    "deXuat": "Nguyễn Đình Tiến",
+    "thietKe": "Nguyễn Đình Tiến",
+    "thucHien": "Nguyễn Đình Tiến",
+    "thoiGian": "29/11/2022024",
+    "hoanThien": 0
+  },
+  {
+    "stt": 20,
+    "trang": " Trang About (USER)",
+    "deXuat": "Nguyễn Quang Trực",
+    "thietKe": "Nguyễn Quang Trực",
+    "thucHien": "Nguyễn Quang Trực",
+    "thoiGian": "29/11/2024",
+    "hoanThien": 0
+  },
+  {
+    "stt": 21,
+    "trang": "Trang Menu (USER)",
+    "deXuat": "Lê Đăng Tuấn Phát",
+    "thietKe": "Lê Đăng Tuấn Phát",
+    "thucHien": "Lê Đăng Tuấn Phát",
+    "thoiGian": "29/11/2024",
+    "hoanThien": 0
   }
 ]
