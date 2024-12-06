@@ -1088,6 +1088,24 @@ document.addEventListener("DOMContentLoaded", function () {
         tabContent.appendChild(tabPane);
       });
     }
+
+    // Handle tags if available
+    const tagsContainer = document.getElementById('productTags');
+    if (productData.tags && productData.tags.length > 0) {
+      // Clear any existing tags
+      tagsContainer.innerHTML = 'Product tags: '; // You can adjust this text if needed
+
+      // Loop through the tags and display them
+      productData.tags.forEach(tag => {
+        const tagElement = document.createElement('span');
+        tagElement.classList.add('badge', 'badge-success', 'light');
+        tagElement.textContent = tag;
+        tagsContainer.appendChild(tagElement);
+      });
+    } else {
+      // If no tags, display a fallback message or leave it empty
+      tagsContainer.innerHTML = 'No tags available';
+    }
   } else {
     console.log('No product data found in localStorage');
   }
@@ -1097,3 +1115,4 @@ document.addEventListener("DOMContentLoaded", function () {
 </body>
 
 </html>
+
