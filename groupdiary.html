@@ -89,22 +89,29 @@
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container">
+        <div class="display_flex" style="display: flex; justify-content: center;">
+        <div class="tab" style="display: contents;">
+          <button class="tablinks" onclick="openTab(event, 'Week1')" id="defaultOpen">Week 1</button>
+          <button class="tablinks" onclick="openTab(event, 'Week2')">Week 2</button>
+          <button class="tablinks" onclick="openTab(event, 'Week3')">Week 3</button>
+          <button class="tablinks" onclick="openTab(event, 'Week4')">Week 4</button>
+        </div>
+      </div>
         <section id="team" class="team section-bg">
           <div class="container">
             <div class="col-md-13 col-md-offset-0 text-center fh5co-heading animate-box">
-              <h1>Group Diary</h1>
-              <div class="tab">
-                <button class="tablinks" onclick="openTab(event, 'Week1')" id="defaultOpen">Week 1</button>
-                <button class="tablinks" onclick="openTab(event, 'Week2')">Week 2</button>
-                <button class="tablinks" onclick="openTab(event, 'Week3')">Week 3</button>
-                <button class="tablinks" onclick="openTab(event, 'Week4')">Week 4</button>
-              </div>
+             <div class="testFlex" style="    display: flex;
+             flex-direction: row;
+             justify-content: center;">
+              <!-- <h1>Group Diary</h1> -->
+              
     
               <div id="Week1" class="tabcontent"></div>
               <div id="Week2" class="tabcontent"></div>
               <div id="Week3" class="tabcontent"></div>
               <div id="Week4" class="tabcontent"></div>
             </div>
+          </div>
           </div>
         </section>
       </div>
@@ -158,9 +165,9 @@
           <tr>
             <td>${item.stt}</td>
             <td>${item.ma_sv}</td>
-            <td>${item.ho_ten}</td>
-            <td>${item.cong_viec}</td>
-            <td>${item.ket_qua}</td>
+              <td style="text-align: left;">${item.ho_ten}</td>
+        <td style="text-align: left;">${item.cong_viec}</td>
+        <td style="text-align: left;">${item.ket_qua}</td>
             <td>
               <div class="progress">
                 <div class="progress-bar bg-success" style="width: ${item.tien_do}%">${item.tien_do}%</div>

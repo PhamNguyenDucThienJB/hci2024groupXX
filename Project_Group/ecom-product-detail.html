@@ -706,47 +706,62 @@
         ***********************************-->
         <div class="deznav">
             <div class="deznav-scroll">
-				<ul class="metismenu" id="menu">
-                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-							<i class="flaticon-381-networking"></i>
-							<span class="nav-text">Dashboard</span>
+	<ul class="metismenu" id="menu">
+					<li>
+						<a href="index.html" style="color: #969ba0;" class="ai-icon mm-active bg-white" aria-expanded="false">
+							<i style="color: #969ba0;" class="flaticon-381-networking"></i>
+							<span class="nav-text">Bảng Tổng Quát</span>
 						</a>
-                        <ul aria-expanded="false">
+                        <!-- <ul aria-expanded="false">
 							<li><a href="index.html">Dashboard</a></li>
 							<li><a href="page-analytics.html">Analytics</a></li>
 							<li><a href="page-review.html">Review</a></li>
 							<li><a href="page-order.html">Order</a></li>
 							<li><a href="page-order-list.html">Order List</a></li>
 							<li><a href="page-general-customers.html">General Customers</a></li>
-						</ul>
-                    </li>
-                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-							<i class="flaticon-381-television"></i>
-							<span class="nav-text">Apps</span>
+						</ul> -->
+
+						<!-- customers -->
+						<li>
+						<a href="./ecom-customers.html" style="color: #969ba0;" class="ai-icon mm-active bg-white" aria-expanded="false">
+							<i style="color: #969ba0;" class="flaticon-381-television"></i>
+							<span class="nav-text">Customers</span>
 						</a>
-                        <ul aria-expanded="false">
-                            <li><a href="./app-profile.html">Profile</a></li>
-                            <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Email</a>
-                                <ul aria-expanded="false">
-                                    <li><a href="./email-compose.html">Compose</a></li>
-                                    <li><a href="./email-inbox.html">Inbox</a></li>
-                                    <li><a href="./email-read.html">Read</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="./app-calender.html">Calendar</a></li>
-							<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Shop</a>
-                                <ul aria-expanded="false">
-                                    <li><a href="./ecom-product-grid.html">Product Grid</a></li>
-									<li><a href="./ecom-product-list.html">Product List</a></li>
-									<li><a href="./ecom-product-detail.html">Product Details</a></li>
-									<li><a href="./ecom-product-order.html">Order</a></li>
-									<li><a href="./ecom-checkout.html">Checkout</a></li>
-									<li><a href="./ecom-invoice.html">Invoice</a></li>
-									<li><a href="./ecom-customers.html">Customers</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
+							<!-- Staff  -->
+						<a href="./table-datatable-basic.html" class="ai-icon mm-active" aria-expanded="false">
+							<i class="flaticon-381-network"></i>
+							<span class="nav-text">Nhân viên</span>
+						</a>
+	                                <li>
+                                                <a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                                                        <i class="flaticon-381-television"></i> <!-- Biểu tượng Cửa hàng -->
+                                                        <span class="nav-text">Cửa hàng</span> <!-- Dịch: Shop -->
+                                                </a>
+                                                <ul aria-expanded="false">
+                                                        <li><a href="./ecom-product-grid.html">Lưới Sản Phẩm</a></li> <!-- Dịch: Product Grid -->
+                                                        <li><a href="./ecom-product-list.html">Danh Sách Sản Phẩm</a></li> <!-- Dịch: Product List -->
+                                                        <li><a href="./ecom-product-detail.html">Chi Tiết Sản Phẩm</a></li> <!-- Dịch: Product Details -->
+                                                        <li><a href="./ecom-product-order.html">Đặt Hàng</a></li> <!-- Dịch: Order -->
+                                                        <li><a href="./ecom-checkout.html">Thanh Toán</a></li> <!-- Dịch: Checkout -->
+                                                        <li><a href="./ecom-invoice.html">Hóa Đơn</a></li> <!-- Dịch: Invoice -->
+                                                        <li><a href="./ecom-customers.html">Khách Hàng</a></li> <!-- Dịch: Customers -->
+                                                </ul>
+                                        </li>
+
+                                     <!-- Mục Email -->
+                                        <li>
+                                                <a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                                                        <i class="flaticon-381-mail"></i> <!-- Biểu tượng Email -->
+                                                        <span class="nav-text">Email</span> <!-- Dịch: Email -->
+                                                </a>
+                                                <ul aria-expanded="false">
+                                                    <li><a href="./email-compose.html">Soạn Thư</a></li> <!-- Dịch: Compose -->
+                                                    <li><a href="./email-inbox.html">Hộp Thư Đến</a></li> <!-- Dịch: Inbox -->
+                                                    <li><a href="./email-read.html">Đọc Thư</a></li> <!-- Dịch: Read -->
+                                                </ul>
+                                        </li>
+ 
+                   
                     <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
 							<i class="flaticon-381-controls-3"></i>
 							<span class="nav-text">Charts</span>
@@ -1073,9 +1088,66 @@ document.addEventListener("DOMContentLoaded", function () {
         tabContent.appendChild(tabPane);
       });
     }
+
+    // Handle tags if available
+    const tagsContainer = document.getElementById('productTags');
+    if (productData.tags && productData.tags.length > 0) {
+      // Clear any existing tags
+      tagsContainer.innerHTML = 'Product tags: '; // You can adjust this text if needed
+
+      // Loop through the tags and display them
+      productData.tags.forEach(tag => {
+        const tagElement = document.createElement('span');
+        tagElement.classList.add('badge', 'badge-success', 'light');
+        tagElement.textContent = tag;
+        tagsContainer.appendChild(tagElement);
+      });
+    } else {
+      // If no tags, display a fallback message or leave it empty
+      tagsContainer.innerHTML = 'No tags available';
+    }
   } else {
     console.log('No product data found in localStorage');
   }
+
+  // --- ADD TO CART BUTTON CODE (NEW) ---
+  const addToCartButton = document.getElementById('addToCartBtn'); // Get the Add to Cart button
+
+  // When Add to Cart button is clicked
+  addToCartButton.addEventListener('click', function (event) {
+    event.preventDefault();  // Prevent the default form submission behavior
+
+    // Retrieve the product data from localStorage (product data is already stored when you open the detail page)
+    const productData = JSON.parse(localStorage.getItem('cartProduct'));
+
+    if (productData) {
+      // Retrieve the current cart from localStorage (if it exists)
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+      // Check if the product is already in the cart
+      const existingProductIndex = cart.findIndex(item => item.name === productData.name);
+
+      if (existingProductIndex !== -1) {
+        // If the product is already in the cart, update its quantity or other properties as needed
+        cart[existingProductIndex].quantity += 1;  // Example: increase the quantity
+      } else {
+        // If the product is not in the cart, add it as a new item
+        productData.quantity = 1;  // Adding a quantity field to track the number of items
+        cart.push(productData);
+      }
+
+      // Store the updated cart back in localStorage
+      localStorage.setItem('cart', JSON.stringify(cart));
+
+      // Optionally, show a confirmation message to the user that the item was added to the cart
+      alert(`${productData.name} has been added to your cart!`);
+
+      // Redirect back to the grid page (or you can stay on the page)
+      window.location.href = 'ecom-product-grid.html';  // Or change this URL to your grid page
+    } else {
+      console.log('No product data found in localStorage');
+    }
+  });
 });
 
 </script>
