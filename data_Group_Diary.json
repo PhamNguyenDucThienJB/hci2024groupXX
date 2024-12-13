@@ -77,8 +77,8 @@
           "ma_sv": "23130351",
           "ho_ten": "Nguyễn Quang Trực",
           "cong_viec": "Trang danh sách khách hàng (customers), footer (web-group)",
-          "ket_qua": "",
-          "tien_do": 70
+          "ket_qua": "Hoàn thành",
+          "tien_do": 100
         },
         {
           "stt": 5,
@@ -98,8 +98,8 @@
           "ma_sv": "2013410",
           "ho_ten": "Phạm Nguyễn Đức Thiện (NT)",
           "cong_viec": "Trang review, trang about (web-group), csdl, lập kế hoạch",
-          "ket_qua": "",
-          "tien_do": 0
+          "ket_qua": "Hoàn thành",
+          "tien_do": 100
         },
         {
           "stt": 2,
@@ -122,8 +122,8 @@
           "ma_sv": "23130351",
           "ho_ten": "Nguyễn Quang Trực",
           "cong_viec": "Trang thêm, sửa, xóa, danh sách khách hàng (customers)",
-          "ket_qua": "",
-          "tien_do": 0
+          "ket_qua": "Hoàn thành",
+          "tien_do": 100
         },
         {
           "stt": 5,
@@ -142,9 +142,9 @@
           "stt": 1,
           "ma_sv": "2013410",
           "ho_ten": "Phạm Nguyễn Đức Thiện (NT)",
-          "cong_viec": "",
-          "ket_qua": "",
-          "tien_do": 0
+          "cong_viec": "Trang quản lý nguyên liệu",
+          "ket_qua": "Hoàn thành",
+          "tien_do": 100
         },
         {
           "stt": 2,
@@ -167,8 +167,8 @@
           "ma_sv": "23130351",
           "ho_ten": "Nguyễn Quang Trực",
           "cong_viec": " Trang About (USER)",
-          "ket_qua": "",
-          "tien_do": 0
+          "ket_qua": "Hoàn thành",
+          "tien_do": 100
         },
         {
           "stt": 5,
