@@ -1,17 +1,16 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Eatio - Restaurant Food Order Bootstrap Admin Dashboard</title>
+    <title>Davur - Restaurant Food Order Bootstrap Admin Dashboard</title>
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
-    <!-- Datatable -->
-    <link href="./vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
     <!-- Custom Stylesheet -->
-    <link href="./vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    	<link href="./vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
 
 </head>
@@ -676,7 +675,7 @@
                             <li class="nav-item dropdown header-profile">
                                 <a class="nav-link" href="#" role="button" data-toggle="dropdown">
 									<div class="header-info">
-										<span>Hello, <strong>Samuel</strong></span>
+										<span>Hello, <strong>Kelvin</strong></span>
 									</div>
                                     <img src="images/profile/pic1.jpg" width="20" alt=""/>
                                 </a>
@@ -740,15 +739,7 @@
                                                         <i class="flaticon-381-television"></i> <!-- Biểu tượng Cửa hàng -->
                                                         <span class="nav-text">Cửa hàng</span> <!-- Dịch: Shop -->
                                                 </a>
-                                                <ul aria-expanded="false">
-                                                        <li><a href="./ecom-product-grid.html">Lưới Sản Phẩm</a></li> <!-- Dịch: Product Grid -->
-                                                        <li><a href="./ecom-product-list.html">Danh Sách Sản Phẩm</a></li> <!-- Dịch: Product List -->
-                                                        <li><a href="./ecom-product-detail.html">Chi Tiết Sản Phẩm</a></li> <!-- Dịch: Product Details -->
-                                                        <li><a href="./ecom-product-order.html">Đặt Hàng</a></li> <!-- Dịch: Order -->
-                                                        <li><a href="./ecom-checkout.html">Thanh Toán</a></li> <!-- Dịch: Checkout -->
-                                                        <li><a href="./ecom-invoice.html">Hóa Đơn</a></li> <!-- Dịch: Invoice -->
-                                                        <li><a href="./ecom-customers.html">Khách Hàng</a></li> <!-- Dịch: Customers -->
-                                                </ul>
+                                              
                                         </li>
 
                                      <!-- Mục Email -->
@@ -791,7 +782,7 @@
                     </li> 
                     <li><a href="table-Meterial-datatable.html" class="ai-icon" aria-expanded="false">
 							<i class="flaticon-381-settings-2"></i>
-							<span class="nav-text">Quản lý nguyên liệu</span>
+							<span class="nav-text">Nguyên Liệu</span>
 						</a>
 					</li>
                     <li><a class="" href="page-review.html" aria-expanded="false">
@@ -803,7 +794,14 @@
 							<i class="flaticon-381-layer-1"></i>
 							<span class="nav-text">Pages</span>
 						</a>
-                   	   
+                   	    <ul aria-expanded="false">
+                            <li><a href="./page-register.html">Register</a></li>
+                            <li><a href="./page-login.html">Login</a></li>
+                            <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Error</a>
+                               
+                            </li>
+                            <li><a href="./page-lock-screen.html">Lock Screen</a></li>
+                        </ul> 
                     </li> 
                 </ul>  
             
@@ -830,276 +828,140 @@
                 <div class="row page-titles mx-0">
                     <div class="col-sm-6 p-md-0">
                         <div class="welcome-text">
-                            <h4>Chào mừng đã quay trở lại</h4>
-                            <span>Datatable</span>
+                            <h4>Hi, welcome back!</h4>
+                            <p class="mb-0">Validation</p>
                         </div>
                     </div>
                     <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="javascript:void(0)">Menu</a></li>
-                            <li class="breadcrumb-item active"><a href="javascript:void(0)">Quản lý nguyên liệu</a></li>
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Nguyên liệu</a></li>
+                            <li class="breadcrumb-item active"><a href="javascript:void(0)">Nhập thêm nguyên liệu</a></li>
                         </ol>
                     </div>
                 </div>
                 <!-- row -->
-
-
                 <div class="row">
-                 
-					<div class="col-12">
+                    <div class="col-lg-12">
                         <div class="card">
-							<div>
                             <div class="card-header">
-                                <h4 class="card-title">Quản lý nguyên liệu</h4>
-								<button type="button" class="btn btn-rounded btn-info"><span
-									class="btn-icon-left text-info"><i class="fa fa-plus color-info"></i>
-								</span><a href="add_meterial.html" style="text-decoration: none; color: white; ">Nhập thêm nguyên liệu</a></button>
-							</div>
-							
-						</div>
+                                <h4 class="card-title">Nhập thêm nguyên liệu</h4>
+                            </div>
                             <div class="card-body">
-                                <div class="table-responsive">
-                                    <table id="example3" class="display" style="min-width: 845px">
-                                        <thead>
-                                            <tr>
-                                                <th></th>
-                                                <th>Tên</th>
-                                                <th>Loại</th>
-                                                <th>Tồn kho (Kg)</th>
-                                                <th>Giá cũ</th>
-                                                <th>Giá mới</th>
-                                                <th>Ngày nhập hàng gần nhất</th>
-                                                <th>Xu hướng</th>
-                                                <th>Action</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-												<td><img class="rounded-circle" width="35" src="images/product/rauthom.png" alt=""></td>
-                                                <td>Rau thơm</td>
-                                                <td>Rau củ</td>
-                                                <td>10</td>
-                                                <td>2,000 VND</td>
-                                                <td><a href="javascript:void(0);"><strong>5,000 VND</strong></a></td>
-                                                <td><a href="javascript:void(0);"><strong>12/7/2024</strong></a></td>
-                                                <td>
-													<span class="badge light badge-success">
-														<i class="fa fa-circle text-success mr-1"></i>
-														Nhiều
-													</span>
-												</td>
-                                                <td>
-													<div class="d-flex">
-														<a href="edit_meterial.html" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
-													</div>												
-												</td>												
-                                            </tr>
-                                           
-											<tr>
-												<td><img class="rounded-circle" width="35" src="images/product/rauthom.png" alt=""></td>
-                                                <td>Rau thơm</td>
-                                                <td>Rau củ</td>
-                                                <td>10</td>
-                                                <td>2,000 VND</td>
-                                                <td><a href="javascript:void(0);"><strong>5,000 VND</strong></a></td>
-                                                <td><a href="javascript:void(0);"><strong>12/7/2024</strong></a></td>
-                                                <td>
-													<span class="badge light badge-success">
-														<i class="fa fa-circle text-success mr-1"></i>
-														Nhiều
-													</span>
-												</td>
-                                                <td>
-													<div class="d-flex">
-														<a href="#" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
-													</div>												
-												</td>												
-                                            </tr>
-											<tr>
-												<td><img class="rounded-circle" width="35" src="images/product/rauthom.png" alt=""></td>
-                                                <td>Rau thơm</td>
-                                                <td>Rau củ</td>
-                                                <td>10</td>
-                                                <td>2,000 VND</td>
-                                                <td><a href="javascript:void(0);"><strong>5,000 VND</strong></a></td>
-                                                <td><a href="javascript:void(0);"><strong>12/7/2024</strong></a></td>
-                                                <td>
-													<span class="badge light badge-success">
-														<i class="fa fa-circle text-success mr-1"></i>
-														Nhiều
-													</span>
-												</td>
-                                                <td>
-													<div class="d-flex">
-														<a href="#" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
-													</div>												
-												</td>												
-                                            </tr>
-											<tr>
-												<td><img class="rounded-circle" width="35" src="images/product/rauthom.png" alt=""></td>
-                                                <td>Rau thơm</td>
-                                                <td>Rau củ</td>
-                                                <td>10</td>
-                                                <td>2,000 VND</td>
-                                                <td><a href="javascript:void(0);"><strong>5,000 VND</strong></a></td>
-                                                <td><a href="javascript:void(0);"><strong>12/7/2024</strong></a></td>
-                                                <td>
-													<span class="badge light badge-success">
-														<i class="fa fa-circle text-success mr-1"></i>
-														Nhiều
-													</span>
-												</td>
-                                                <td>
-													<div class="d-flex">
-														<a href="#" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
-													</div>												
-												</td>												
-                                            </tr>
-
-											<tr>
-												<td><img class="rounded-circle" width="35" src="images/product/rauthom.png" alt=""></td>
-                                                <td>Rau thơm</td>
-                                                <td>Rau củ</td>
-                                                <td>10</td>
-                                                <td>2,000 VND</td>
-                                                <td><a href="javascript:void(0);"><strong>5,000 VND</strong></a></td>
-                                                <td><a href="javascript:void(0);"><strong>12/7/2024</strong></a></td>
-                                                <td>
-													<span class="badge light badge-success">
-														<i class="fa fa-circle text-success mr-1"></i>
-														Nhiều
-													</span>
-												</td>
-                                                <td>
-													<div class="d-flex">
-														<a href="#" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
-													</div>												
-												</td>												
-                                            </tr>
-											<tr>
-                                                <td><img class="rounded-circle" width="35" src="images/product/rauthom.png" alt=""></td>
-                                                <td>Rau thơm</td>
-                                                <td>Rau củ</td>
-                                                <td>10</td>
-                                                <td>2,000 VND</td>
-                                                <td><a href="javascript:void(0);"><strong>5,000 VND</strong></a></td>
-                                                <td><a href="javascript:void(0);"><strong>12/7/2024</strong></a></td>
-                                                <td>
-													<span class="badge light badge-success">
-														<i class="fa fa-circle text-success mr-1"></i>
-														Nhiều
-													</span>
-												</td>
-                                                <td>
-													<div class="d-flex">
-														<a href="#" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
-													</div>												
-												</td>												
-                                            </tr>
-											<tr>
-												<td><img class="rounded-circle" width="35" src="images/product/rauthom.png" alt=""></td>
-                                                <td>Rau thơm</td>
-                                                <td>Rau củ</td>
-                                                <td>10</td>
-                                                <td>2,000 VND</td>
-                                                <td><a href="javascript:void(0);"><strong>5,000 VND</strong></a></td>
-                                                <td><a href="javascript:void(0);"><strong>12/7/2024</strong></a></td>
-                                                <td>
-													<span class="badge light badge-success">
-														<i class="fa fa-circle text-success mr-1"></i>
-														Nhiều
-													</span>
-												</td>
-                                                <td>
-													<div class="d-flex">
-														<a href="#" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
-													</div>												
-												</td>												
-                                            </tr>
-
-											<tr>
-                                                <td><img class="rounded-circle" width="35" src="images/product/rauthom.png" alt=""></td>
-                                                <td>Rau thơm</td>
-                                                <td>Rau củ</td>
-                                                <td>10</td>
-                                                <td>2,000 VND</td>
-                                                <td><a href="javascript:void(0);"><strong>5,000 VND</strong></a></td>
-                                                <td><a href="javascript:void(0);"><strong>12/7/2024</strong></a></td>
-                                                <td>
-													<span class="badge light badge-success">
-														<i class="fa fa-circle text-success mr-1"></i>
-														Nhiều
-													</span>
-												</td>
-                                                <td>
-													<div class="d-flex">
-														<a href="#" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
-													</div>												
-												</td>												
-                                            </tr>
-											<tr>
-												<td><img class="rounded-circle" width="35" src="images/product/rauthom.png" alt=""></td>
-                                                <td>Rau thơm</td>
-                                                <td>Rau củ</td>
-                                                <td>10</td>
-                                                <td>2,000 VND</td>
-                                                <td><a href="javascript:void(0);"><strong>5,000 VND</strong></a></td>
-                                                <td><a href="javascript:void(0);"><strong>12/7/2024</strong></a></td>
-                                                <td>
-													<span class="badge light badge-success">
-														<i class="fa fa-circle text-success mr-1"></i>
-														Nhiều
-													</span>
-												</td>
-                                                <td>
-													<div class="d-flex">
-														<a href="#" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
-													</div>												
-												</td>												
-                                            </tr>
-											<tr>
-												<td><img class="rounded-circle" width="35" src="images/product/rauthom.png" alt=""></td>
-                                                <td>Rau thơm</td>
-                                                <td>Rau củ</td>
-                                                <td>10</td>
-                                                <td>2,000 VND</td>
-                                                <td><a href="javascript:void(0);"><strong>5,000 VND</strong></a></td>
-                                                <td><a href="javascript:void(0);"><strong>12/7/2024</strong></a></td>
-                                                <td>
-													<span class="badge light badge-success">
-														<i class="fa fa-circle text-success mr-1"></i>
-														Nhiều
-													</span>
-												</td>
-                                                <td>
-													<div class="d-flex">
-														<a href="#" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
-													</div>												
-												</td>												
-                                            </tr>
-                                           
-                                         
-                                          
-                                           
-                                           
-                                        </tbody>
-                                    </table>
+                                <div class="form-validation">
+                                    <form class="form-valide" action="#" method="post">
+                                        <div class="row">
+                                            <div class="col-xl-6">
+                                                <div class="form-group row">
+                                                    <label class="col-lg-4 col-form-label" for="val-username">Tên nguyên liệu
+                                                        <span class="text-danger">*</span>
+                                                    </label>
+                                                    <div class="col-lg-6">
+                                                        <input type="text" class="form-control" id="val-username" name="val-username" placeholder="Tên nguyên liệu..">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-lg-4 col-form-label" for="val-email">Hình<span
+                                                            class="text-danger">*</span>
+                                                    </label>
+                                                    <div class="col-lg-6">
+                                                        <input type="text" class="form-control" id="val-email" name="val-email" placeholder="Nhập hình nguyên liệu..">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-lg-4 col-form-label" for="val-password">Số lượng (kg)
+                                                        <span class="text-danger">*</span>
+                                                    </label>
+                                                    <div class="col-lg-6">
+                                                        <input type="password" class="form-control" id="val-password" name="val-password" placeholder="Ghi khối lượng..">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-lg-4 col-form-label" for="val-confirm-password">Giá <span
+                                                            class="text-danger">*</span>
+                                                    </label>
+                                                    <div class="col-lg-6">
+                                                        <input type="password" class="form-control" id="val-confirm-password" name="val-confirm-password" placeholder="Giá !">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-lg-4 col-form-label" for="val-suggestions">Ngày nhập hàng <span
+                                                            class="text-danger">*</span>
+                                                    </label>
+                                                    <div class="col-lg-6">
+                                                        <textarea class="form-control" id="val-suggestions" name="val-suggestions" rows="5" placeholder="Ngày nhập hàng "></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="form-group row">
+                                                    <label class="col-lg-4 col-form-label" for="val-skill">Loại nguyên liệu
+                                                        <span class="text-danger">*</span>
+                                                    </label>
+                                                    <div class="col-lg-6">
+                                                        <select class="form-control" id="val-skill" name="val-skill">
+                                                            <option value="">Please select</option>
+                                                            <option value="html">HTML</option>
+                                                            <option value="css">CSS</option>
+                                                            <option value="javascript">JavaScript</option>
+                                                            <option value="angular">Angular</option>
+                                                            <option value="angular">React</option>
+                                                            <option value="vuejs">Vue.js</option>
+                                                            <option value="ruby">Ruby</option>
+                                                            <option value="php">PHP</option>
+                                                            <option value="asp">ASP.NET</option>
+                                                            <option value="python">Python</option>
+                                                            <option value="mysql">MySQL</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-lg-4 col-form-label" for="val-currency">Currency
+                                                        <span class="text-danger">*</span>
+                                                    </label>
+                                                    <div class="col-lg-6">
+                                                        <input type="text" class="form-control" id="val-currency" name="val-currency" placeholder="$21.60">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-lg-4 col-form-label" for="val-website">Giá cũ
+                                                        <span class="text-danger">*</span>
+                                                    </label>
+                                                    <div class="col-lg-6">
+                                                        <input type="text" class="form-control" id="val-website" name="val-website" placeholder="http://example.com">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-lg-4 col-form-label" for="val-phoneus">Giá mới
+                                                        <span class="text-danger">*</span>
+                                                    </label>
+                                                    <div class="col-lg-6">
+                                                        <input type="text" class="form-control" id="val-phoneus" name="val-phoneus" placeholder="212-999-0000">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-lg-4 col-form-label" for="val-digits">Xu hướng <span
+                                                            class="text-danger">*</span>
+                                                    </label>
+                                                    <div class="col-lg-6">
+                                                        <input type="text" class="form-control" id="val-digits" name="val-digits" placeholder="5">
+                                                    </div>
+                                                </div>
+                                                
+                                              
+                                                <div class="form-group row">
+                                                    <div class="col-lg-8 ml-auto">
+                                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
                     </div>
-				
-				</div>
+                    
+                </div>
             </div>
         </div>
         <!--**********************************
@@ -1107,7 +969,25 @@
         ***********************************-->
 
 
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <div class="footer">
+            <div class="copyright">
+                <p>Copyright © Designed &amp; Developed by <a href="http://dexignzone.com/" target="_blank">DexignZone</a> 2020</p>
+            </div>
+        </div>
+        <!--**********************************
+            Footer end
+        ***********************************-->
 
+        <!--**********************************
+           Support ticket button start
+        ***********************************-->
+
+        <!--**********************************
+           Support ticket button end
+        ***********************************-->
 
         
     </div>
@@ -1121,12 +1001,22 @@
     <!-- Required vendors -->
     <script src="./vendor/global/global.min.js"></script>
 	<script src="./vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="./vendor/chart.js/Chart.bundle.min.js"></script>
     <script src="./js/custom.min.js"></script>
 	<script src="./js/deznav-init.js"></script>
-	
-    <!-- Datatable -->
-    <script src="./vendor/datatables/js/jquery.dataTables.min.js"></script>
-    <script src="./js/plugins-init/datatables.init.js"></script>
+	<!-- Apex Chart -->
+	<script src="./vendor/apexchart/apexchart.js"></script>
+    
+
+
+
+    <!-- Jquery Validation -->
+    <script src="./vendor/jquery-validation/jquery.validate.min.js"></script>
+    <!-- Form validate init -->
+    <script src="./js/plugins-init/jquery.validate-init.js"></script>
+
+
 
 </body>
+
 </html>
