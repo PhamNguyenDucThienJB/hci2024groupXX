@@ -580,11 +580,9 @@
 										<path d="M23.7871 22.7761L17.9548 16.9437C19.5193 15.145 20.4665 12.7982 20.4665 10.2333C20.4665 4.58714 15.8741 0 10.2333 0C4.58714 0 0 4.59246 0 10.2333C0 15.8741 4.59246 20.4665 10.2333 20.4665C12.7982 20.4665 15.145 19.5193 16.9437 17.9548L22.7761 23.7871C22.9144 23.9255 23.1007 24 23.2816 24C23.4625 24 23.6488 23.9308 23.7871 23.7871C24.0639 23.5104 24.0639 23.0528 23.7871 22.7761ZM1.43149 10.2333C1.43149 5.38004 5.38004 1.43681 10.2279 1.43681C15.0812 1.43681 19.0244 5.38537 19.0244 10.2333C19.0244 15.0812 15.0812 19.035 10.2279 19.035C5.38004 19.035 1.43149 15.0865 1.43149 10.2333Z" fill="#A4A4A4"></path>
 									</svg>
 								</span>
-							</div>
-								<span class="search_icon p-3 c-pointer" data-toggle="dropdown">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.7871 22.7761L17.9548 16.9437C19.5193 15.145 20.4665 12.7982 20.4665 10.2333C20.4665 4.58714 15.8741 0 10.2333 0C4.58714 0 0 4.59246 0 10.2333C0 15.8741 4.59246 20.4665 10.2333 20.4665C12.7982 20.4665 15.145 19.5193 16.9437 17.9548L22.7761 23.7871C22.9144 23.9255 23.1007 24 23.2816 24C23.4625 24 23.6488 23.9308 23.7871 23.7871C24.0639 23.5104 24.0639 23.0528 23.7871 22.7761ZM1.43149 10.2333C1.43149 5.38004 5.38004 1.43681 10.2279 1.43681C15.0812 1.43681 19.0244 5.38537 19.0244 10.2333C19.0244 15.0812 15.0812 19.035 10.2279 19.035C5.38004 19.035 1.43149 15.0865 1.43149 10.2333Z" fill="#A4A4A4"/></svg>
-                                </span>
+							</div>								
                             </div>
+	
                         </div>
 
                         <ul class="navbar-nav header-right">
@@ -674,6 +672,7 @@
 											</li>
 										</ul>
 									</div>
+									
                                     <a class="all-notification" href="#">See all notifications <i class="ti-arrow-right"></i></a>
                                 </div>
                             </li>
@@ -889,354 +888,49 @@
 	
 	
 		<div class="content-body">
+			
 			<div class="container-fluid">
+				
 				<div class="flex-container">
+					
+					<p>Add a product
+						<form id="add-product-form" style="display: flex;flex-direction: row;gap:20px;">
+							<input type="text" id="product-name" placeholder="Product Name" required>
+							<input type="number" id="product-price" placeholder="Price" required>
+							<input id="product-description" placeholder="Description" required style="text-align: left;width: 200px;height: 51.62px;"></input>
+							<input type="url" id="product-image" placeholder="Image URL" required>
+							<button type="submit">Add Product</button>
+						  </form>
+					</p>
 				<div class="row" id="product-container">
 					<!-- All Product Cards Here -->
-					<div class="row">
+					<div class="row" id="new-products">
 						
-						<!-- Product 1 -->
-						<div class="col-xl-3 col-lg-6 col-md-4 col-sm-6">
-							<div class="card">
-								<div class="card-body">
-									<div class="new-arrival-product">
-										<div class="new-arrivals-img-contnent">
-											<img class="img-fluid product-image" src="Product images/f1.png" alt="">
-										</div>
-										<div class="new-arrival-content text-center mt-3">
-											<h4 class="product-name">Delicious Pizza</h4>
-											<ul class="star-rating">
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star-half-empty"></i></li>
-												<li><i class="fa fa-star-half-empty"></i></li>
-											</ul>
-											<span class="price">$20.00</span>
-											<a class="btn btn-primary btn-lg add-to-cart" href="#"><i class="fa fa-shopping-basket mr-2"></i>Thêm vào giỏ hàng</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
 			
-						<!-- Product 2 -->
-						<div class="col-xl-3 col-lg-6 col-md-4 col-sm-6">
-							<div class="card">
-								<div class="card-body">
-									<div class="new-arrival-product">
-										<div class="new-arrivals-img-contnent">
-											<img class="img-fluid product-image" src="Product images/f2.png" alt="">
-										</div>
-										<div class="new-arrival-content text-center mt-3">
-											<h4 class="product-name">Delicious Burger</h4>
-											<ul class="star-rating">
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-											</ul>
-											<span class="price">$15.00</span>
-											<a class="btn btn-primary btn-lg add-to-cart" href="#"><i class="fa fa-shopping-basket mr-2"></i>Thêm vào giỏ hàng</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-			
-						<!-- Product 3 -->
-						<div class="col-xl-3 col-lg-6 col-md-4 col-sm-6">
-							<div class="card">
-								<div class="card-body">
-									<div class="new-arrival-product">
-										<div class="new-arrivals-img-contnent">
-											<img class="img-fluid product-image" src="Product images/f3.png" alt="">
-										</div>
-										<div class="new-arrival-content text-center mt-3">
-											<h4 class="product-name">Mozzarella Original Pizza</h4>
-											<ul class="star-rating">
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-											</ul>
-											<span class="price">$17.00</span>
-											<a class="btn btn-primary btn-lg add-to-cart" href="#"><i class="fa fa-shopping-basket mr-2"></i>Thêm vào giỏ hàng</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-			
-						<!-- Product 4 -->
-						<div class="col-xl-3 col-lg-6 col-md-4 col-sm-6">
-							<div class="card">
-								<div class="card-body">
-									<div class="new-arrival-product">
-										<div class="new-arrivals-img-contnent">
-											<img class="img-fluid product-image" src="Product images/f4.jpg" alt="">
-										</div>
-										<div class="new-arrival-content text-center mt-3">
-											<h4 class="product-name">Delicious Pasta</h4>
-											<ul class="star-rating">
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star-half-empty"></i></li>
-												<li><i class="fa fa-star-half-empty"></i></li>
-											</ul>
-											<span class="price">$18.00</span>
-											<a class="btn btn-primary btn-lg add-to-cart" href="#"><i class="fa fa-shopping-basket mr-2"></i>Thêm vào giỏ hàng</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-			
-						<!-- Product 5 -->
-						<div class="col-xl-3 col-lg-6 col-md-4 col-sm-6">
-							<div class="card">
-								<div class="card-body">
-									<div class="new-arrival-product">
-										<div class="new-arrivals-img-contnent">
-											<img class="img-fluid product-image" src="Product images/f5.jpg" alt="">
-										</div>
-										<div class="new-arrival-content text-center mt-3">
-											<h4 class="product-name">French Fries</h4>
-											<ul class="star-rating">
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-											</ul>
-											<span class="price">$10.00</span>
-											<a class="btn btn-primary btn-lg add-to-cart" href="#"><i class="fa fa-shopping-basket mr-2"></i>Thêm vào giỏ hàng</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-			
-						<!-- Product 6 -->
-						<div class="col-xl-3 col-lg-6 col-md-4 col-sm-6">
-							<div class="card">
-								<div class="card-body">
-									<div class="new-arrival-product">
-										<div class="new-arrivals-img-contnent">
-											<img class="img-fluid product-image" src="Product images/f6.webp" alt="">
-										</div>
-										<div class="new-arrival-content text-center mt-3">
-											<h4 class="product-name">Multiple Layers Pizza</h4>
-											<ul class="star-rating">
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-											</ul>
-											<span class="price">$20.00</span>
-											<a class="btn btn-primary btn-lg add-to-cart" href="#"><i class="fa fa-shopping-basket mr-2"></i>Thêm vào giỏ hàng</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-			
-						<!-- Product 7 -->
-						<div class="col-xl-3 col-lg-6 col-md-4 col-sm-6">
-							<div class="card">
-								<div class="card-body">
-									<div class="new-arrival-product">
-										<div class="new-arrivals-img-contnent">
-											<img class="img-fluid product-image" src="Product images/f7.png" alt="">
-										</div>
-										<div class="new-arrival-content text-center mt-3">
-											<h4 class="product-name">Tasty Chicken Burger</h4>
-											<ul class="star-rating">
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star-half-empty"></i></li>
-												<li><i class="fa fa-star-half-empty"></i></li>
-											</ul>
-											<span class="price">$12.00</span>
-											<a class="btn btn-primary btn-lg add-to-cart" href="#"><i class="fa fa-shopping-basket mr-2"></i>Thêm vào giỏ hàng</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-			
-						<!-- Product 8 -->
-						<div class="col-xl-3 col-lg-6 col-md-4 col-sm-6">
-							<div class="card">
-								<div class="card-body">
-									<div class="new-arrival-product">
-										<div class="new-arrivals-img-contnent">
-											<img class="img-fluid product-image" src="Product images/f8.png" alt="">
-										</div>
-										<div class="new-arrival-content text-center mt-3">
-											<h4 class="product-name">Tasty Steak Burger</h4>
-											<ul class="star-rating">
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star-half-empty"></i></li>
-												<li><i class="fa fa-star-half-empty"></i></li>
-											</ul>
-											<span class="price">$78.00</span>
-											<a class="btn btn-primary btn-lg add-to-cart" href="#"><i class="fa fa-shopping-basket mr-2"></i>Thêm vào giỏ hàng</a>
-										</div>
-										
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-		<!-- Product 9 -->
-		<div class="col-xl-3 col-lg-6 col-md-4 col-sm-6">
-			<div class="card">
-				<div class="card-body">
-					<div class="new-arrival-product">
-						<div class="new-arrivals-img-contnent">
-							<img class="img-fluid product-image" src="Product images/f9.png" alt="">
-						</div>
-						<div class="new-arrival-content text-center mt-3">
-							<h4 class="product-name">Macaroni Chesse</h4>
-							<ul class="star-rating">
-								<li><i class="fa fa-star"></i></li>
-								<li><i class="fa fa-star"></i></li>
-								<li><i class="fa fa-star"></i></li>
-								<li><i class="fa fa-star"></i></li>
-								<li><i class="fa fa-star"></i></li>
-							</ul>
-							<span class="price">$20.00</span>
-							<a class="btn btn-primary btn-lg add-to-cart" href="#"><i class="fa fa-shopping-basket mr-2"></i>Thêm vào giỏ hàng</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 	
-		<!-- Product 10 -->
-		<div class="col-xl-3 col-lg-6 col-md-4 col-sm-6">
-			<div class="card">
-				<div class="card-body">
-					<div class="new-arrival-product">
-						<div class="new-arrivals-img-contnent">
-							<img class="img-fluid product-image" src="Product images/o1.jpg" alt="">
-						</div>
-						<div class="new-arrival-content text-center mt-3">
-							<h4 class="product-name">Tasty Thursday 20% Off</h4>
-							<ul class="star-rating">
-								<li><i class="fa fa-star"></i></li>
-								<li><i class="fa fa-star"></i></li>
-								<li><i class="fa fa-star"></i></li>
-								<li><i class="fa fa-star"></i></li>
-								<li><i class="fa fa-star-half-empty"></i></li>
-							</ul>
-							<span class="price">$32.80</span>
-							<a class="btn btn-primary btn-lg add-to-cart" href="#"><i class="fa fa-shopping-basket mr-2"></i>Thêm vào giỏ hàng</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	
-		<!-- Product 11 -->
-		<div class="col-xl-3 col-lg-6 col-md-4 col-sm-6">
-			<div class="card">
-				<div class="card-body">
-					<div class="new-arrival-product">
-						<div class="new-arrivals-img-contnent">
-							<img class="img-fluid product-image" src="Product images/o2.jpg" alt="">
-						</div>
-						<div class="new-arrival-content text-center mt-3">
-							<h4 class="product-name">Pizza Days</h4>
-							<ul class="star-rating">
-								<li><i class="fa fa-star"></i></li>
-								<li><i class="fa fa-star"></i></li>
-								<li><i class="fa fa-star"></i></li>
-								<li><i class="fa fa-star"></i></li>
-								<li><i class="fa fa-star"></i></li>
-							</ul>
-							<span class="price">$33.60</span>
-							<a class="btn btn-primary btn-lg add-to-cart" href="#"><i class="fa fa-shopping-basket mr-2"></i>Thêm vào giỏ hàng</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-xl-3 col-lg-6 col-md-4 col-sm-6">
-			<div class="card">
-				<div class="card-body">
-					<div class="new-arrival-product">
-						<div class="new-arrivals-img-contnent">
-							<img class="img-fluid product-image" src="Product images/f1.png" alt="">
-						</div>
-						<div class="new-arrival-content text-center mt-3">
-							<h4 class="product-name">Delicious Pizza</h4>
-							<ul class="star-rating">
-								<li><i class="fa fa-star"></i></li>
-								<li><i class="fa fa-star"></i></li>
-								<li><i class="fa fa-star"></i></li>
-								<li><i class="fa fa-star-half-empty"></i></li>
-								<li><i class="fa fa-star-half-empty"></i></li>
-							</ul>
-							<span class="price">$20.00</span>
-							<a class="btn btn-primary btn-lg add-to-cart" href="#"><i class="fa fa-shopping-basket mr-2"></i>Thêm vào giỏ hàng</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div><div class="col-xl-3 col-lg-6 col-md-4 col-sm-6">
-			<div class="card">
-				<div class="card-body">
-					<div class="new-arrival-product">
-						<div class="new-arrivals-img-contnent">
-							<img class="img-fluid product-image" src="Product images/f1.png" alt="">
-						</div>
-						<div class="new-arrival-content text-center mt-3">
-							<h4 class="product-name">Delicious Pizza</h4>
-							<ul class="star-rating">
-								<li><i class="fa fa-star"></i></li>
-								<li><i class="fa fa-star"></i></li>
-								<li><i class="fa fa-star"></i></li>
-								<li><i class="fa fa-star-half-empty"></i></li>
-								<li><i class="fa fa-star-half-empty"></i></li>
-							</ul>
-							<span class="price">$20.00</span>
-							<a class="btn btn-primary btn-lg add-to-cart" href="#"><i class="fa fa-shopping-basket mr-2"></i>Thêm vào giỏ hàng</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>	
 					<!-- Product Cards as shown in your example -->
 				</div>
 				<!-- Pagination Controls -->
 			<!-- Pagination Controls -->
-			<div class="pagination-controls-wrapper">
-				<div class="pagination-controls">
-					<button id="prevPage" class="btn btn-secondary mr-3">Previous</button>
-					<span id="pageNumber" class="mx-3">Page 1</span>
-					<button id="nextPage" class="btn btn-secondary ml-3">Next</button>
-				</div>
-			</div>
+			
 			
 		
         <!--**********************************
             Content body end
         ***********************************-->
 
-
+		
         
 
     </div>
+	<div class="pagination-controls-wrapper">
+		<div class="pagination-controls">
+			<button id="prevPage" class="btn btn-secondary mr-3">Previous</button>
+			<span id="pageNumber" class="mx-3">Page 1</span>
+			<button id="nextPage" class="btn btn-secondary ml-3">Next</button>
+		</div>
+	</div>
+	
     <!--**********************************
         Main wrapper end
     ***********************************-->
@@ -1256,15 +950,19 @@
     <script src="./vendor/highlightjs/highlight.pack.min.js"></script>
     <!-- Circle progress -->
 	<script>
-document.addEventListener("DOMContentLoaded", function () {
+	document.addEventListener("DOMContentLoaded", function () {
+  const productsPerPage = 8;  // Number of products per page
+  let currentPage = 1;
+
+  // The product details object (includes all products)
   const productDetails = {
     "Delicious Pizza": {
-      description: "pizza, dish of Italian origin consisting of a flattened disk of bread dough topped with some combination of olive oil, oregano, tomato, olives, mozzarella or other cheese, and many other ingredients, baked quickly—usually, in a commercial setting, using a wood-fired oven heated to a very high temperature—and served hot ",
+      description: "Pizza, dish of Italian origin consisting of a flattened disk of bread dough topped with some combination of olive oil, oregano, tomato, olives, mozzarella or other cheese, and many other ingredients, baked quickly—usually, in a commercial setting, using a wood-fired oven heated to a very high temperature—and served hot.",
       price: 20.00,
       availability: "In stock",
       code: "0405689",
       brand: "Eatio Pizza",
-      tags: ["fragrance", "pizza", "delicous"],
+      tags: ["fragrance", "pizza", "delicious"],
       images: [
         "Product images/f1.png",
         "Product images/f1(1).jpg",
@@ -1272,7 +970,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ]
     },
     "Delicious Burger": {
-      description: "What is a burger? Burger is short for a hamburger. It's a fast food sandwich. That is a ground beef patty, grilled, between a split seeded hamburger bun, often optionally also layered with lettuce, tomato, pickles, onions, and a variety of sauces such as mayonnaise, mustard, or ketchup.",
+      description: "What is a burger? Burger is short for a hamburger. It's a fast food sandwich made with a ground beef patty, grilled, between a split seeded hamburger bun, often optionally also layered with lettuce, tomato, pickles, onions, and a variety of sauces such as mayonnaise, mustard, or ketchup.",
       price: 15.00,
       availability: "In stock",
       code: "0412345",
@@ -1298,7 +996,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ]
     },
     "Delicious Pasta": {
-      description: "Pasta is a traditional Italian dish made from durum wheat and water, often mixed with eggs. It comes in various shapes, such as spaghetti, penne, fusilli, and farfalle, and can be paired with a wide range of sauces, including marinara, pesto, Alfredo, and bolognese. Whether served as a main dish or as a side, pasta is a versatile and beloved comfort food around the world.",
+      description: "Pasta is a traditional Italian dish made from durum wheat and water, often mixed with eggs. It comes in various shapes, such as spaghetti, penne, fusilli, and farfalle, and can be paired with a wide range of sauces, including marinara, pesto, Alfredo, and bolognese.",
       price: 18.00,
       availability: "Out of stock",
       code: "0512346",
@@ -1311,7 +1009,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ]
     },
     "French Fries": {
-      description: "French fries, also known as chips in some regions, are crispy, golden-brown strips of deep-fried potato. Typically served as a side dish or snack, they are enjoyed worldwide for their delicious crunch and savory taste. Often seasoned with salt, they can be paired with a variety of sauces like ketchup, mayonnaise, or aioli. French fries are a popular fast food item, perfect for any meal or as a standalone treat.",
+      description: "French fries, also known as chips in some regions, are crispy, golden-brown strips of deep-fried potato. Typically served as a side dish or snack, they are enjoyed worldwide for their delicious crunch and savory taste.",
       price: 10.00,
       availability: "In stock",
       code: "0512347",
@@ -1324,7 +1022,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ]
     },
     "Multiple Layers Pizza": {
-      description: "A delightful and customizable pizza experience, this pie offers a unique twist on the classic. Each slice features a different topping, allowing everyone to enjoy a variety of flavors in one meal. From savory pepperoni and mushrooms to fresh vegetables and gooey cheese, every bite is a new adventure. Perfect for groups or those who love variety, this pizza guarantees something for everyone, all on a single crust. Whether you're craving meat, veggies, or something cheesy, this pizza satisfies all tastes!.",
+      description: "A delightful and customizable pizza experience, this pie offers a unique twist on the classic. Each slice features a different topping, allowing everyone to enjoy a variety of flavors in one meal.",
       price: 40.00,
       availability: "In stock",
       code: "0412348",
@@ -1337,7 +1035,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ]
     },
     "Tasty Chicken Burger": {
-      description: "A mouthwatering chicken burger made with a tender, perfectly seasoned chicken patty, grilled to perfection. Nestled in a soft, toasted bun, this burger is topped with crisp lettuce, juicy tomatoes, and a flavorful sauce that ties everything together. The combination of the succulent chicken and fresh toppings creates the ideal balance of taste and texture. Whether you're looking for a quick meal or a satisfying snack, the Tasty Chicken Burger is sure to hit the spot with every bite!",
+      description: "A mouthwatering chicken burger made with a tender, perfectly seasoned chicken patty, grilled to perfection. Nestled in a soft, toasted bun, this burger is topped with crisp lettuce, juicy tomatoes, and a flavorful sauce.",
       price: 60.00,
       availability: "In stock",
       code: "0512349",
@@ -1350,7 +1048,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ]
     },
     "Tasty Steak Burger": {
-      description: "Indulge in a juicy, tender steak burger made with a high-quality, perfectly grilled beef patty. This burger is served in a soft, toasted bun and complemented by fresh, crisp lettuce, juicy tomatoes, and a rich, smoky sauce. The combination of the hearty steak patty and the fresh toppings creates a satisfying, flavorful experience in every bite. Whether you're a steak lover or just craving something delicious, the Tasty Steak Burger delivers a premium taste that will leave you wanting more!",
+      description: "Indulge in a juicy, tender steak burger made with a high-quality, perfectly grilled beef patty. This burger is served in a soft, toasted bun and complemented by fresh, crisp lettuce, juicy tomatoes, and a rich, smoky sauce.",
       price: 25.00,
       availability: "In stock",
       code: "0512350",
@@ -1362,9 +1060,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "Product images/f8(1).jpg"
       ]
     },
-    // New Products
     "Macaroni Cheese": {
-      description: "A comforting classic, our Mac n Cheese features tender elbow macaroni smothered in a rich and creamy cheese sauce. The perfect blend of sharp cheddar and smooth cream creates a velvety texture that coats each piece of pasta. Baked to perfection with a golden, crispy top, this dish is a delightful combination of gooey cheese and satisfying texture. Ideal for cheese lovers, it's the ultimate indulgence for anyone craving something warm, hearty, and absolutely delicious!",
+      description: "A comforting classic, our Mac n Cheese features tender elbow macaroni smothered in a rich and creamy cheese sauce. The perfect blend of sharp cheddar and smooth cream creates a velvety texture.",
       price: 20.00,
       availability: "In stock",
       code: "0712345",
@@ -1377,7 +1074,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ]
     },
     "Đồng hồ thông minh Smartwatch X7": {
-      description: "A smart watch with fitness tracking and notifications.",
+      description: "A smartwatch with fitness tracking and notifications.",
       price: 32.80,
       availability: "In stock",
       code: "0712346",
@@ -1390,7 +1087,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ]
     },
     "Tasty Thursday 20% Off": {
-      description: "A Combo of 3  Burgers",
+      description: "A Combo of 3 Burgers.",
       price: 33.60,
       availability: "In stock",
       code: "0712347",
@@ -1402,127 +1099,231 @@ document.addEventListener("DOMContentLoaded", function () {
         "Product images/f8.png"
       ]
     },
-	"Pizza Days": {
+    "Pizza Days": {
       description: "A Combo of 3 Pizzas.",
       price: 33.60,
       availability: "In stock",
-      code: "0712347",
+      code: "0712348",
       brand: "Eatio Pizzas",
-      tags: ["Combo", "Pizzas"],
+      tags: ["Pizza", "Best Seller", "Combo"],
       images: [
-        "Product images/f1.png",
         "Product images/f3.png",
-        "Product images/f6.png"
+        "Product images/f1(2).jpg",
+        "Product images/f5.webp"
       ]
-    },
-    
+    }
   };
 
-  // Add event listeners to each "Add to Cart" button
-  document.querySelectorAll('.add-to-cart').forEach(button => {
-    button.addEventListener('click', function (event) {
-      event.preventDefault();  // Prevent default anchor behavior (navigation)
+  // Function to render products dynamically
+  function renderProducts() {
+    const productContainer = document.getElementById('product-container');
+    productContainer.innerHTML = '';  // Clear previous products
 
-      // Get the parent product container of the button
-      const productContainer = button.closest('.new-arrival-product');
+    // Calculate the start and end index for pagination
+    const startIndex = (currentPage - 1) * productsPerPage;
+    const endIndex = startIndex + productsPerPage;
 
-      // Find the product name from the sibling <h4> element
-      const productName = productContainer.querySelector('.product-name').textContent.trim();
+    // Slice the productDetails object to get the products for the current page
+    const productsToRender = Object.keys(productDetails).slice(startIndex, endIndex);
 
-      // Get product details from the `productDetails` object
+    productsToRender.forEach(productName => {
       const details = productDetails[productName];
 
-      if (details) {
-        // Store the product details in localStorage (including price, availability, images, etc.)
-        localStorage.setItem('cartProduct', JSON.stringify({
-          name: productName,
-          image: details.images[0],  // Use the first image as the main image
-          description: details.description,
-          price: details.price,
-          availability: details.availability,
-          code: details.code,
-          brand: details.brand,
-          tags: details.tags,
-          images: details.images  // Store all images for the tabs here
-        }));
-
-        // Optionally, navigate to product detail page (change this URL as necessary)
-        window.location.href = 'ecom-product-detail.html';  // Or show a modal instead
-      } else {
-        console.log("Product details not found for:", productName);
-      }
+      // Create product card
+      const productCard = document.createElement('div');
+      productCard.classList.add('col-xl-3', 'col-lg-6', 'col-md-4', 'col-sm-6');
+      productCard.innerHTML = `
+        <div class="card">
+          <div class="card-body">
+            <div class="new-arrival-product">
+              <div class="new-arrivals-img-contnent">
+                <img class="img-fluid product-image" src="${details.images[0]}" alt="${productName}">
+              </div>
+              <div class="new-arrival-content text-center mt-3">
+                <h4 class="product-name">${productName}</h4>
+                <ul class="star-rating">
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star-half-empty"></i></li>
+                  <li><i class="fa fa-star-half-empty"></i></li>
+                </ul>
+                <span class="price">$${details.price.toFixed(2)}</span>
+                <a class="btn btn-primary btn-lg add-to-cart" href="#">Add to Cart</a>
+                <button class="btn btn-danger btn-sm delete-product" data-product="${productName}">X</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+      productContainer.appendChild(productCard);
     });
+
+    // Add event listeners to the "Add to Cart" buttons
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+      button.addEventListener('click', function (event) {
+        event.preventDefault();
+
+        const productContainer = button.closest('.new-arrival-product');
+        const productName = productContainer.querySelector('.product-name').textContent.trim();
+        const details = productDetails[productName];
+
+        if (details) {
+          // Store the product details in localStorage
+          localStorage.setItem('cartProduct', JSON.stringify({
+            name: productName,
+            image: details.images[0],
+            description: details.description,
+            price: details.price,
+            availability: details.availability,
+            code: details.code,
+            brand: details.brand,
+            tags: details.tags,
+            images: details.images
+          }));
+
+          // Navigate to the product detail page
+          window.location.href = 'ecom-product-detail.html';
+        }
+      });
+    });
+
+    // Add event listeners to the "X" delete buttons
+    document.querySelectorAll('.delete-product').forEach(button => {
+      button.addEventListener('click', function (event) {
+        const productName = button.getAttribute('data-product');
+        delete productDetails[productName];
+        renderProducts();  // Re-render after deletion
+      });
+    });
+
+    // Update page number display
+    const totalPages = Math.ceil(Object.keys(productDetails).length / productsPerPage);
+    document.getElementById('pageNumber').textContent = `Page ${currentPage} of ${totalPages}`;
+  }
+
+  // Event listeners for pagination buttons
+  document.getElementById('prevPage').addEventListener('click', function () {
+    if (currentPage > 1) {
+      currentPage--;
+      renderProducts();
+    }
+  });
+
+  document.getElementById('nextPage').addEventListener('click', function () {
+    const totalPages = Math.ceil(Object.keys(productDetails).length / productsPerPage);
+    if (currentPage < totalPages) {
+      currentPage++;
+      renderProducts();
+    }
+  });
+
+  // Initial render of products
+  renderProducts();
+// Add the necessary styles for the "Add to Cart" button
+const styles = `
+		.add-to-cart {
+		position: absolute;
+		bottom: 0;  /* Pin the button to the bottom of the card */
+		left: 0;
+		width: 100%;  /* Ensure the button spans the width of the card */
+		padding: 10px;
+		background-color: #007bff;
+		color: white;
+		text-align: center;
+		cursor: pointer;
+		border-radius: 4px;
+		text-decoration: none;
+		}
+
+		.add-to-cart:hover {
+		background-color: #0056b3;
+		}
+
+		.card {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		}
+
+		.card-body {
+		flex-grow: 1; /* Make the card body take up available space */
+		}
+		.delete-product {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: red;
+      color: white;
+      border: none;
+      width: 30px;
+      height: 30px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .delete-product:hover {
+      background-color: darkred;
+    }
+
+    .delete-product:focus {
+      outline: none;
+    }
+	`;
+
+	// Inject styles into the document head
+	const styleSheet = document.createElement("style");
+	styleSheet.type = "text/css";
+	styleSheet.innerText = styles;
+	document.head.appendChild(styleSheet);
+
+  // Adding a New Product through Input Fields
+  const addProductForm = document.getElementById('add-product-form');
+  const nameInput = document.getElementById('product-name');
+  const priceInput = document.getElementById('product-price');
+  const descriptionInput = document.getElementById('product-description');
+  const imageInput = document.getElementById('product-image');
+
+  // Function to handle adding the new product
+  addProductForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const name = nameInput.value.trim();
+    const price = parseFloat(priceInput.value);
+    const description = descriptionInput.value.trim();
+    const image = imageInput.value.trim();
+
+    if (name && price && description && image) {
+      const newProduct = {
+        description: description,
+        price: price,
+        availability: "In stock",
+        code: "newCode", // You can generate dynamic codes if needed
+        brand: "Eatio Brand", // You can adjust this based on your product's details
+        tags: ["New", "Product"],
+        images: [image]
+      };
+
+      // Add the new product to the productDetails object
+      productDetails[name] = newProduct;
+
+      // Re-render the products with the newly added item
+      renderProducts();
+
+      // Clear the input fields
+      nameInput.value = '';
+      priceInput.value = '';
+      descriptionInput.value = '';
+      imageInput.value = '';
+    } else {
+      alert("Please fill out all fields!");
+    }
   });
 });
 
-const products = document.querySelectorAll('.card'); // Get all product cards
-    const totalProducts = products.length;
-    const productsPerPage = 12; // Change to 12 items per page
-    let currentPage = 1;
-
-    // Total number of pages
-    const totalPages = Math.ceil(totalProducts / productsPerPage);
-
-    // Hide all products
-    function hideProducts() {
-        products.forEach(product => {
-            product.style.display = 'none';
-        });
-    }
-
-    // Show products for the current page
-    function showPage(page) {
-        const startIndex = (page - 1) * productsPerPage;
-        const endIndex = startIndex + productsPerPage;
-        hideProducts(); // Hide all products before showing the current page's products
-
-        // Show products for the current page
-        for (let i = startIndex; i < endIndex && i < totalProducts; i++) {
-            products[i].style.display = 'block';
-        }
-
-        // Update the page number displayed
-        document.getElementById('pageNumber').textContent = `Page ${page}`;
-    }
-
-    // Handle the "Previous" button click
-    document.getElementById('prevPage').addEventListener('click', () => {
-        if (currentPage > 1) {
-            currentPage--;
-            showPage(currentPage);
-        }
-    });
-
-    // Handle the "Next" button click
-    document.getElementById('nextPage').addEventListener('click', () => {
-        if (currentPage < totalPages) {
-            currentPage++;
-            showPage(currentPage);
-        }
-    });
-
-    // Initial page load
-    showPage(currentPage);
 	
-	function filterProducts() {
-            // Get the search term from the input field
-            let searchTerm = document.getElementById("searchBar").value.toLowerCase();
-            
-            // Get all product cards
-            let productCards = document.querySelectorAll("#product-container .col-xl-3");
-            
-            // Loop through all product cards and filter them based on the search term
-            productCards.forEach(function(card) {
-                let productName = card.querySelector(".product-name").textContent.toLowerCase();
-                
-                // If the product name matches the search term, display it; otherwise, hide it
-                if (productName.includes(searchTerm)) {
-                    card.style.display = "block";  // Show product
-                } else {
-                    card.style.display = "none";  // Hide product
-                }
-            });
-        }
+	
 	</script>
 	
 
