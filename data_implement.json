@@ -6,7 +6,7 @@
   { "id": "tab-23", "title": "Project", "images": ["assets/img/design/Project_Requirement.png", "assets/img/design/Project_Design.png", "assets/img/design/Project_Implement.png"] },
   { "id": "tab-24", "title": "Contact", "images": ["assets/img/design/contact.png","assets/img/design/"] },
   { "id": "tab", "title": "Web-ProJect", "images": [] },
-  { "id": "tab-26", "title": "Login", "images": ["assets/img/design/"] },
+  { "id": "tab-26", "title": "Login", "images": ["assets/img/design/login_1."] },
   { "id": "tab-27", "title": "Register-Passwword", "images": ["assets/img/design/Register_picture_2.jpg"] },
   { "id": "tab-28", "title": "Forget-Password", "images": ["assets/img/design/quenmk_1.png","assets/img/design/quenmk_2.png"] },
   { "id": "tab-29", "title": "Trang Tổng Quát", "images": ["assets/img/design/dashbroad_01.png","assets/img/design/dashbroad_02.png"] },
