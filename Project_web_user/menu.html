@@ -29,7 +29,7 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
-
+  <link href="css/styles.css" rel="stylesheet" />
 </head>
 
 <body class="sub_page">
@@ -68,10 +68,7 @@
               </li>
             </ul>
             <div class="user_option">
-              <a href="" class="user_link">
-                <i class="fa fa-user" aria-hidden="true"></i>
-              </a>
-              <a class="cart_link" href="#">
+              <a href="javascript:void(0);" onclick="showCartModal()" class="cart_link" >
                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                   <g>
                     <g>
@@ -124,6 +121,7 @@
                   <g>
                   </g>
                 </svg>
+                <span id="cart-count">0</span>
               </a>
               <form class="form-inline">
                 <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
@@ -140,7 +138,53 @@
     </header>
     <!-- end header section -->
   </div>
-
+  <div id="cart-modal" class="modal" style="display: none">
+      <div class="modal-content">
+        <h2>Giỏ hàng</h2>
+        <div id="cart-items"></div>
+        <p id="total-price">Tổng giá: 0 VND</p>
+        <label for="special-instructions">Ghi chú:</label>
+        <textarea
+          id="special-instructions"
+          name="special-instructions"
+        ></textarea
+        ><br />
+        <label for="coupon-code">Mã giảm giá:</label>
+        <input type="text" id="coupon-code" name="coupon-code" />
+        <button onclick="applyCoupon()">Áp dụng</button>
+        <p id="coupon-message"></p>
+        <button onclick="checkout()">Thanh toán</button>
+        <button onclick="closeCart()">Đóng</button>
+      </div>
+    </div>
+    <div id="checkout-modal" class="modal" style="display: none">
+      <div class="modal-content">
+        <h2>Thông tin thanh toán</h2>
+        <form id="checkout-form">
+          <label for="name">Tên:</label>
+          <input type="text" id="name" name="name" required /><br />
+          <label for="phone">Số điện thoại:</label>
+          <input type="text" id="phone" name="phone" required /><br />
+          <label for="address">Địa chỉ:</label>
+          <input type="text" id="address" name="address" required /><br />
+          <label for="delivery-time">Thời gian giao hàng:</label>
+          <input
+            type="datetime-local"
+            id="delivery-time"
+            name="delivery-time"
+            required
+          /><br />
+          <label for="payment-method">Phương thức thanh toán:</label>
+          <select id="payment-method" name="payment-method" required>
+            <option value="cash">Tiền mặt</option>
+            <option value="credit-card">Thẻ tín dụng</option>
+            <option value="momo">Momo</option></select
+          ><br />
+          <button type="submit">Xác nhận</button>
+          <button type="button" onclick="closeCheckoutModal()">Đóng</button>
+        </form>
+      </div>
+    </div>
   <!-- food section -->
 
   <section class="food_section layout_padding">
@@ -959,7 +1003,6 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
   </script>
   <!-- End Google Map -->
-
+  <script src="js/java.js"></script>
 </body>
-
 </html>
