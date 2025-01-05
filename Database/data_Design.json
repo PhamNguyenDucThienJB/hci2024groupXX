@@ -1,0 +1,110 @@
+{
+  "tabs": [
+    {
+      "tabId": "tab-01",
+      "title": "Web-Group",
+      "image": "assets/img/design/Web-Group.png",
+      "download": "assets/img/design/"
+    },
+    {
+      "tabId": "tab-1",
+      "title": "Home",
+      "image": "assets/img/design/Groupdiary.jpg",
+      "download": "assets/img/design/Groupdiary.jpg"
+    },
+    {
+      "tabId": "tab-2",
+      "title": "About",
+      "image": "assets/img/design/design_project.pdf",
+      "download": "assets/img/design/design_project.pdf"
+    },
+    {
+      "tabId": "tab-3",
+      "title": "Group Diary",
+      "image": "assets/img/design/Groupdiary.jpg",
+      "download": "assets/img/design/Groupdiary.jpg"
+    },
+    {
+      "tabId": "tab-4",
+      "title": "Project",
+      "image": "assets/img/design/design_project_Requirment.jpg",
+      "download": "assets/img/design/design_project_Requirment.jpg"
+    },
+    {
+      "tabId": "tab-5",
+      "title": "Contact",
+      "image": "assets/img/design/thietke_contact.jpg",
+      "download": "assets/img/design/thietke_contact.jpg"
+    },
+    {
+      "tabId": "tab-02",
+      "title": "Web-Project",
+      "image": "assets/img/design/",
+      "download": "assets/img/design/"
+    },
+    {
+      "tabId": "tab-6",
+      "title": "Login",
+      "image": "assets/img/design/dangnhap.jpg",
+      "download": "assets/img/design/.jpg"
+    },
+    {
+      "tabId": "tab-7",
+      "title": "Register-Password",
+      "image": "assets/img/design/Register_picture.jpg",
+      "download": "assets/img/design/Register_picture.jpg"
+    },
+    {
+      "tabId": "tab-8",
+      "title": "Forget-Password",
+      "image": "assets/img/design/thietke_quenmk.jpg",
+      "download": "assets/img/design/thietke_quenmk.jpg"
+    },
+    {
+      "tabId": "tab-9",
+      "title": "Trang Tổng Quát",
+      "image": "assets/img/design/dashbroad.jpg",
+      "download": "assets/img/design/dashbroad.jpg"
+    },
+    {
+      "tabId": "tab-10",
+      "title": "Trang danh sách đơn hàng",
+      "image": "assets/img/design/dangnhap.jpg",
+      "download": "assets/img/design/dangnhap.jpg"
+    },
+    {
+      "tabId": "tab-11",
+      "title": "Trang danh sách sản phẩm",
+      "image": "assets/img/design/danhsachsanpham.png",
+      "download": "assets/img/design/dangki.jpg"
+    },
+    {
+      "tabId": "tab-12",
+      "title": "Trang danh sách nhân viên",
+      "image": "assets/img/design/quenmatkhau.jpg",
+      "download": "assets/img/design/quenmatkhau.jpg"
+    },
+    {
+      "tabId": "tab-13",
+      "title": "Trang danh sách khách hàng",
+      "image": "assets/img/design/thietke_danhsachkhachhang.png",
+      "download": "assets/img/design/thietke_danhsachkhachhang.png"
+    }
+    ,
+    {
+      "tabId": "tab-14",
+      "title": "Trang đánh giá",
+      "image": "assets/img/design/review_design.jpg",
+      "download": "assets/img/design/review_design.jpg"
+    }
+    ,
+    {
+      "tabId": "tab-15",
+      "title": "Trang About Web-Group",
+      "image": "assets/img/design/about.jpg",
+      "download": "assets/img/design/about.jpg"
+    }
+
+    
+  ]
+}

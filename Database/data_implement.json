@@ -1,0 +1,19 @@
+[
+  { "id": "tab", "title": "Web-Group", "images": ["assets/img/design/index-web-group.png"] },
+  { "id": "tab-20", "title": "Home", "images": ["assets/img/design/header footer.jpg"] },
+  { "id": "tab-21", "title": "About", "images": ["assets/img/design/trang chủ 1.jpg", "assets/img/design/trang chủ 2.jpg"] },
+  { "id": "tab-22", "title": "Group Diary", "images": ["assets/img/design/Group_Diary.png"] },
+  { "id": "tab-23", "title": "Project", "images": ["assets/img/design/Project_Requirement.png", "assets/img/design/Project_Design.png", "assets/img/design/Project_Implement.png"] },
+  { "id": "tab-24", "title": "Contact", "images": ["assets/img/design/contact.png","assets/img/design/"] },
+  { "id": "tab", "title": "Web-ProJect", "images": [] },
+  { "id": "tab-26", "title": "Login", "images": ["assets/img/design/login_1."] },
+  { "id": "tab-27", "title": "Register-Passwword", "images": ["assets/img/design/Register_picture_2.jpg"] },
+  { "id": "tab-28", "title": "Forget-Password", "images": ["assets/img/design/quenmk_1.png","assets/img/design/quenmk_2.png"] },
+  { "id": "tab-29", "title": "Trang Tổng Quát", "images": ["assets/img/design/dashbroad_01.png","assets/img/design/dashbroad_02.png"] },
+  { "id": "tab-30", "title": "Trang danh sách đơn hàng", "images": ["assets/img/design/product-grid2.png"] },
+  { "id": "tab-31", "title": "Trang danh sách sản phẩm", "images": ["assets/img/design/product-grid.png", "assets/img/design/Project_Implement.png"] },
+  { "id": "tab-32", "title": "Trang danh sách nhân viên", "images": ["assets/img/design/contact.png"] },
+  { "id": "tab-33", "title": "Trang danh sách khách hàng", "images": ["assets/img/design/danhsachkhachhang.png"] },
+  { "id": "tab-34", "title": "Trang đánh giá", "images": ["assets/img/design/review_01.png","assets/img/design/review_02.png","assets/img/design/review_03.png"] },
+  { "id": "tab-35", "title": "Trang About Web-Group", "images": ["assets/img/design/about_Webgroup.png"] }
+]
