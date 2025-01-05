@@ -7,9 +7,13 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Eatio - Restaurant Food Order Bootstrap Admin Dashboard</title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
-    	<link href="./vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
-    <link href="./css/style.css" rel="stylesheet">
+	<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon.png">
+    <link href="../vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../vendor/chartist/css/chartist.min.css">
+    <link href="../vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+	<link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+
 
 </head>
 
@@ -38,11 +42,11 @@
         <!--**********************************
             Nav header start
         ***********************************-->
-        <div class="nav-header">
+		<div class="nav-header">
             <a href="index.html" class="brand-logo">
-                <img class="logo-abbr" src="./images/logo.png" alt="">
-                <img class="logo-compact" src="./images/logo-text.png" alt="">
-                <img class="brand-title" src="./images/logo-text.png" alt="">
+                <img class="logo-abbr" src="../images/logo.png" alt="">
+                <img class="logo-compact" src="../images/logo-text.png" alt="">
+                <img class="brand-title" src="../images/logo-text.png" alt="">
             </a>
 
             <div class="nav-control">
@@ -568,21 +572,16 @@
                 <nav class="navbar navbar-expand">
                     <div class="collapse navbar-collapse justify-content-between">
                         <div class="header-left">
-							<div class="search_bar dropdown show">
-								<div class="dropdown-menu p-0 m-0 show">
-									<form>
-										<!-- Added 'onkeyup' event to trigger the filterProducts function on every keystroke -->
-										<input class="form-control" type="search" id="searchBar" placeholder="Search Here" aria-label="Search" onkeyup="filterProducts()">
-									</form>
-								</div>
-								<span class="search_icon p-3 c-pointer" data-toggle="dropdown" aria-expanded="true">
-									<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M23.7871 22.7761L17.9548 16.9437C19.5193 15.145 20.4665 12.7982 20.4665 10.2333C20.4665 4.58714 15.8741 0 10.2333 0C4.58714 0 0 4.59246 0 10.2333C0 15.8741 4.59246 20.4665 10.2333 20.4665C12.7982 20.4665 15.145 19.5193 16.9437 17.9548L22.7761 23.7871C22.9144 23.9255 23.1007 24 23.2816 24C23.4625 24 23.6488 23.9308 23.7871 23.7871C24.0639 23.5104 24.0639 23.0528 23.7871 22.7761ZM1.43149 10.2333C1.43149 5.38004 5.38004 1.43681 10.2279 1.43681C15.0812 1.43681 19.0244 5.38537 19.0244 10.2333C19.0244 15.0812 15.0812 19.035 10.2279 19.035C5.38004 19.035 1.43149 15.0865 1.43149 10.2333Z" fill="#A4A4A4"></path>
-									</svg>
-								</span>
-							</div>								
+                            <div class="search_bar dropdown show">
+                                <div class="dropdown-menu p-0 m-0 show">
+                                    <form>
+                                        <input class="form-control" type="search" placeholder="Search Here" aria-label="Search">
+                                    </form>
+                                </div>
+								<span class="search_icon p-3 c-pointer" data-toggle="dropdown">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.7871 22.7761L17.9548 16.9437C19.5193 15.145 20.4665 12.7982 20.4665 10.2333C20.4665 4.58714 15.8741 0 10.2333 0C4.58714 0 0 4.59246 0 10.2333C0 15.8741 4.59246 20.4665 10.2333 20.4665C12.7982 20.4665 15.145 19.5193 16.9437 17.9548L22.7761 23.7871C22.9144 23.9255 23.1007 24 23.2816 24C23.4625 24 23.6488 23.9308 23.7871 23.7871C24.0639 23.5104 24.0639 23.0528 23.7871 22.7761ZM1.43149 10.2333C1.43149 5.38004 5.38004 1.43681 10.2279 1.43681C15.0812 1.43681 19.0244 5.38537 19.0244 10.2333C19.0244 15.0812 15.0812 19.035 10.2279 19.035C5.38004 19.035 1.43149 15.0865 1.43149 10.2333Z" fill="#A4A4A4"/></svg>
+                                </span>
                             </div>
-	
                         </div>
 
                         <ul class="navbar-nav header-right">
@@ -672,7 +671,6 @@
 											</li>
 										</ul>
 									</div>
-									
                                     <a class="all-notification" href="#">See all notifications <i class="ti-arrow-right"></i></a>
                                 </div>
                             </li>
@@ -712,172 +710,161 @@
         ***********************************-->
         <div class="deznav">
             <div class="deznav-scroll">
-			<ul class="metismenu" id="menu">
-					<li>
-						<a href="index.html" style="color: #969ba0;" class="ai-icon mm-active bg-white" aria-expanded="false">
-							<i style="color: #969ba0;" class="flaticon-381-networking"></i>
-							<span class="nav-text">Bảng Tổng Quát</span>
-						</a>
-                        <!-- <ul aria-expanded="false">
-							<li><a href="index.html">Dashboard</a></li>
-							<li><a href="page-analytics.html">Analytics</a></li>
-							<li><a href="page-review.html">Review</a></li>
-							<li><a href="page-order.html">Order</a></li>
-							<li><a href="page-order-list.html">Order List</a></li>
-							<li><a href="page-general-customers.html">General Customers</a></li>
-						</ul> -->
-
-						<!-- customers -->
-						<li>
-						<a href="./ecom-customers.html" style="color: #969ba0;" class="ai-icon mm-active bg-white" aria-expanded="false">
-							<i style="color: #969ba0;" class="flaticon-381-television"></i>
-							<span class="nav-text">Customers</span>
-						</a>
-							<!-- Staff  -->
-						<a href="./table-datatable-basic.html" class="ai-icon mm-active" aria-expanded="false">
-							<i class="flaticon-381-network"></i>
-							<span class="nav-text">Nhân viên</span>
-						</a>
-	                                <li>
-                                                <a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-                                                        <i class="flaticon-381-television"></i> <!-- Biểu tượng Cửa hàng -->
-                                                        <span class="nav-text">Cửa hàng</span> <!-- Dịch: Shop -->
-                                                </a>
-                                                <ul aria-expanded="false">
-                                                        <li><a href="./ecom-product-grid.html">Lưới Sản Phẩm</a></li> <!-- Dịch: Product Grid -->
-                                                        
-                                                        <li><a href="./ecom-product-detail.html">Chi Tiết Sản Phẩm</a></li> <!-- Dịch: Product Details -->
-														<li><a href="./ecom-product-list.html">Danh Sách Sản Phẩm</a></li> <!-- Dịch: Product List -->
-                                                        <li><a href="./ecom-product-order.html">Đặt Hàng</a></li> <!-- Dịch: Order -->
-                                                        <li><a href="./ecom-checkout.html">Thanh Toán</a></li> <!-- Dịch: Checkout -->
-                                                        <li><a href="./ecom-invoice.html">Hóa Đơn</a></li> <!-- Dịch: Invoice -->
-                                                        <li><a href="./ecom-customers.html">Khách Hàng</a></li> <!-- Dịch: Customers -->
-                                                </ul>
-                                        </li>
-
-                                     <!-- Mục Email -->
-                                        <li>
-                                                <a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-                                                        <i class="flaticon-381-mail"></i> <!-- Biểu tượng Email -->
-                                                        <span class="nav-text">Email</span> <!-- Dịch: Email -->
-                                                </a>
-                                                <ul aria-expanded="false">
-                                                    <li><a href="./email-compose.html">Soạn Thư</a></li> <!-- Dịch: Compose -->
-                                                    <li><a href="./email-inbox.html">Hộp Thư Đến</a></li> <!-- Dịch: Inbox -->
-                                                    <li><a href="./email-read.html">Đọc Thư</a></li> <!-- Dịch: Read -->
-                                                </ul>
-                                        </li>
- 
-                   
-                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-							<i class="flaticon-381-controls-3"></i>
-							<span class="nav-text">Charts</span>
-						</a>
-                        <ul aria-expanded="false">
-                            <li><a href="./chart-flot.html">Flot</a></li>
-                            <li><a href="./chart-morris.html">Morris</a></li>
-                            <li><a href="./chart-chartjs.html">Chartjs</a></li>
-                            <li><a href="./chart-chartist.html">Chartist</a></li>
-                            <li><a href="./chart-sparkline.html">Sparkline</a></li>
-                            <li><a href="./chart-peity.html">Peity</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-							<i class="flaticon-381-internet"></i>
-							<span class="nav-text">Bootstrap</span>
-						</a>
-                        <ul aria-expanded="false">
-                            <li><a href="./ui-accordion.html">Accordion</a></li>
-                            <li><a href="./ui-alert.html">Alert</a></li>
-                            <li><a href="./ui-badge.html">Badge</a></li>
-                            <li><a href="./ui-button.html">Button</a></li>
-                            <li><a href="./ui-modal.html">Modal</a></li>
-                            <li><a href="./ui-button-group.html">Button Group</a></li>
-                            <li><a href="./ui-list-group.html">List Group</a></li>
-                            <li><a href="./ui-media-object.html">Media Object</a></li>
-                            <li><a href="./ui-card.html">Cards</a></li>
-                            <li><a href="./ui-carousel.html">Carousel</a></li>
-                            <li><a href="./ui-dropdown.html">Dropdown</a></li>
-                            <li><a href="./ui-popover.html">Popover</a></li>
-                            <li><a href="./ui-progressbar.html">Progressbar</a></li>
-                            <li><a href="./ui-tab.html">Tab</a></li>
-                            <li><a href="./ui-typography.html">Typography</a></li>
-                            <li><a href="./ui-pagination.html">Pagination</a></li>
-                            <li><a href="./ui-grid.html">Grid</a></li>
-
-                        </ul>
-                    </li>
-                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-							<i class="flaticon-381-heart"></i>
-							<span class="nav-text">Plugins</span>
-						</a>
-                        <ul aria-expanded="false">
-                            <li><a href="./uc-select2.html">Select 2</a></li>
-                            <li><a href="./uc-nestable.html">Nestedable</a></li>
-                            <li><a href="./uc-noui-slider.html">Noui Slider</a></li>
-                            <li><a href="./uc-sweetalert.html">Sweet Alert</a></li>
-                            <li><a href="./uc-toastr.html">Toastr</a></li>
-                            <li><a href="./map-jqvmap.html">Jqv Map</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="widget-basic.html" class="ai-icon" aria-expanded="false">
-							<i class="flaticon-381-settings-2"></i>
-							<span class="nav-text">Widget</span>
-						</a>
-					</li>
-                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-							<i class="flaticon-381-notepad"></i>
-							<span class="nav-text">Forms</span>
-						</a>
-                        <ul aria-expanded="false">
-                            <li><a href="./form-element.html">Form Elements</a></li>
-                            <li><a href="./form-wizard.html">Wizard</a></li>
-                            <li><a href="./form-editor-summernote.html">Summernote</a></li>
-                            <li><a href="form-pickers.html">Pickers</a></li>
-                            <li><a href="form-validation-jquery.html">Jquery Validate</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-							<i class="flaticon-381-network"></i>
-							<span class="nav-text">Table</span>
-						</a>
-                        <ul aria-expanded="false">
-                            <li><a href="table-bootstrap-basic.html">Bootstrap</a></li>
-                            <li><a href="table-datatable-basic.html">Datatable</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-							<i class="flaticon-381-layer-1"></i>
-							<span class="nav-text">Pages</span>
-						</a>
-                        <ul aria-expanded="false">
-                            <li><a href="./page-register.html">Register</a></li>
-                            <li><a href="./page-login.html">Login</a></li>
-                            <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Error</a>
-                                <ul aria-expanded="false">
-                                    <li><a href="./page-error-400.html">Error 400</a></li>
-                                    <li><a href="./page-error-403.html">Error 403</a></li>
-                                    <li><a href="./page-error-404.html">Error 404</a></li>
-                                    <li><a href="./page-error-500.html">Error 500</a></li>
-                                    <li><a href="./page-error-503.html">Error 503</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="./page-lock-screen.html">Lock Screen</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            
-				<div class="add-menu-sidebar">
-					<img src="images/icon1.png" alt=""/>
-					<p>Organize your menus through button bellow</p>
-					<a href="javascript:void(0);" class="btn btn-primary btn-block light">+ Add Menus</a>
+				<div class="deznav">
+					<div class="deznav-scroll">
+						<ul class="metismenu" id="menu">
+							<li>
+								<a href="index.html" class="ai-icon mm-active" aria-expanded="false">
+									<i class="flaticon-381-networking"></i>
+									<span class="nav-text">Bảng Tổng Quát</span>
+								</a>
+								<!-- <ul aria-expanded="false">
+									<li><a href="index.html">Dashboard</a></li>
+									<li><a href="page-analytics.html">Analytics</a></li>
+									<li><a href="page-review.html">Review</a></li>
+									<li><a href="page-order.html">Order</a></li>
+									<li><a href="page-order-list.html">Order List</a></li>
+									<li><a href="page-general-customers.html">General Customers</a></li>
+								</ul> -->
+		
+								<!-- customers -->
+		
+								<a href="./ecom-customers.html" style="color: #969ba0;" class="ai-icon mm-active bg-white" aria-expanded="false">
+									<i style="color: #969ba0;" class="flaticon-381-television"></i>
+									<span class="nav-text">Customers</span>
+								</a>
+							</li>
+							<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+									<i class="flaticon-381-television"></i>
+									<span class="nav-text">Apps</span>
+								</a>
+								<ul aria-expanded="false">
+									<li><a href="./app-profile.html">Profile</a></li>
+									<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Email</a>
+										<ul aria-expanded="false">
+											<li><a href="./email-compose.html">Compose</a></li>
+											<li><a href="./email-inbox.html">Inbox</a></li>
+											<li><a href="./email-read.html">Read</a></li>
+										</ul>
+									</li>
+									<li><a href="./app-calender.html">Calendar</a></li>
+									<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Shop</a>
+										<ul aria-expanded="false">
+											<li><a href="./ecom-product-grid.html">Product Grid</a></li>
+											<li><a href="./ecom-product-list.html">Product List</a></li>
+											<li><a href="./ecom-product-detail.html">Product Details</a></li>
+											<li><a href="./ecom-product-order.html">Order</a></li>
+											<li><a href="./ecom-checkout.html">Checkout</a></li>
+											<li><a href="./ecom-invoice.html">Invoice</a></li>
+		
+										</ul>
+									</li>
+								</ul>
+		
+							</li>
+							<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+									<i class="flaticon-381-controls-3"></i>
+									<span class="nav-text">Charts</span>
+								</a>
+								<ul aria-expanded="false">
+									<li><a href="./chart-flot.html">Flot</a></li>
+									<li><a href="./chart-morris.html">Morris</a></li>
+									<li><a href="./chart-chartjs.html">Chartjs</a></li>
+									<li><a href="./chart-chartist.html">Chartist</a></li>
+									<li><a href="./chart-sparkline.html">Sparkline</a></li>
+									<li><a href="./chart-peity.html">Peity</a></li>
+								</ul>
+							</li>
+							<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+									<i class="flaticon-381-internet"></i>
+									<span class="nav-text">Bootstrap</span>
+								</a>
+								<ul aria-expanded="false">
+									<li><a href="./ui-accordion.html">Accordion</a></li>
+									<li><a href="./ui-alert.html">Alert</a></li>
+									<li><a href="./ui-badge.html">Badge</a></li>
+									<li><a href="./ui-button.html">Button</a></li>
+									<li><a href="./ui-modal.html">Modal</a></li>
+									<li><a href="./ui-button-group.html">Button Group</a></li>
+									<li><a href="./ui-list-group.html">List Group</a></li>
+									<li><a href="./ui-media-object.html">Media Object</a></li>
+									<li><a href="./ui-card.html">Cards</a></li>
+									<li><a href="./ui-carousel.html">Carousel</a></li>
+									<li><a href="./ui-dropdown.html">Dropdown</a></li>
+									<li><a href="./ui-popover.html">Popover</a></li>
+									<li><a href="./ui-progressbar.html">Progressbar</a></li>
+									<li><a href="./ui-tab.html">Tab</a></li>
+									<li><a href="./ui-typography.html">Typography</a></li>
+									<li><a href="./ui-pagination.html">Pagination</a></li>
+									<li><a href="./ui-grid.html">Grid</a></li>
+		
+								</ul>
+							</li>
+							<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+									<i class="flaticon-381-heart"></i>
+									<span class="nav-text">Plugins</span>
+								</a>
+								<ul aria-expanded="false">
+									<li><a href="./uc-select2.html">Select 2</a></li>
+									<li><a href="./uc-nestable.html">Nestedable</a></li>
+									<li><a href="./uc-noui-slider.html">Noui Slider</a></li>
+									<li><a href="./uc-sweetalert.html">Sweet Alert</a></li>
+									<li><a href="./uc-toastr.html">Toastr</a></li>
+									<li><a href="./map-jqvmap.html">Jqv Map</a></li>
+								</ul>
+							</li>
+							<li><a href="widget-basic.html" class="ai-icon" aria-expanded="false">
+									<i class="flaticon-381-settings-2"></i>
+									<span class="nav-text">Widget</span>
+								</a>
+							</li>
+							<li><a class="" href="page-review.html" aria-expanded="false">
+									<i class="flaticon-381-notepad"></i>
+									<span class="nav-text">Trang Đánh Giá</span>
+								</a>
+							  
+							</li>
+							<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+									<i class="flaticon-381-network"></i>
+									<span class="nav-text">Table</span>
+								</a>
+								<ul aria-expanded="false">
+									<li><a href="table-bootstrap-basic.html">Bootstrap</a></li>
+									<li><a href="table-datatable-basic.html">Datatable</a></li>
+								</ul>
+							</li>
+							<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+									<i class="flaticon-381-layer-1"></i>
+									<span class="nav-text">Pages</span>
+								</a>
+								<ul aria-expanded="false">
+									<li><a href="./page-register.html">Register</a></li>
+									<li><a href="./page-login.html">Login</a></li>
+									<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Error</a>
+										<ul aria-expanded="false">
+											<li><a href="./page-error-400.html">Error 400</a></li>
+											<li><a href="./page-error-403.html">Error 403</a></li>
+											<li><a href="./page-error-404.html">Error 404</a></li>
+											<li><a href="./page-error-500.html">Error 500</a></li>
+											<li><a href="./page-error-503.html">Error 503</a></li>
+										</ul>
+									</li>
+									<li><a href="./page-lock-screen.html">Lock Screen</a></li>
+								</ul>
+							</li>
+						</ul>
+					
+						<div class="add-menu-sidebar">
+							<img src="../images/icon1.png" alt=""/>
+							<p>Organize your menus through button bellow</p>
+							<a href="javascript:void(0);" class="btn btn-primary btn-block light">+ Add Menus</a>
+						</div>
+						<div class="copyright">
+							<p><strong>Eatio - Restaurant Admin Dashboard</strong> © 2020 All Rights Reserved</p>
+							
+						</div>
+					</div>
 				</div>
-				<div class="copyright">
-					<p><strong>Eatio - Restaurant Admin Dashboard</strong> © 2020 All Rights Reserved</p>
-				
-				</div>
-			</div>
-        </div>
         <!--**********************************
             Sidebar end
         ***********************************-->
@@ -885,52 +872,150 @@
         <!--**********************************
             Content body start
         ***********************************-->
-	
-	
-		<div class="content-body">
-			
-			<div class="container-fluid">
-				
-				<div class="flex-container">
+			<div class="content-body">
+				<div class="container-fluid">
+					<div class="row page-titles mx-0">
+						<div class="col-sm-6 p-md-0">
+							<div class="welcome-text">
+								<h4>Hi, welcome back!</h4>
+								<p class="mb-0">Your business dashboard template</p>
+							</div>
+						</div>
+						<div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="javascript:void(0)">Layout</a></li>
+								<li class="breadcrumb-item active"><a href="javascript:void(0)">Blank</a></li>
+							</ol>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="card">
+								<div class="card-body">
+									<div class="row">
+										<div class="col-xl-3">
+											<!-- Tab panes -->
+											<div class="tab-content">
+												<div role="tabpanel" class="tab-pane fade show active" id="first">
+													<img class="img-fluid" id="productImage" src="" alt="">
+												</div>
+												<div role="tabpanel" class="tab-pane fade" id="second">
+													<!-- Dynamically populated image will go here -->
+												</div>
+												<div role="tabpanel" class="tab-pane fade" id="third">
+													<!-- Dynamically populated image will go here -->
+												</div>
+												<div role="tabpanel" class="tab-pane fade" id="for">
+													<!-- Dynamically populated image will go here -->
+												</div>
+												
+											</div>
+											<!-- Thumbnail images for tabs -->
+											<div class="tab-slide-content new-arrival-product mb-4 mb-xl-0">
+												<!-- Nav tabs -->
+												<ul class="nav slide-item-list mt-3" role="tablist">
+													<li role="presentation" class="show">
+														<a href="#first" role="tab" data-toggle="tab">
+															<img class="img-fluid" src="images/tab/1.jpg" alt="" width="50" height="50">
+														</a>
+													</li>
+													<li role="presentation">
+														<a href="#second" role="tab" data-toggle="tab"><img class="img-fluid" src="images/tab/2.jpg" alt="" width="50" height="50"></a>
+													</li>
+													<li role="presentation">
+														<a href="#third" role="tab" data-toggle="tab"><img class="img-fluid" src="images/tab/3.jpg" alt="" width="50" height="50"></a>
+													</li>
+													<li role="presentation">
+														<a href="#for" role="tab" data-toggle="tab"><img class="img-fluid" src="images/tab/4.jpg" alt="" width="50" height="50"></a>
+													</li>
+												</ul>
+											</div>
+										</div>
 					
-					<p>Add a product
-						<form id="add-product-form" style="display: flex;flex-direction: row;gap:20px;">
-							<input type="text" id="product-name" placeholder="Product Name" required>
-							<input type="number" id="product-price" placeholder="Price" required>
-							<input id="product-description" placeholder="Description" required style="text-align: left;width: 200px;height: 51.62px;"></input>
-							<input type="url" id="product-image" placeholder="Image URL" required>
-							<button type="submit">Add Product</button>
-						  </form>
-					</p>
-				<div class="row" id="product-container">
-					<!-- All Product Cards Here -->
-					<div class="row" id="new-products">
-						
-			
-	
-					<!-- Product Cards as shown in your example -->
-				</div>
-				<!-- Pagination Controls -->
-			<!-- Pagination Controls -->
-			
-			
-		
+										<!-- Product Details -->
+										<div class="col-xl-9 col-sm-12">
+											<div class="product-detail-content">
+												<div class="new-arrival-content pr">
+													<!-- Product Name -->
+													<h4 id="productName">Solid Women's V-neck Dark T-Shirt</h4>
+													<div class="star-rating mb-2">
+														<ul class="produtct-detail-tag">
+															<li><i class="fa fa-star"></i></li>
+															<li><i class="fa fa-star"></i></li>
+															<li><i class="fa fa-star"></i></li>
+															<li><i class="fa fa-star"></i></li>
+															<li><i class="fa fa-star"></i></li>
+														</ul>
+														<span class="review-text">(34 reviews) / </span><a class="product-review" href="#">Write a review?</a>
+													</div>
+					
+													<!-- Price -->
+													<p class="price" id="productPrice">$320.00</p>
+					
+													<!-- Availability -->
+													<p>Availability: <span class="item" id="productAvailability">In stock <i class="fa fa-shopping-basket"></i></span></p>
+					
+													<!-- Product Code -->
+													<p>Product code: <span class="item" id="productCode">0405689</span> </p>
+					
+													<!-- Product Brand -->
+													<p>Brand: <span class="item" id="productBrand">Lee</span></p>
+					
+													<!-- Product Tags -->
+													<p class="product-tags" id="productTags">
+														Product tags: 
+														<span class="badge badge-success light">bags</span>
+														<span class="badge badge-success light">clothes</span>
+														<span class="badge badge-success light">shoes</span>
+														<span class="badge badge-success light">dresses</span>
+													</p>
+					
+													<!-- Product Description -->
+													<p class="text-content" id="productDescription">
+														There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+														If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing.
+													</p>
+					
+													<!-- Select Size -->
+													<div class="filtaring-area my-3">
+														<div class="size-filter">
+															<h4 class="m-b-15">Select size</h4>
+															<ul>
+																<li class="btn btn-primary light sharp">x</li>
+																<li class="btn btn-primary light sharp">m</li>
+																<li class="btn btn-primary light sharp">l</li>
+																<li class="btn btn-primary light sharp">xs</li>
+																<li class="btn btn-primary light sharp">xl</li>
+															</ul>
+														</div>
+													</div>
+					
+													<!-- Quantity and Add to Cart Button -->
+													<div class="col-2 px-0">
+														<input type="number" name="num" class="form-control input-btn input-number" value="1">
+													</div>
+					
+													<div class="shopping-cart mt-3">
+														<a class="btn btn-primary btn-lg" href="#" id="addToCartBtn"><i class="fa fa-shopping-basket mr-2"></i>Add to cart</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				
         <!--**********************************
             Content body end
         ***********************************-->
 
-		
+
         
 
+        
     </div>
-	<div class="pagination-controls-wrapper">
-		<div class="pagination-controls">
-			<button id="prevPage" class="btn btn-secondary mr-3">Previous</button>
-			<span id="pageNumber" class="mx-3">Page 1</span>
-			<button id="nextPage" class="btn btn-secondary ml-3">Next</button>
-		</div>
-	</div>
-	
     <!--**********************************
         Main wrapper end
     ***********************************-->
@@ -939,395 +1024,156 @@
         Scripts
     ***********************************-->
     <!-- Required vendors -->
-    <script src="./vendor/global/global.min.js"></script>
-	<script src="./vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-    <script src="./vendor/chart.js/Chart.bundle.min.js"></script>
-    <script src="./js/custom.min.js"></script>
-	<script src="./js/deznav-init.js"></script>
+    <script src="../vendor/global/global.min.js"></script>
+	<script src="../vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="../vendor/chart.js/Chart.bundle.min.js"></script>
+    <script src="../js/custom.min.js"></script>
+	<script src="../js/deznav-init.js"></script>
 	<!-- Apex Chart -->
-	<script src="./vendor/apexchart/apexchart.js"></script>
+	<script src="../vendor/apexchart/apexchart.js"></script>
+    
 
-    <script src="./vendor/highlightjs/highlight.pack.min.js"></script>
+
+
+    <!-- Jquery Validation -->
+    <script src="../vendor/jquery-validation/jquery.validate.min.js"></script>
+    <!-- Form validate init -->
+    <script src="../js/plugins-init/jquery.validate-init.js"></script>
+
     <!-- Circle progress -->
-	<script>
-	document.addEventListener("DOMContentLoaded", function () {
-  const productsPerPage = 8;  // Number of products per page
-  let currentPage = 1;
 
-  // The product details object (includes all products)
-  const productDetails = {
-    "Delicious Pizza": {
-      description: "Pizza, dish of Italian origin consisting of a flattened disk of bread dough topped with some combination of olive oil, oregano, tomato, olives, mozzarella or other cheese, and many other ingredients, baked quickly—usually, in a commercial setting, using a wood-fired oven heated to a very high temperature—and served hot.",
-      price: 20.00,
-      availability: "In stock",
-      code: "0405689",
-      brand: "Eatio Pizza",
-      tags: ["fragrance", "pizza", "delicious"],
-      images: [
-        "Product images/f1.png",
-        "Product images/f1(1).jpg",
-        "Product images/f1(2).jpg"
-      ]
-    },
-    "Delicious Burger": {
-      description: "What is a burger? Burger is short for a hamburger. It's a fast food sandwich made with a ground beef patty, grilled, between a split seeded hamburger bun, often optionally also layered with lettuce, tomato, pickles, onions, and a variety of sauces such as mayonnaise, mustard, or ketchup.",
-      price: 15.00,
-      availability: "In stock",
-      code: "0412345",
-      brand: "Eatio Burger",
-      tags: ["Delicious", "Burger", "2-Layer"],
-      images: [
-        "Product images/f2.png",
-        "Product images/f2.webp",
-        "Product images/f2(1).jpg"
-      ]
-    },
-    "Mozzarella Original Pizza": {
-      description: "A thin crust Mega Meat Pizza with Our Original Mozzarella cheese blend and it comes topped with sausage, pepperoni, and bacon.",
-      price: 17.00,
-      availability: "In stock",
-      code: "0512345",
-      brand: "Eatio Pizza",
-      tags: ["Mozzarella", "Original", "Pizza"],
-      images: [
-        "Product images/f3.png",
-        "Product images/f3.avif",
-        "Product images/f3(1).avif"
-      ]
-    },
-    "Delicious Pasta": {
-      description: "Pasta is a traditional Italian dish made from durum wheat and water, often mixed with eggs. It comes in various shapes, such as spaghetti, penne, fusilli, and farfalle, and can be paired with a wide range of sauces, including marinara, pesto, Alfredo, and bolognese.",
-      price: 18.00,
-      availability: "Out of stock",
-      code: "0512346",
-      brand: "Eatio Pasta",
-      tags: ["Macaroni", "Pasta", "Delicious"],
-      images: [
-        "Product images/f4.jpg",
-        "Product images/f4.png",
-        "Product images/f4.webp"
-      ]
-    },
-    "French Fries": {
-      description: "French fries, also known as chips in some regions, are crispy, golden-brown strips of deep-fried potato. Typically served as a side dish or snack, they are enjoyed worldwide for their delicious crunch and savory taste.",
-      price: 10.00,
-      availability: "In stock",
-      code: "0512347",
-      brand: "Eatio Fries",
-      tags: ["Fries", "Ketchup", "Hot Sauce"],
-      images: [
-        "Product images/f5.jpg",
-        "Product images/f5.png",
-        "Product images/f5.webp"
-      ]
-    },
-    "Multiple Layers Pizza": {
-      description: "A delightful and customizable pizza experience, this pie offers a unique twist on the classic. Each slice features a different topping, allowing everyone to enjoy a variety of flavors in one meal.",
-      price: 40.00,
-      availability: "In stock",
-      code: "0412348",
-      brand: "Eatio Pizza",
-      tags: ["Multiple Slices", "Best Seller", "Pizza"],
-      images: [
-        "Product images/f6.jpg",
-        "Product images/f6.webp",
-        "Product images/f6.png"
-      ]
-    },
-    "Tasty Chicken Burger": {
-      description: "A mouthwatering chicken burger made with a tender, perfectly seasoned chicken patty, grilled to perfection. Nestled in a soft, toasted bun, this burger is topped with crisp lettuce, juicy tomatoes, and a flavorful sauce.",
-      price: 60.00,
-      availability: "In stock",
-      code: "0512349",
-      brand: "Eatio Burger",
-      tags: ["Burger", "Best Seller", "Tasty"],
-      images: [
-        "Product images/f7.png",
-        "Product images/f7(1).jpg",
-        "Product images/f7(2).jpg"
-      ]
-    },
-    "Tasty Steak Burger": {
-      description: "Indulge in a juicy, tender steak burger made with a high-quality, perfectly grilled beef patty. This burger is served in a soft, toasted bun and complemented by fresh, crisp lettuce, juicy tomatoes, and a rich, smoky sauce.",
-      price: 25.00,
-      availability: "In stock",
-      code: "0512350",
-      brand: "Eatio Burger",
-      tags: ["Burger", "Tasty"],
-      images: [
-        "Product images/f8.png",
-        "Product images/f8.jpg",
-        "Product images/f8(1).jpg"
-      ]
-    },
-    "Macaroni Cheese": {
-      description: "A comforting classic, our Mac n Cheese features tender elbow macaroni smothered in a rich and creamy cheese sauce. The perfect blend of sharp cheddar and smooth cream creates a velvety texture.",
-      price: 20.00,
-      availability: "In stock",
-      code: "0712345",
-      brand: "Eatio Pasta",
-      tags: ["Pasta", "Mac n Cheese", "Best Seller"],
-      images: [
-        "Product images/f8.png",
-        "Product images/f8.jpg",
-        "Product images/f8(1).jpg"
-      ]
-    },
-    "Đồng hồ thông minh Smartwatch X7": {
-      description: "A smartwatch with fitness tracking and notifications.",
-      price: 32.80,
-      availability: "In stock",
-      code: "0712346",
-      brand: "SmartTech",
-      tags: ["watch", "smartwatch", "fitness"],
-      images: [
-        "Product images/f9.png",
-        "Product images/f9.jpg",
-        "Product images/f9(1).jpg"
-      ]
-    },
-    "Tasty Thursday 20% Off": {
-      description: "A Combo of 3 Burgers.",
-      price: 33.60,
-      availability: "In stock",
-      code: "0712347",
-      brand: "Eatio Burger",
-      tags: ["Combo", "Burgers"],
-      images: [
-        "Product images/f2.png",
-        "Product images/f7.png",
-        "Product images/f8.png"
-      ]
-    },
-    "Pizza Days": {
-      description: "A Combo of 3 Pizzas.",
-      price: 33.60,
-      availability: "In stock",
-      code: "0712348",
-      brand: "Eatio Pizzas",
-      tags: ["Pizza", "Best Seller", "Combo"],
-      images: [
-        "Product images/f3.png",
-        "Product images/f1(2).jpg",
-        "Product images/f5.webp"
-      ]
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  // Retrieve the product data from localStorage
+  const productData = JSON.parse(localStorage.getItem('cartProduct'));
+
+  // Select the thumbnail image section
+  const thumbnailSection = document.querySelector('.tab-slide-content');
+
+  if (productData) {
+    // Set the main product image
+    const productImageElement = document.getElementById('productImage');
+    if (productImageElement && productData.image) {
+      productImageElement.src = productData.image;  // Use the main image stored in localStorage
     }
-  };
 
-  // Function to render products dynamically
-  function renderProducts() {
-    const productContainer = document.getElementById('product-container');
-    productContainer.innerHTML = '';  // Clear previous products
+    // Set product details
+    document.getElementById('productName').textContent = productData.name || 'No name available';
+    document.getElementById('productDescription').textContent = productData.description || 'No description available';
+    document.getElementById('productPrice').textContent = `$${productData.price ? productData.price.toFixed(2) : '0.00'}`;
 
-    // Calculate the start and end index for pagination
-    const startIndex = (currentPage - 1) * productsPerPage;
-    const endIndex = startIndex + productsPerPage;
+    // Handle images if available (create tabs for each image)
+    if (productData.images && Array.isArray(productData.images)) {
+      const imageTabsContainer = document.querySelector('.nav.slide-item-list');
+      const tabContent = document.querySelector('.tab-content');
 
-    // Slice the productDetails object to get the products for the current page
-    const productsToRender = Object.keys(productDetails).slice(startIndex, endIndex);
+      // Clear existing tabs and content
+      imageTabsContainer.innerHTML = '';
+      tabContent.innerHTML = '';
 
-    productsToRender.forEach(productName => {
-      const details = productDetails[productName];
+      // Loop through the images and create tabs and content
+      productData.images.forEach((image, index) => {
+        // Create tab links (thumbnails)
+        const tabLink = document.createElement('li');
+        tabLink.classList.add('nav-item');
+        tabLink.innerHTML = `
+          <a href="#tab${index}" role="tab" data-toggle="tab">
+            <img class="img-fluid" src="${image}" alt="Thumbnail ${index + 1}" width="50">
+          </a>
+        `;
+        imageTabsContainer.appendChild(tabLink);
 
-      // Create product card
-      const productCard = document.createElement('div');
-      productCard.classList.add('col-xl-3', 'col-lg-6', 'col-md-4', 'col-sm-6');
-      productCard.innerHTML = `
-        <div class="card">
-          <div class="card-body">
-            <div class="new-arrival-product">
-              <div class="new-arrivals-img-contnent">
-                <img class="img-fluid product-image" src="${details.images[0]}" alt="${productName}">
-              </div>
-              <div class="new-arrival-content text-center mt-3">
-                <h4 class="product-name">${productName}</h4>
-                <ul class="star-rating">
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star-half-empty"></i></li>
-                  <li><i class="fa fa-star-half-empty"></i></li>
-                </ul>
-                <span class="price">$${details.price.toFixed(2)}</span>
-                <a class="btn btn-primary btn-lg add-to-cart" href="#">Add to Cart</a>
-                <button class="btn btn-danger btn-sm delete-product" data-product="${productName}">X</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      `;
-      productContainer.appendChild(productCard);
-    });
-
-    // Add event listeners to the "Add to Cart" buttons
-    document.querySelectorAll('.add-to-cart').forEach(button => {
-      button.addEventListener('click', function (event) {
-        event.preventDefault();
-
-        const productContainer = button.closest('.new-arrival-product');
-        const productName = productContainer.querySelector('.product-name').textContent.trim();
-        const details = productDetails[productName];
-
-        if (details) {
-          // Store the product details in localStorage
-          localStorage.setItem('cartProduct', JSON.stringify({
-            name: productName,
-            image: details.images[0],
-            description: details.description,
-            price: details.price,
-            availability: details.availability,
-            code: details.code,
-            brand: details.brand,
-            tags: details.tags,
-            images: details.images
-          }));
-
-          // Navigate to the product detail page
-          window.location.href = 'ecom-product-detail.html';
-        }
+        // Create tab content for each image
+        const tabPane = document.createElement('div');
+        tabPane.classList.add('tab-pane', 'fade');
+        if (index === 0) tabPane.classList.add('show', 'active');  // Make the first image active
+        tabPane.id = `tab${index}`;
+        tabPane.innerHTML = `<img class="img-fluid" src="${image}" alt="Product Image ${index + 1}">`;
+        tabContent.appendChild(tabPane);
       });
-    });
+    }
 
-    // Add event listeners to the "X" delete buttons
-    document.querySelectorAll('.delete-product').forEach(button => {
-      button.addEventListener('click', function (event) {
-        const productName = button.getAttribute('data-product');
-        delete productDetails[productName];
-        renderProducts();  // Re-render after deletion
+    // Make sure the thumbnail section is visible
+    if (thumbnailSection) {
+      thumbnailSection.style.display = 'block';
+    }
+
+    // Handle tags if available
+    const tagsContainer = document.getElementById('productTags');
+    if (productData.tags && productData.tags.length > 0) {
+      // Clear any existing tags
+      tagsContainer.innerHTML = 'Product tags: '; // You can adjust this text if needed
+
+      // Loop through the tags and display them
+      productData.tags.forEach(tag => {
+        const tagElement = document.createElement('span');
+        tagElement.classList.add('badge', 'badge-success', 'light');
+        tagElement.textContent = tag;
+        tagsContainer.appendChild(tagElement);
       });
-    });
+    } else {
+      // If no tags, display a fallback message or leave it empty
+      tagsContainer.innerHTML = 'No tags available';
+    }
+  } else {
+    // If no product data exists in localStorage, show a message and hide the thumbnail section
+    const productContainer = document.querySelector('.product-detail-content');
+    productContainer.innerHTML = '<p>No product available. Please select a product from the catalog.</p>';
 
-    // Update page number display
-    const totalPages = Math.ceil(Object.keys(productDetails).length / productsPerPage);
-    document.getElementById('pageNumber').textContent = `Page ${currentPage} of ${totalPages}`;
+    // Hide the thumbnail section (tab slide content)
+    if (thumbnailSection) {
+      thumbnailSection.style.display = 'none';
+    }
   }
 
-  // Event listeners for pagination buttons
-  document.getElementById('prevPage').addEventListener('click', function () {
-    if (currentPage > 1) {
-      currentPage--;
-      renderProducts();
-    }
-  });
+  // --- ADD TO CART BUTTON CODE (UPDATED FOR QUANTITY) ---
+  const addToCartButton = document.getElementById('addToCartBtn'); // Get the Add to Cart button
 
-  document.getElementById('nextPage').addEventListener('click', function () {
-    const totalPages = Math.ceil(Object.keys(productDetails).length / productsPerPage);
-    if (currentPage < totalPages) {
-      currentPage++;
-      renderProducts();
-    }
-  });
+  // When Add to Cart button is clicked
+  addToCartButton.addEventListener('click', function (event) {
+    event.preventDefault();  // Prevent the default form submission behavior
 
-  // Initial render of products
-  renderProducts();
-// Add the necessary styles for the "Add to Cart" button
-const styles = `
-		.add-to-cart {
-		position: absolute;
-		bottom: 0;  /* Pin the button to the bottom of the card */
-		left: 0;
-		width: 100%;  /* Ensure the button spans the width of the card */
-		padding: 10px;
-		background-color: #007bff;
-		color: white;
-		text-align: center;
-		cursor: pointer;
-		border-radius: 4px;
-		text-decoration: none;
-		}
+    // Retrieve the quantity value from the input field
+    const quantityInput = document.querySelector('input[name="num"]');
+    const quantity = parseInt(quantityInput.value, 10) || 1;  // Default to 1 if the value is not valid
 
-		.add-to-cart:hover {
-		background-color: #0056b3;
-		}
+    // Retrieve the product data from localStorage (product data is already stored when you open the detail page)
+    const productData = JSON.parse(localStorage.getItem('cartProduct'));
 
-		.card {
-		display: flex;
-		flex-direction: column;
-		height: 100%;
-		}
+    if (productData) {
+      // Retrieve the current cart from localStorage (if it exists)
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-		.card-body {
-		flex-grow: 1; /* Make the card body take up available space */
-		}
-		.delete-product {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      background-color: red;
-      color: white;
-      border: none;
-      width: 30px;
-      height: 30px;
-      font-size: 18px;
-      font-weight: bold;
-      cursor: pointer;
-    }
+      // Check if the product is already in the cart
+      const existingProductIndex = cart.findIndex(item => item.name === productData.name);
 
-    .delete-product:hover {
-      background-color: darkred;
-    }
+      if (existingProductIndex !== -1) {
+        // If the product is already in the cart, update its quantity
+        cart[existingProductIndex].quantity += quantity;  // Add the new quantity to the existing quantity
+      } else {
+        // If the product is not in the cart, add it as a new item with the selected quantity
+        productData.quantity = quantity;  // Set the quantity field
+        cart.push(productData);
+      }
 
-    .delete-product:focus {
-      outline: none;
-    }
-	`;
+      // Store the updated cart back in localStorage
+      localStorage.setItem('cart', JSON.stringify(cart));
 
-	// Inject styles into the document head
-	const styleSheet = document.createElement("style");
-	styleSheet.type = "text/css";
-	styleSheet.innerText = styles;
-	document.head.appendChild(styleSheet);
+      // Optionally, show a confirmation message to the user that the item was added to the cart
+      alert(`${productData.name} has been added to your cart!`);
 
-  // Adding a New Product through Input Fields
-  const addProductForm = document.getElementById('add-product-form');
-  const nameInput = document.getElementById('product-name');
-  const priceInput = document.getElementById('product-price');
-  const descriptionInput = document.getElementById('product-description');
-  const imageInput = document.getElementById('product-image');
+      // Redirect back to the grid page (or you can stay on the page)
+      window.location.href = 'ecom-product-grid.html';  // Or change this URL to your grid page
 
-  // Function to handle adding the new product
-  addProductForm.addEventListener('submit', function (event) {
-    event.preventDefault();
-
-    const name = nameInput.value.trim();
-    const price = parseFloat(priceInput.value);
-    const description = descriptionInput.value.trim();
-    const image = imageInput.value.trim();
-
-    if (name && price && description && image) {
-      const newProduct = {
-        description: description,
-        price: price,
-        availability: "In stock",
-        code: "newCode", // You can generate dynamic codes if needed
-        brand: "Eatio Brand", // You can adjust this based on your product's details
-        tags: ["New", "Product"],
-        images: [image]
-      };
-
-      // Add the new product to the productDetails object
-      productDetails[name] = newProduct;
-
-      // Re-render the products with the newly added item
-      renderProducts();
-
-      // Clear the input fields
-      nameInput.value = '';
-      priceInput.value = '';
-      descriptionInput.value = '';
-      imageInput.value = '';
+      // After adding to cart, clear the localStorage product to avoid reloading it
+      localStorage.removeItem('cartProduct');
     } else {
-      alert("Please fill out all fields!");
+      console.log('No product data found in localStorage');
     }
   });
 });
 
-	
-	
-	</script>
-	
-
-
+</script>
 </body>
 
 </html>
