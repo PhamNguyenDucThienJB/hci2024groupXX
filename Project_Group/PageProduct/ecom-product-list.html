@@ -7,9 +7,12 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Eatio - Restaurant Food Order Bootstrap Admin Dashboard</title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
-    	<link href="./vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
-    <link href="./css/style.css" rel="stylesheet">
+	<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon.png">
+    <link href="../vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../vendor/chartist/css/chartist.min.css">
+    <link href="../vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+	<link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
 
 </head>
 
@@ -38,11 +41,11 @@
         <!--**********************************
             Nav header start
         ***********************************-->
-        <div class="nav-header">
+		<div class="nav-header">
             <a href="index.html" class="brand-logo">
-                <img class="logo-abbr" src="./images/logo.png" alt="">
-                <img class="logo-compact" src="./images/logo-text.png" alt="">
-                <img class="brand-title" src="./images/logo-text.png" alt="">
+                <img class="logo-abbr" src="../images/logo.png" alt="">
+                <img class="logo-compact" src="../images/logo-text.png" alt="">
+                <img class="brand-title" src="../images/logo-text.png" alt="">
             </a>
 
             <div class="nav-control">
@@ -557,13 +560,13 @@
             Chat box End
         ***********************************-->
 
-
+        
 		
 		
         <!--**********************************
             Header start
         ***********************************-->
-        <div class="header">
+       <div class="header">
             <div class="header-content">
                 <nav class="navbar navbar-expand">
                     <div class="collapse navbar-collapse justify-content-between">
@@ -706,7 +709,7 @@
         ***********************************-->
         <div class="deznav">
             <div class="deznav-scroll">
-	<ul class="metismenu" id="menu">
+				<ul class="metismenu" id="menu">
 					<li>
 						<a href="index.html" style="color: #969ba0;" class="ai-icon mm-active bg-white" aria-expanded="false">
 							<i style="color: #969ba0;" class="flaticon-381-networking"></i>
@@ -738,8 +741,7 @@
                                                         <span class="nav-text">Cửa hàng</span> <!-- Dịch: Shop -->
                                                 </a>
                                                 <ul aria-expanded="false">
-                                                        <li><a href="./ecom-product-grid.html">Lưới Sản Phẩm</a></li> <!-- Dịch: Product Grid -->
-                                                       
+                                                        <li><a href="./ecom-product-grid.html">Lưới Sản Phẩm</a></li> <!-- Dịch: Product Grid -->                                                       
                                                         <li><a href="./ecom-product-detail.html">Chi Tiết Sản Phẩm</a></li> <!-- Dịch: Product Details -->
 														<li><a href="./ecom-product-list.html">Danh Sách Sản Phẩm</a></li> <!-- Dịch: Product List -->
                                                         <li><a href="./ecom-product-order.html">Đặt Hàng</a></li> <!-- Dịch: Order -->
@@ -879,149 +881,123 @@
         <!--**********************************
             Content body start
         ***********************************-->
-			<div class="content-body">
-				<div class="container-fluid">
-					<div class="row page-titles mx-0">
-						<div class="col-sm-6 p-md-0">
-							<div class="welcome-text">
-								<h4>Hi, welcome back!</h4>
-								<p class="mb-0">Your business dashboard template</p>
-							</div>
-						</div>
-						<div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
-							<ol class="breadcrumb">
-								<li class="breadcrumb-item"><a href="javascript:void(0)">Layout</a></li>
-								<li class="breadcrumb-item active"><a href="javascript:void(0)">Blank</a></li>
-							</ol>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-lg-12">
-							<div class="card">
-								<div class="card-body">
-									<div class="row">
-										<div class="col-xl-3">
-											<!-- Tab panes -->
-											<div class="tab-content">
-												<div role="tabpanel" class="tab-pane fade show active" id="first">
-													<img class="img-fluid" id="productImage" src="" alt="">
-												</div>
-												<div role="tabpanel" class="tab-pane fade" id="second">
-													<!-- Dynamically populated image will go here -->
-												</div>
-												<div role="tabpanel" class="tab-pane fade" id="third">
-													<!-- Dynamically populated image will go here -->
-												</div>
-												<div role="tabpanel" class="tab-pane fade" id="for">
-													<!-- Dynamically populated image will go here -->
-												</div>
-												
-											</div>
-											<!-- Thumbnail images for tabs -->
-											<div class="tab-slide-content new-arrival-product mb-4 mb-xl-0">
-												<!-- Nav tabs -->
-												<ul class="nav slide-item-list mt-3" role="tablist">
-													<li role="presentation" class="show">
-														<a href="#first" role="tab" data-toggle="tab">
-															<img class="img-fluid" src="images/tab/1.jpg" alt="" width="50" height="50">
-														</a>
-													</li>
-													<li role="presentation">
-														<a href="#second" role="tab" data-toggle="tab"><img class="img-fluid" src="images/tab/2.jpg" alt="" width="50" height="50"></a>
-													</li>
-													<li role="presentation">
-														<a href="#third" role="tab" data-toggle="tab"><img class="img-fluid" src="images/tab/3.jpg" alt="" width="50" height="50"></a>
-													</li>
-													<li role="presentation">
-														<a href="#for" role="tab" data-toggle="tab"><img class="img-fluid" src="images/tab/4.jpg" alt="" width="50" height="50"></a>
-													</li>
-												</ul>
-											</div>
-										</div>
+        <div class="content-body">
+            <div class="container-fluid">
+                <div class="row page-titles mx-0">
+                    <div class="col-sm-6 p-md-0 d-flex">
+                        <div class="welcome-text">
+                            <h4>Xin chào, chào mừng bạn trở lại!</h4>
+                            <p class="mb-0">Your business dashboard template</p>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item active"><a href="javascript:void(0)">Customers</a></li>
+                        </ol>
+                    </div>
 					
-										<!-- Product Details -->
-										<div class="col-xl-9 col-sm-12">
-											<div class="product-detail-content">
-												<div class="new-arrival-content pr">
-													<!-- Product Name -->
-													<h4 id="productName">Solid Women's V-neck Dark T-Shirt</h4>
-													<div class="star-rating mb-2">
-														<ul class="produtct-detail-tag">
-															<li><i class="fa fa-star"></i></li>
-															<li><i class="fa fa-star"></i></li>
-															<li><i class="fa fa-star"></i></li>
-															<li><i class="fa fa-star"></i></li>
-															<li><i class="fa fa-star"></i></li>
-														</ul>
-														<span class="review-text">(34 reviews) / </span><a class="product-review" href="#">Write a review?</a>
-													</div>
 					
-													<!-- Price -->
-													<p class="price" id="productPrice">$320.00</p>
 					
-													<!-- Availability -->
-													<p>Availability: <span class="item" id="productAvailability">In stock <i class="fa fa-shopping-basket"></i></span></p>
-					
-													<!-- Product Code -->
-													<p>Product code: <span class="item" id="productCode">0405689</span> </p>
-					
-													<!-- Product Brand -->
-													<p>Brand: <span class="item" id="productBrand">Lee</span></p>
-					
-													<!-- Product Tags -->
-													<p class="product-tags" id="productTags">
-														Product tags: 
-														<span class="badge badge-success light">bags</span>
-														<span class="badge badge-success light">clothes</span>
-														<span class="badge badge-success light">shoes</span>
-														<span class="badge badge-success light">dresses</span>
-													</p>
-					
-													<!-- Product Description -->
-													<p class="text-content" id="productDescription">
-														There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-														If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing.
-													</p>
-					
-													<!-- Select Size -->
-													<div class="filtaring-area my-3">
-														<div class="size-filter">
-															<h4 class="m-b-15">Select size</h4>
-															<ul>
-																<li class="btn btn-primary light sharp">x</li>
-																<li class="btn btn-primary light sharp">m</li>
-																<li class="btn btn-primary light sharp">l</li>
-																<li class="btn btn-primary light sharp">xs</li>
-																<li class="btn btn-primary light sharp">xl</li>
-															</ul>
-														</div>
-													</div>
-					
-													<!-- Quantity and Add to Cart Button -->
-													<div class="col-2 px-0">
-														<input type="number" name="num" class="form-control input-btn input-number" value="1">
-													</div>
-					
-													<div class="shopping-cart mt-3">
-														<a class="btn btn-primary btn-lg" href="#" id="addToCartBtn"><i class="fa fa-shopping-basket mr-2"></i>Add to cart</a>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+                </div>
+
 				
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-sm mb-0 table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th class=" pr-3">
+													<div class="custom-control custom-checkbox mx-2">
+														<input type="checkbox" class="custom-control-input" id="checkAll">
+														<label class="custom-control-label" for="checkAll"></label>
+													</div>
+                                                </th>
+                                                <th>Tên</th>
+                                                <th>Giá</th>
+												<th>Số lượng</th>
+
+                                         
+                                            </tr>
+                                        </thead>
+                                        <tbody id="customers">
+                                           
+
+                                            <tr class="btn-reveal-trigger">
+                                                <td class="py-2">
+                                                    <div class="custom-control custom-checkbox mx-2">
+														<input type="checkbox" class="custom-control-input" id="checkbox4">
+														<label class="custom-control-label" for="checkbox4"></label>
+													</div>
+                                                </td>
+                                                <td class="py-3">
+                                                    <a href="#">
+                                                        <div class="media d-flex align-items-center">
+                                                            <div class="avatar avatar-xl mr-2">
+                                                                <img class="rounded-circle img-fluid"
+                                                                    src="./images/avatar/1.png" alt="" width="30" />
+                                                            </div>
+                                                            <div class="media-body">
+                                                                <h5 class="mb-0 fs--1">Neymar</h5>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="py-2"><a
+                                                        href="mailto:antony@example.com">neymar@gmail.com</a></td>
+                                                <td class="py-2"> <a href="tel:9013243127">0102030405</a></td>
+                                                <td class="py-2 pl-5">15/15 đ20 Bình Thạnh</td>
+                                                <td class="py-2">05/04/2018</td>
+                                                <td class="py-2 text-right">
+                                                    <div class="dropdown"><button class="btn btn-primary tp-btn-light sharp" type="button" data-toggle="dropdown"><span class="fs--1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg></span></button>
+                                                        <div class="dropdown-menu dropdown-menu-right border py-0">
+                                                            <a class="dropdown-item"  href="./page-edit-customers.html">Edit</a>
+																<a class="dropdown-item text-danger" href="./page-delete-customers.html">Delete</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+								<div class="container">
+  <div class="row" style="display: flex;flex-direction: row;gap: 550px;" >
+    <div class="col-3" >
+      <!-- Add Item Button -->
+      <a class="btn bg-info text-white p-1 w-100" id="addItemBtn" >
+        Thêm
+      </a>
+    </div>
+	<div class="col-3" >
+		<!-- Add Item Button -->
+		<a class="btn bg-info text-white p-1 w-100"  >
+		  Thanh Toán	
+		</a>
+	  </div>
+    
+  </div>
+</div>
+
+<!-- Dropdown for selecting products -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+			
+        </div>
         <!--**********************************
             Content body end
         ***********************************-->
 
 
-        
 
-        
     </div>
     <!--**********************************
         Main wrapper end
@@ -1031,149 +1007,225 @@
         Scripts
     ***********************************-->
     <!-- Required vendors -->
-    <script src="./vendor/global/global.min.js"></script>
-	<script src="./vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-    <script src="./vendor/chart.js/Chart.bundle.min.js"></script>
-    <script src="./js/custom.min.js"></script>
-	<script src="./js/deznav-init.js"></script>
+	<script src="../vendor/global/global.min.js"></script>
+	<script src="../vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="../vendor/chart.js/Chart.bundle.min.js"></script>
+    <script src="../js/custom.min.js"></script>
+	<script src="../js/deznav-init.js"></script>
 	<!-- Apex Chart -->
-	<script src="./vendor/apexchart/apexchart.js"></script>
+	<script src="../vendor/apexchart/apexchart.js"></script>
     
-    <script src="./vendor/highlightjs/highlight.pack.min.js"></script>
-    <!-- Circle progress -->
+
+
+
+    <!-- Jquery Validation -->
+    <script src="../vendor/jquery-validation/jquery.validate.min.js"></script>
+    <!-- Form validate init -->
+    <script src="../js/plugins-init/jquery.validate-init.js"></script>
 
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-  // Retrieve the product data from localStorage
-  const productData = JSON.parse(localStorage.getItem('cartProduct'));
+	document.addEventListener("DOMContentLoaded", function () {
+  const customersTableBody = document.getElementById('customers'); // Table body where we'll insert rows
+  const addItemButton = document.getElementById('addItemBtn');
+  const deleteItemButton = document.getElementById('deleteItemBtn');
+  
+  // Predefined list of products (with images)
+  const availableItems = [
+    { name: 'Delicious Pizza', price: 20.00, image: './Product images/f1.png' },
+    { name: 'Delicious Burger', price: 15.00, image: './Product images/f2.png' },
+    { name: 'Mozzarella Original Pizza', price: 17.00, image: './Product images/f3.png' },
+    { name: 'Delicious Pasta', price: 18.00, image: './Product images/f4.jpg' },
+    { name: 'French Fries', price: 10.00, image: './Product images/f5.jpg' },
+    { name: 'Multiple Layers Pizza', price: 40.00, image: './Product images/f6.webp' },
+    { name: 'Tasty Thursday 20% Off', price: 32.80, image: './Product images/o1.jpg' },
+    { name: 'Pizza Days', price: 33.60, image: './Product images/o2.jpg' },
+    { name: 'Tasty Chicken Burger', price: 12.00, image: './Product images/f7.png' },
+    { name: 'Tasty Steak Burger', price: 78.00, image: './Product images/f8.png' }
+  ];
 
-  // Select the thumbnail image section
-  const thumbnailSection = document.querySelector('.tab-slide-content');
+  // Load cart items from localStorage on page load
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-  if (productData) {
-    // Set the main product image
-    const productImageElement = document.getElementById('productImage');
-    if (productImageElement && productData.image) {
-      productImageElement.src = productData.image;  // Use the main image stored in localStorage
-    }
+  // Function to clear existing rows in the table
+  function clearTable() {
+    customersTableBody.innerHTML = ''; // Clear any existing rows
+  }
 
-    // Set product details
-    document.getElementById('productName').textContent = productData.name || 'No name available';
-    document.getElementById('productDescription').textContent = productData.description || 'No description available';
-    document.getElementById('productPrice').textContent = `$${productData.price ? productData.price.toFixed(2) : '0.00'}`;
+  // Function to populate the table with cart items
+  function populateTable() {
+    clearTable(); // Clear any existing rows before adding the new ones
 
-    // Handle images if available (create tabs for each image)
-    if (productData.images && Array.isArray(productData.images)) {
-      const imageTabsContainer = document.querySelector('.nav.slide-item-list');
-      const tabContent = document.querySelector('.tab-content');
-
-      // Clear existing tabs and content
-      imageTabsContainer.innerHTML = '';
-      tabContent.innerHTML = '';
-
-      // Loop through the images and create tabs and content
-      productData.images.forEach((image, index) => {
-        // Create tab links (thumbnails)
-        const tabLink = document.createElement('li');
-        tabLink.classList.add('nav-item');
-        tabLink.innerHTML = `
-          <a href="#tab${index}" role="tab" data-toggle="tab">
-            <img class="img-fluid" src="${image}" alt="Thumbnail ${index + 1}" width="50">
-          </a>
+    if (cart.length > 0) {
+      cart.forEach(item => {
+        const customerRow = document.createElement('tr');
+        customerRow.classList.add('btn-reveal-trigger');
+        customerRow.innerHTML = `
+          <td class="py-2">
+            <div class="custom-control custom-checkbox mx-2">
+              <input type="checkbox" class="custom-control-input" id="checkbox-${item.name}">
+              <label class="custom-control-label" for="checkbox-${item.name}"></label>
+            </div>
+          </td>
+          <td class="py-3">
+            <a href="#">
+              <div class="media d-flex align-items-center">
+                <div class="avatar avatar-xl mr-2">
+                  <img class="rounded-circle img-fluid" src="${item.image}" width="30" alt="${item.name}" />
+                </div>
+                <div class="media-body">
+                  <h5 class="mb-0 fs--1">${item.name}</h5> <!-- Product Name -->
+                </div>
+              </div>
+            </a>
+          </td>
+          <td class="py-3 text-center">
+            $${item.price.toFixed(2)} <!-- Product Price -->
+          </td>
+          <td class="py-3 text-center">
+            <input type="number" class="form-control input-number" value="${item.quantity}" min="1" data-name="${item.name}">
+          </td>
+          <td class="py-2 text-right">
+            <button class="btn btn-danger delete-btn">Delete</button>
+          </td>
         `;
-        imageTabsContainer.appendChild(tabLink);
 
-        // Create tab content for each image
-        const tabPane = document.createElement('div');
-        tabPane.classList.add('tab-pane', 'fade');
-        if (index === 0) tabPane.classList.add('show', 'active');  // Make the first image active
-        tabPane.id = `tab${index}`;
-        tabPane.innerHTML = `<img class="img-fluid" src="${image}" alt="Product Image ${index + 1}">`;
-        tabContent.appendChild(tabPane);
-      });
-    }
+        // Add delete button functionality to each added row
+        const deleteButton = customerRow.querySelector('.delete-btn');
+        deleteButton.addEventListener('click', function () {
+          const index = cart.findIndex(cartItem => cartItem.name === item.name);
+          if (index !== -1) {
+            cart.splice(index, 1); // Remove the item from the cart array
+            localStorage.setItem('cart', JSON.stringify(cart)); // Update localStorage
+            populateTable(); // Re-populate the table after deletion
+          }
+        });
 
-    // Make sure the thumbnail section is visible
-    if (thumbnailSection) {
-      thumbnailSection.style.display = 'block';
-    }
+        // Add quantity change functionality
+        const quantityInput = customerRow.querySelector('input[type="number"]');
+        quantityInput.addEventListener('change', function () {
+          const newQuantity = parseInt(quantityInput.value, 10);
+          if (newQuantity > 0) {
+            const index = cart.findIndex(cartItem => cartItem.name === item.name);
+            if (index !== -1) {
+              cart[index].quantity = newQuantity; // Update quantity
+              localStorage.setItem('cart', JSON.stringify(cart)); // Update localStorage
+            }
+          }
+        });
 
-    // Handle tags if available
-    const tagsContainer = document.getElementById('productTags');
-    if (productData.tags && productData.tags.length > 0) {
-      // Clear any existing tags
-      tagsContainer.innerHTML = 'Product tags: '; // You can adjust this text if needed
-
-      // Loop through the tags and display them
-      productData.tags.forEach(tag => {
-        const tagElement = document.createElement('span');
-        tagElement.classList.add('badge', 'badge-success', 'light');
-        tagElement.textContent = tag;
-        tagsContainer.appendChild(tagElement);
+        // Append the new row to the table
+        customersTableBody.appendChild(customerRow);
       });
     } else {
-      // If no tags, display a fallback message or leave it empty
-      tagsContainer.innerHTML = 'No tags available';
-    }
-  } else {
-    // If no product data exists in localStorage, show a message and hide the thumbnail section
-    const productContainer = document.querySelector('.product-detail-content');
-    productContainer.innerHTML = '<p>No product available. Please select a product from the catalog.</p>';
-
-    // Hide the thumbnail section (tab slide content)
-    if (thumbnailSection) {
-      thumbnailSection.style.display = 'none';
+      // If no items in the cart, show a message
+      customersTableBody.innerHTML = '<tr><td colspan="5" class="text-center">Your cart is empty!</td></tr>';
     }
   }
 
-  // --- ADD TO CART BUTTON CODE (UPDATED FOR QUANTITY) ---
-  const addToCartButton = document.getElementById('addToCartBtn'); // Get the Add to Cart button
+  // Call populateTable to load the cart items when the page is loaded
+  populateTable();
 
-  // When Add to Cart button is clicked
-  addToCartButton.addEventListener('click', function (event) {
-    event.preventDefault();  // Prevent the default form submission behavior
+  // Add Item Button (Add new row with product dropdown)
+  addItemButton.addEventListener('click', function (event) {
+    event.preventDefault();
 
-    // Retrieve the quantity value from the input field
-    const quantityInput = document.querySelector('input[name="num"]');
-    const quantity = parseInt(quantityInput.value, 10) || 1;  // Default to 1 if the value is not valid
+    // Create a new row
+    const newRow = document.createElement('tr');
+    newRow.classList.add('btn-reveal-trigger');
 
-    // Retrieve the product data from localStorage (product data is already stored when you open the detail page)
-    const productData = JSON.parse(localStorage.getItem('cartProduct'));
+    // Create the product dropdown
+    const dropdown = document.createElement('select');
+    dropdown.classList.add('product-dropdown');
+    
+    // Add default option
+    const defaultOption = document.createElement('option');
+    defaultOption.value = '';
+    defaultOption.textContent = 'Select Product';
+    dropdown.appendChild(defaultOption);
 
-    if (productData) {
-      // Retrieve the current cart from localStorage (if it exists)
-      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    // Add options for each item
+    availableItems.forEach(item => {
+      const option = document.createElement('option');
+      option.value = item.name;
+      option.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+      dropdown.appendChild(option);
+    });
 
-      // Check if the product is already in the cart
-      const existingProductIndex = cart.findIndex(item => item.name === productData.name);
+    // Table Cells
+    const selectCell = document.createElement('td');
+    const productNameCell = document.createElement('td');
+    const priceCell = document.createElement('td');
+    const quantityCell = document.createElement('td');
+    const actionsCell = document.createElement('td');
 
-      if (existingProductIndex !== -1) {
-        // If the product is already in the cart, update its quantity
-        cart[existingProductIndex].quantity += quantity;  // Add the new quantity to the existing quantity
+    // Append the dropdown to the selectCell
+    selectCell.appendChild(dropdown);
+
+    // Handle dropdown change (to populate product name, price, and image)
+    dropdown.addEventListener('change', function () {
+      const selectedItem = availableItems.find(item => item.name === dropdown.value);
+      if (selectedItem) {
+        productNameCell.textContent = selectedItem.name;
+        priceCell.textContent = `$${selectedItem.price.toFixed(2)}`;
+        quantityCell.innerHTML = `<input type="number" class="form-control input-number" value="1" min="1" data-name="${selectedItem.name}">`;
+
+        // Add to the cart and update localStorage
+        const newCartItem = { ...selectedItem, quantity: 1 };
+        cart.push(newCartItem);
+        localStorage.setItem('cart', JSON.stringify(cart));
+
+        // Re-populate the table after adding
+        populateTable();
       } else {
-        // If the product is not in the cart, add it as a new item with the selected quantity
-        productData.quantity = quantity;  // Set the quantity field
-        cart.push(productData);
+        productNameCell.textContent = '';
+        priceCell.textContent = '';
       }
+    });
 
-      // Store the updated cart back in localStorage
-      localStorage.setItem('cart', JSON.stringify(cart));
+    // Add Delete Button
+    const deleteButton = document.createElement('button');
+    deleteButton.textContent = 'Delete';
+    deleteButton.classList.add('btn', 'btn-danger');
+    deleteButton.addEventListener('click', function () {
+      newRow.remove();
+      // Optionally, remove from localStorage if needed
+      const index = cart.findIndex(item => item.name === productNameCell.textContent);
+      if (index > -1) {
+        cart.splice(index, 1);
+        localStorage.setItem('cart', JSON.stringify(cart));
 
-      // Optionally, show a confirmation message to the user that the item was added to the cart
-      alert(`${productData.name} has been added to your cart!`);
+        // Re-populate the table after deleting
+        populateTable();
+      }
+    });
+    actionsCell.appendChild(deleteButton);
 
-      // Redirect back to the grid page (or you can stay on the page)
-      window.location.href = 'ecom-product-grid.html';  // Or change this URL to your grid page
+    // Append all cells to the row
+    newRow.appendChild(selectCell);
+    newRow.appendChild(productNameCell);
+    newRow.appendChild(priceCell);
+    newRow.appendChild(quantityCell);
+    newRow.appendChild(actionsCell);
 
-      // After adding to cart, clear the localStorage product to avoid reloading it
-      localStorage.removeItem('cartProduct');
-    } else {
-      console.log('No product data found in localStorage');
-    }
+    // Append the row to the table body
+    customersTableBody.appendChild(newRow);
+  });
+
+  // Optional: Delete All Button (remove all rows)
+  deleteItemButton.addEventListener('click', function (event) {
+    event.preventDefault();
+    clearTable(); // Clear the table
+
+    // Clear the cart in localStorage
+    localStorage.setItem('cart', JSON.stringify([]));
+
+    // Re-populate the table (will show "Your cart is empty!")
+    populateTable();
   });
 });
 
 </script>
+
 </body>
 
 </html>
