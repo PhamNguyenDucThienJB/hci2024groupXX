@@ -29559,3 +29559,37 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
   align-items: center;      /* Align the buttons vertically */
   margin-top: 20px;         /* Adjust the top margin */
 }
+
+.logout-link:hover {
+  color: #fff;
+  background-color: #f72b50;
+  border-color: #f72b50;   /* Màu nền */
+  color: white;            /* Màu chữ */
+  border-radius: 5px;      /* Tùy chọn bo góc */
+  padding-left: 10px;      /* Padding bên trái */
+  padding-right: 10px;     /* Padding bên phải */
+  margin-left: 10px;
+  margin-right: 10px;      /* Margin bên phải */
+}
+
+.logout-link:hover i {
+  color: white;  /* Màu của icon khi hover */
+}
+
+.logout-link:hover span {
+  color: white;  /* Màu chữ trong <span> khi hover */
+}
+/* Di chuyển mục có lớp mm-active và active-no-child */
+a.mm-active, a.active-no-child {
+  transition: transform 0.3s ease; /* Thêm hiệu ứng mượt mà khi di chuyển */
+}
+
+/* Di chuyển các mục khi hover vào */
+a.mm-active:hover, a.active-no-child:hover {
+  transform: translateX(10px); /* Dịch chuyển sang phải 10px */
+}
+
+/* Nếu muốn di chuyển lên hoặc xuống */
+a.mm-active:hover, a.active-no-child:hover {
+  transform: translateY(-5px); /* Dịch chuyển lên 5px */
+}
