@@ -1,7 +1,7 @@
 [
   { "id": "tab", "title": "------Web-Group------", "images": ["assets/img/design/index-web-group.png"] },
   { "id": "tab-20", "title": "Home", "images": ["assets/img/design/header footer.jpg"] },
-  { "id": "tab-21", "title": "About", "images": ["assets/img/design/trang chủ 1.jpg", "assets/img/design/trang chủ 2.jpg"] },
+  { "id": "tab-21", "title": "About", "images": ["assets/img/design/about_Webgroub.png"] },
   { "id": "tab-22", "title": "Group Diary", "images": ["assets/img/design/Group_Diary.png"] },
   { "id": "tab-23", "title": "Project", "images": ["assets/img/design/Project_Requirement.png", "assets/img/design/Project_Design.png", "assets/img/design/Project_Implement.png"] },
   { "id": "tab-24", "title": "Contact", "images": ["assets/img/design/contact.png","assets/img/design/"] },
