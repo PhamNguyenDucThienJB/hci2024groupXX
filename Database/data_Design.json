@@ -3,7 +3,7 @@
     {
       "tabId": "tab-01",
       "title": "------Web-Group----",
-      "image":  "./assets/img/design/Web-Group.png",
+      "image":  "./assets/img/design/Web-Group.jpg",
       "download": "assets/img/design/Web-Group.png"
     },
     {
@@ -69,8 +69,8 @@
     {
       "tabId": "tab-10",
       "title": "Trang danh sách đơn hàng",
-      "image": "assets/img/design/dangnhap.jpg",
-      "download": "assets/img/design/dangnhap.jpg"
+      "image": "assets/img/design/thietke_danhsachkhachhang.png",
+      "download": "assets/img/design/thietke_danhsachkhachhang.png"
     },
     {
       "tabId": "tab-11",
