@@ -191,7 +191,7 @@
 // Hàm tải dữ liệu từ file JSON
 function loadTabs() {
   // Sử dụng fetch để tải file JSON từ server
-  fetch('/Database/data_Design.json')
+  fetch('Database/data_Design.json')
     .then(response => response.json())
     .then(data => {
       // Lấy phần tử chứa các tab và nội dung
@@ -261,7 +261,7 @@ window.onload = loadTabs;
         </section>
 
 <script>
- fetch('data_implement.json')
+ fetch('Database/data_implement.json')
   .then(response => response.json())
   .then(tabs => {
     const tabMenu = document.getElementById("tab-menu");

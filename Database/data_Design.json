@@ -2,7 +2,7 @@
   "tabs": [
     {
       "tabId": "tab-01",
-      "title": "Web-Group",
+      "title": "------Web-Group----",
       "image": "assets/img/design/Web-Group.png",
       "download": "assets/img/design/"
     },
@@ -15,8 +15,8 @@
     {
       "tabId": "tab-2",
       "title": "About",
-      "image": "assets/img/design/design_project.pdf",
-      "download": "assets/img/design/design_project.pdf"
+      "image": "assets/img/design/about.jpg",
+      "download": "assets/img/design/about.jpg"
     },
     {
       "tabId": "tab-3",
@@ -38,7 +38,7 @@
     },
     {
       "tabId": "tab-02",
-      "title": "Web-Project",
+      "title": "------Web-Project------",
       "image": "assets/img/design/",
       "download": "assets/img/design/"
     },
@@ -105,6 +105,57 @@
       "download": "assets/img/design/about.jpg"
     }
 
+    ,
+    {
+      "tabId": "tab-70",
+      "title": "Trang Nhập nguyên liệu",
+      "image": "assets/img/design/trangnguyenlieu.jpg",
+      "download": "assets/img/design/trangnguyenlieu.jpg"
+    }
+    ,
+    {
+      "tabId": "tab-71",
+      "title": "Thêm nguyên liệu",
+      "image": "assets/img/design/addedit_material.jpg",
+      "download": "assets/img/design/addedit_material.jpg"
+    }
+    ,
+    {
+      "tabId": "tab-72",
+      "title": "Sửa nguyên liệu",
+      "image": "assets/img/design/addedit_material.jpg",
+      "download": "assets/img/design/addedit_material.jpg"
+    }
+    ,
+    {
+      "tabId": "tab-73",
+      "title": "Trang Lịch",
+      "image": "assets/img/design/calender_design.jpg",
+      "download": "assets/img/design/about.jpg"
+    }
+    ,
+    {
+      "tabId": "tab-77",
+      "title": "Thêm Lịch hẹn",
+      "image": "assets/img/design/addcalender_main.jpg",
+      "download": "assets/img/design/addcalender_main.jpg"
+    }
+    ,
+    {
+      "tabId": "tab-74",
+      "title": "Trang Profile",
+      "image": "assets/img/design/profile_design_main.jpg",
+      "download": "assets/img/design/profile_design_main.jpg"
+    }
+    ,
+    {
+      "tabId": "tab-76",
+      "title": "Trang Error",
+      "image": "assets/img/design/error_design.jpg",
+      "download": "assets/img/design/error_design.jpg"
+    }
+   
+ 
     
   ]
 }
