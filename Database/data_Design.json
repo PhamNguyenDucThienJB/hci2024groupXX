@@ -3,7 +3,7 @@
     {
       "tabId": "tab-01",
       "title": "------Web-Group----",
-      "image":  "/assets/img/design/Web-Group.png",
+      "image":  "./assets/img/design/Web-Group.png",
       "download": "assets/img/design/Web-Group.png"
     },
     {
@@ -75,7 +75,7 @@
     {
       "tabId": "tab-11",
       "title": "Trang danh sách sản phẩm",
-      "image": "assets/img/design/danh",
+      "image": "./assets/img/design/danhsachsanpham2.jpg",
       "download": "assets/img/design/dangki.jpg"
     },
     {
