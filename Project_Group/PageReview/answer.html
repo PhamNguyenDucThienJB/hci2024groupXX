@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Davur - Restaurant Food Order Bootstrap Admin Dashboard</title>
+    <title>Eatio - Restaurant Food Order Bootstrap Admin Dashboard</title>
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon.png">
+    <!-- Summernote -->
+    <link href="../vendor/summernote/summernote.css" rel="stylesheet">
     <!-- Custom Stylesheet -->
     	<link href="../vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
@@ -42,9 +43,9 @@
         ***********************************-->
         <div class="nav-header">
             <a href="index.html" class="brand-logo">
-                <img class="logo-abbr" src="../images/logo.png" alt="">
-                <img class="logo-compact" src="../images/logo-text.png" alt="">
-                <img class="brand-title" src="../images/logo-text.png" alt="">
+                <img class="logo-abbr" src="./images/logo.png" alt="">
+                <img class="logo-compact" src="./images/logo-text.png" alt="">
+                <img class="brand-title" src="./images/logo-text.png" alt="">
             </a>
 
             <div class="nav-control">
@@ -675,7 +676,7 @@
                             <li class="nav-item dropdown header-profile">
                                 <a class="nav-link" href="#" role="button" data-toggle="dropdown">
 									<div class="header-info">
-										<span>Hello, <strong>Kelvin</strong></span>
+										<span>Hello, <strong>Samuel</strong></span>
 									</div>
                                     <img src="images/profile/pic1.jpg" width="20" alt=""/>
                                 </a>
@@ -706,86 +707,146 @@
         <!--**********************************
             Sidebar start
         ***********************************-->
-		<div class="deznav">
+        <div class="deznav">
             <div class="deznav-scroll">
 				<ul class="metismenu" id="menu">
-					<li>
-						<a href="/Project_Group/PageDashBroad/index.html" class="ai-icon mm-active" aria-expanded="false">
+                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
 							<i class="flaticon-381-networking"></i>
-							<span class="nav-text">Bảng Tổng Quát</span>
+							<span class="nav-text">Dashboard</span>
 						</a>
-                       
-
-						<!-- customers -->
-						<li>
-						<a href="../PageCostumer/ecom-customers.html" style="color: #969ba0;" class="ai-icon mm-active bg-white" aria-expanded="false">
-							<i style="color: #969ba0;" class="flaticon-381-television"></i>
-							<span class="nav-text">Khách Hàng</span>
+                        <ul aria-expanded="false">
+							<li><a href="index.html">Dashboard</a></li>
+							<li><a href="page-analytics.html">Analytics</a></li>
+							<li><a href="page-review.html">Review</a></li>
+							<li><a href="page-order.html">Order</a></li>
+							<li><a href="page-order-list.html">Order List</a></li>
+							<li><a href="page-general-customers.html">General Customers</a></li>
+						</ul>
+                    </li>
+                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="flaticon-381-television"></i>
+							<span class="nav-text">Apps</span>
 						</a>
-							<!-- Staff  -->
-						<a href="../PageStaff/page_staff.html" class="ai-icon mm-active" aria-expanded="false">
-							<i class="flaticon-381-network"></i>
-							<span class="nav-text">Nhân viên</span>
-						</a>
-						 <li>
-                                                <a class=" ai-icon" href="javascript:void()" aria-expanded="false">
-                                                        <i class="flaticon-381-television"></i> <!-- Biểu tượng Cửa hàng -->
-                                                        <span class="nav-text">Cửa hàng</span> <!-- Dịch: Shop -->
-                                                </a>
-                                              
-                                        </li>
-
-                                     <!-- Mục Email -->
-                                        <li>
-                                                <a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-                                                        <i class="flaticon-381-internet"></i> <!-- Biểu tượng Email -->
-                                                        <span class="nav-text">Email</span> <!-- Dịch: Email -->
-                                                </a>
-                                                <ul aria-expanded="false">
-                                                    <li><a href="./email-compose.html">Soạn Thư</a></li> <!-- Dịch: Compose -->
-                                                    <li><a href="./email-inbox.html">Hộp Thư Đến</a></li> <!-- Dịch: Inbox -->
-                                                    <li><a href="./email-read.html">Đọc Thư</a></li> <!-- Dịch: Read -->
-                                                </ul>
-                                        </li>
- 
-                    <li><a href="/Project_Group/PageCalender/app-calender.html" class="ai-icon" aria-expanded="false">
+                        <ul aria-expanded="false">
+                            <li><a href="./app-profile.html">Profile</a></li>
+                            <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Email</a>
+                                <ul aria-expanded="false">
+                                    <li><a href="./email-compose.html">Compose</a></li>
+                                    <li><a href="./email-inbox.html">Inbox</a></li>
+                                    <li><a href="./email-read.html">Read</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./app-calender.html">Calendar</a></li>
+							<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Shop</a>
+                                <ul aria-expanded="false">
+                                    <li><a href="./ecom-product-grid.html">Product Grid</a></li>
+									<li><a href="./ecom-product-list.html">Product List</a></li>
+									<li><a href="./ecom-product-detail.html">Product Details</a></li>
+									<li><a href="./ecom-product-order.html">Order</a></li>
+									<li><a href="./ecom-checkout.html">Checkout</a></li>
+									<li><a href="./ecom-invoice.html">Invoice</a></li>
+									<li><a href="./ecom-customers.html">Customers</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
 							<i class="flaticon-381-controls-3"></i>
-							<span class="nav-text">Lịch</span>
+							<span class="nav-text">Charts</span>
 						</a>
-                  	    
-                    </li>  
-                    
-                  
-                    <li><a href="/Project_Group/PageMaterial/table-Meterial-datatable.html" class="ai-icon" aria-expanded="false">
+                        <ul aria-expanded="false">
+                            <li><a href="./chart-flot.html">Flot</a></li>
+                            <li><a href="./chart-morris.html">Morris</a></li>
+                            <li><a href="./chart-chartjs.html">Chartjs</a></li>
+                            <li><a href="./chart-chartist.html">Chartist</a></li>
+                            <li><a href="./chart-sparkline.html">Sparkline</a></li>
+                            <li><a href="./chart-peity.html">Peity</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="flaticon-381-internet"></i>
+							<span class="nav-text">Bootstrap</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="./ui-accordion.html">Accordion</a></li>
+                            <li><a href="./ui-alert.html">Alert</a></li>
+                            <li><a href="./ui-badge.html">Badge</a></li>
+                            <li><a href="./ui-button.html">Button</a></li>
+                            <li><a href="./ui-modal.html">Modal</a></li>
+                            <li><a href="./ui-button-group.html">Button Group</a></li>
+                            <li><a href="./ui-list-group.html">List Group</a></li>
+                            <li><a href="./ui-media-object.html">Media Object</a></li>
+                            <li><a href="./ui-card.html">Cards</a></li>
+                            <li><a href="./ui-carousel.html">Carousel</a></li>
+                            <li><a href="./ui-dropdown.html">Dropdown</a></li>
+                            <li><a href="./ui-popover.html">Popover</a></li>
+                            <li><a href="./ui-progressbar.html">Progressbar</a></li>
+                            <li><a href="./ui-tab.html">Tab</a></li>
+                            <li><a href="./ui-typography.html">Typography</a></li>
+                            <li><a href="./ui-pagination.html">Pagination</a></li>
+                            <li><a href="./ui-grid.html">Grid</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="flaticon-381-heart"></i>
+							<span class="nav-text">Plugins</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="./uc-select2.html">Select 2</a></li>
+                            <li><a href="./uc-nestable.html">Nestedable</a></li>
+                            <li><a href="./uc-noui-slider.html">Noui Slider</a></li>
+                            <li><a href="./uc-sweetalert.html">Sweet Alert</a></li>
+                            <li><a href="./uc-toastr.html">Toastr</a></li>
+                            <li><a href="./map-jqvmap.html">Jqv Map</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="widget-basic.html" class="ai-icon" aria-expanded="false">
 							<i class="flaticon-381-settings-2"></i>
-							<span class="nav-text">Nguyên Liệu</span>
+							<span class="nav-text">Widget</span>
 						</a>
 					</li>
-                    <li><a class="" href="/Project_Group/PageReview/page-review.html" aria-expanded="false">
+                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
 							<i class="flaticon-381-notepad"></i>
-							<span class="nav-text">Trang Đánh Giá</span>
+							<span class="nav-text">Forms</span>
 						</a>
-                
+                        <ul aria-expanded="false">
+                            <li><a href="./form-element.html">Form Elements</a></li>
+                            <li><a href="./form-wizard.html">Wizard</a></li>
+                            <li><a href="./form-editor-summernote.html">Summernote</a></li>
+                            <li><a href="form-pickers.html">Pickers</a></li>
+                            <li><a href="form-validation-jquery.html">Jquery Validate</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="flaticon-381-network"></i>
+							<span class="nav-text">Table</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="table-bootstrap-basic.html">Bootstrap</a></li>
+                            <li><a href="table-datatable-basic.html">Datatable</a></li>
+                        </ul>
+                    </li>
                     <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
 							<i class="flaticon-381-layer-1"></i>
 							<span class="nav-text">Pages</span>
 						</a>
-                   	    <ul aria-expanded="false">
+                        <ul aria-expanded="false">
                             <li><a href="./page-register.html">Register</a></li>
                             <li><a href="./page-login.html">Login</a></li>
                             <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Error</a>
                                 <ul aria-expanded="false">
-                                    <li><a href="/Project_Group/PageError/page-error-400.html">Error 400</a></li>
-                                    <li><a href="/Project_Group/PageError/page-error-403.html">Error 403</a></li>
-                                    <li><a href="/Project_Group/PageError/page-error-404.html">Error 404</a></li>
-                                    <li><a href="/Project_Group/PageError/page-error-500.html">Error 500</a></li>
-                                    <li><a href="/Project_Group/PageError/page-error-503.html">Error 503</a></li>
+                                    <li><a href="./page-error-400.html">Error 400</a></li>
+                                    <li><a href="./page-error-403.html">Error 403</a></li>
+                                    <li><a href="./page-error-404.html">Error 404</a></li>
+                                    <li><a href="./page-error-500.html">Error 500</a></li>
+                                    <li><a href="./page-error-503.html">Error 503</a></li>
                                 </ul>
                             </li>
-                            <li><a href="/Project_Group/PageError/page-lock-screen.html">Lock Screen</a></li>
-                        </ul> 
-                    </li> 
-                </ul>  
+                            <li><a href="./page-lock-screen.html">Lock Screen</a></li>
+                        </ul>
+                    </li>
+                </ul>
             
 				<div class="add-menu-sidebar">
 					<img src="images/icon1.png" alt=""/>
@@ -793,7 +854,7 @@
 					<a href="javascript:void(0);" class="btn btn-primary btn-block light">+ Add Menus</a>
 				</div>
 				<div class="copyright">
-					<p><strong>Eatio - Restaurant Admin Dashboard</strong> © 2024 All Rights Reserved</p>
+					<p><strong>Eatio - Restaurant Admin Dashboard</strong> © 2020 All Rights Reserved</p>
 					
 				</div>
 			</div>
@@ -811,138 +872,28 @@
                     <div class="col-sm-6 p-md-0">
                         <div class="welcome-text">
                             <h4>Hi, welcome back!</h4>
-                            <p class="mb-0">Validation</p>
+                            <p class="mb-0">Your business dashboard template</p>
                         </div>
                     </div>
                     <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="javascript:void(0)">Nguyên liệu</a></li>
-                            <li class="breadcrumb-item active"><a href="javascript:void(0)">Sửa thông tin nguyên liệu</a></li>
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Trang đánh giá</a></li>
+                            <li class="breadcrumb-item active"><a href="javascript:void(0)">Trả lời</a></li>
                         </ol>
                     </div>
                 </div>
                 <!-- row -->
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-xl-12 col-xxl-12">
                         <div class="card">
                             <div class="card-header">
-                                <h4 class="card-title">Sửa thông tin nguyên liệu</h4>
+                                <h4 class="card-title">Trả lời đánh giá</h4>
                             </div>
                             <div class="card-body">
-                                <div class="form-validation">
-                                    <form class="form-valide" action="#" method="post">
-                                        <div class="row">
-                                            <div class="col-xl-6">
-                                                <div class="form-group row">
-                                                    <label class="col-lg-4 col-form-label" for="val-username">Tên nguyên liệu
-                                                        <span class="text-danger">*</span>
-                                                    </label>
-                                                    <div class="col-lg-6">
-                                                        <input type="text" class="form-control" id="val-username" name="val-username" placeholder="Tên nguyên liệu..">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <label class="col-lg-4 col-form-label" for="val-email">Hình<span
-                                                            class="text-danger">*</span>
-                                                    </label>
-                                                    <div class="col-lg-6">
-                                                        <input type="text" class="form-control" id="val-email" name="val-email" placeholder="Nhập hình nguyên liệu..">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <label class="col-lg-4 col-form-label" for="val-password">Số lượng (kg)
-                                                        <span class="text-danger">*</span>
-                                                    </label>
-                                                    <div class="col-lg-6">
-                                                        <input type="password" class="form-control" id="val-password" name="val-password" placeholder="Ghi khối lượng..">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <label class="col-lg-4 col-form-label" for="val-confirm-password">Giá <span
-                                                            class="text-danger">*</span>
-                                                    </label>
-                                                    <div class="col-lg-6">
-                                                        <input type="password" class="form-control" id="val-confirm-password" name="val-confirm-password" placeholder="Giá !">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <label class="col-lg-4 col-form-label" for="val-suggestions">Ngày nhập hàng <span
-                                                            class="text-danger">*</span>
-                                                    </label>
-                                                    <div class="col-lg-6">
-                                                        <textarea class="form-control" id="val-suggestions" name="val-suggestions" rows="5" placeholder="Ngày nhập hàng "></textarea>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-6">
-                                                <div class="form-group row">
-                                                    <label class="col-lg-4 col-form-label" for="val-skill">Loại nguyên liệu
-                                                        <span class="text-danger">*</span>
-                                                    </label>
-                                                    <div class="col-lg-6">
-                                                        <select class="form-control" id="val-skill" name="val-skill">
-                                                            <option value="">Please select</option>
-                                                            <option value="html">HTML</option>
-                                                            <option value="css">CSS</option>
-                                                            <option value="javascript">JavaScript</option>
-                                                            <option value="angular">Angular</option>
-                                                            <option value="angular">React</option>
-                                                            <option value="vuejs">Vue.js</option>
-                                                            <option value="ruby">Ruby</option>
-                                                            <option value="php">PHP</option>
-                                                            <option value="asp">ASP.NET</option>
-                                                            <option value="python">Python</option>
-                                                            <option value="mysql">MySQL</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <label class="col-lg-4 col-form-label" for="val-currency">Currency
-                                                        <span class="text-danger">*</span>
-                                                    </label>
-                                                    <div class="col-lg-6">
-                                                        <input type="text" class="form-control" id="val-currency" name="val-currency" placeholder="VND">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <label class="col-lg-4 col-form-label" for="val-website">Giá cũ
-                                                        <span class="text-danger">*</span>
-                                                    </label>
-                                                    <div class="col-lg-6">
-                                                        <input type="text" class="form-control" id="val-website" name="val-website" placeholder="VND">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <label class="col-lg-4 col-form-label" for="val-phoneus">Giá mới
-                                                        <span class="text-danger">*</span>
-                                                    </label>
-                                                    <div class="col-lg-6">
-                                                        <input type="text" class="form-control" id="val-phoneus" name="val-phoneus" placeholder="VND">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <label class="col-lg-4 col-form-label" for="val-digits">Xu hướng <span
-                                                            class="text-danger">*</span>
-                                                    </label>
-                                                    <div class="col-lg-6">
-                                                        <input type="text" class="form-control" id="val-digits" name="val-digits" placeholder="5">
-                                                    </div>
-                                                </div>
-                                                
-                                              
-                                                <div class="form-group row">
-                                                    <div class="col-lg-8 ml-auto">
-                                                        <button type="submit" class="btn btn-primary">Submit</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
+                                <div class="summernote"></div>
                             </div>
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </div>
@@ -951,25 +902,6 @@
         ***********************************-->
 
 
-        <!--**********************************
-            Footer start
-        ***********************************-->
-        <div class="footer">
-            <div class="copyright">
-                <p>Copyright © Designed &amp; Developed by <a href="" target="_blank">Pham Nguyen Duc Thien</a> 2024</p>
-            </div>
-        </div>
-        <!--**********************************
-            Footer end
-        ***********************************-->
-
-        <!--**********************************
-           Support ticket button start
-        ***********************************-->
-
-        <!--**********************************
-           Support ticket button end
-        ***********************************-->
 
         
     </div>
@@ -990,12 +922,10 @@
 	<script src="../vendor/apexchart/apexchart.js"></script>
     
 
-
-
-    <!-- Jquery Validation -->
-    <script src="../vendor/jquery-validation/jquery.validate.min.js"></script>
-    <!-- Form validate init -->
-    <script src="../js/plugins-init/jquery.validate-init.js"></script>
+    <!-- Summernote -->
+    <script src="../vendor/summernote/js/summernote.min.js"></script>
+    <!-- Summernote init -->
+    <script src="../js/plugins-init/summernote-init.js"></script>
 
 
 
