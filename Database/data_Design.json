@@ -2,7 +2,7 @@
   "tabs": [
     {
       "tabId": "tab-01",
-      "title": "----Web-Group----",
+      "title": "------Web-Group----",
       "image": "assets/img/design/Web-Group.png",
       "download": "assets/img/design/"
     },
@@ -38,7 +38,7 @@
     },
     {
       "tabId": "tab-02",
-      "title": "----Web-Project------",
+      "title": "------Web-Project------",
       "image": "assets/img/design/",
       "download": "assets/img/design/"
     },
