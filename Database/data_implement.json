@@ -16,13 +16,13 @@
   { "id": "tab-33", "title": "Trang danh sách khách hàng", "images": ["assets/img/design/danhsachkhachhang.png"] },
   { "id": "tab-34", "title": "Trang đánh giá", "images": ["assets/img/design/review_01.png","assets/img/design/review_02.png","assets/img/design/review_03.png"] },
   { "id": "tab-35", "title": "Trang About Web-Group", "images": ["assets/img/design/about_Webgroup.png"] },
-  { "id": "tab-53", "title": "Trang Nhập nguyên liệu", "images": ["assets/img/design/about_Webgroup.png"] },
-  { "id": "tab-56", "title": "Thêm Nguyên liệu", "images": ["assets/img/design/about_Webgroup.png"] },
-  { "id": "tab-57", "title": "Sửa Nguyên liệu", "images": ["assets/img/design/about_Webgroup.png"] },
-  { "id": "tab-55", "title": "Trang Lịch", "images": ["assets/img/design/about_Webgroup.png"] },
+  { "id": "tab-53", "title": "Trang Nhập nguyên liệu", "images": ["assets/img/design/nhapnguyenlieu.png"] },
+  { "id": "tab-56", "title": "Thêm Nguyên liệu", "images": ["assets/img/design/nhapthemnguyenlieu.png"] },
+  { "id": "tab-57", "title": "Sửa Nguyên liệu", "images": ["assets/img/design/suanguyenlieu.png"] },
+  { "id": "tab-55", "title": "Trang Lịch", "images": ["assets/img/design/calender.png"] },
 
-  { "id": "tab-52", "title": "Thêm Lịch hẹn", "images": ["assets/img/design/about_Webgroup.png"] },
+  { "id": "tab-52", "title": "Thêm Lịch hẹn", "images": ["assets/img/design/addcalender.png"] },
 
-  { "id": "tab-51", "title": "Trang Profile", "images": ["assets/img/design/about_Webgroup.png"] },
-  { "id": "tab-54", "title": "Trang Error", "images": ["assets/img/design/about_Webgroup.png"] }
+  { "id": "tab-51", "title": "Trang Profile", "images": ["assets/img/design/profile_01.png","assets/img/design/profile-02.png"] },
+  { "id": "tab-50", "title": "Trang Error", "images": ["assets/img/design/error.png"] }
 ]
