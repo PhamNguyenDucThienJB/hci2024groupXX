@@ -19,20 +19,27 @@ document.addEventListener("DOMContentLoaded", function () {
   let discount = 0;
 
   function addToCart(product) {
-    cart.push(product);
+    const existingProduct = cart.find((item) => item.name === product.name);
+    if (existingProduct) {
+      existingProduct.quantity += 1;
+    } else {
+      product.quantity = 1;
+      cart.push(product);
+    }
     localStorage.setItem("cart", JSON.stringify(cart));
     updateCartCount();
     showCart();
   }
 
   function updateCartCount() {
-    document.getElementById("cart-count").innerText = cart.length;
+    const totalCount = cart.reduce((sum, product) => sum + product.quantity, 0);
+    document.getElementById("cart-count").innerText = totalCount;
   }
 
   function calculateTotal() {
     const subtotal = cart.reduce((total, product) => {
       const price = parseFloat(product.price.replace(/[^\d.-]/g, ""));
-      return total + price;
+      return total + price * product.quantity;
     }, 0);
     return (subtotal - discount).toFixed(2);
   }
@@ -45,15 +52,49 @@ document.addEventListener("DOMContentLoaded", function () {
       const item = document.createElement("div");
       item.classList.add("cart-item");
       item.innerHTML = `
-        <div class="cart-item-details">
+        <div class="cart-item-header">
           <h5>${product.name}</h5>
           <p>${product.price}</p>
         </div>
-        <button onclick="removeFromCart(${index})">Xóa</button>
+        <div class="cart-item-controls">
+          <button class="decrease" data-index="${index}">-</button>
+          <span class="quantity">${product.quantity}</span>
+          <button class="increase" data-index="${index}">+</button>
+          <button class="remove" onclick="removeFromCart(${index})">Xóa</button>
+        </div>
       `;
       cartItems.appendChild(item);
     });
+
+    document.querySelectorAll(".increase").forEach((button) => {
+      button.addEventListener("click", increaseQuantity);
+    });
+
+    document.querySelectorAll(".decrease").forEach((button) => {
+      button.addEventListener("click", decreaseQuantity);
+    });
+
     totalPriceElement.innerText = `Tổng giá: ${calculateTotal()} VND`;
+  }
+
+  function increaseQuantity(event) {
+    const index = event.target.dataset.index;
+    cart[index].quantity += 1;
+    localStorage.setItem("cart", JSON.stringify(cart));
+    updateCartCount();
+    showCart();
+  }
+
+  function decreaseQuantity(event) {
+    const index = event.target.dataset.index;
+    if (cart[index].quantity > 1) {
+      cart[index].quantity -= 1;
+    } else {
+      cart.splice(index, 1);
+    }
+    localStorage.setItem("cart", JSON.stringify(cart));
+    updateCartCount();
+    showCart();
   }
 
   function removeFromCart(index) {
@@ -139,3 +180,25 @@ document.addEventListener("DOMContentLoaded", function () {
   updateCartCount();
   showCart();
 });
+
+document
+  .getElementById("orderForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const order = {
+      customerName: document.getElementById("customerName").value,
+      orderDate: document.getElementById("orderDate").value,
+      customerAddress: document.getElementById("customerAddress").value,
+      orderStatus: document.getElementById("orderStatus").value,
+      orderPrice: document.getElementById("orderPrice").value,
+    };
+
+    // Lưu thông tin đơn hàng vào Local Storage
+    let orders = JSON.parse(localStorage.getItem("orders")) || [];
+    orders.push(order);
+    localStorage.setItem("orders", JSON.stringify(orders));
+
+    // Chuyển hướng đến trang ecom-product-order.html
+    window.location.href = "ecom-product-order.html";
+  });
