@@ -78,7 +78,7 @@
     "thietKe": "Nguyễn Đình Tiến",
     "thucHien": "Nguyễn Đình Tiến",
     "thoiGian": "29/11/2024",
-    "hoanThien": 0
+    "hoanThien": 100
   },
   {
     "stt": 10,
@@ -123,7 +123,7 @@
     "thietKe": "Nguyễn Đình Tiến",
     "thucHien": "Nguyễn Đình Tiến",
     "thoiGian": "29/11/2022024",
-    "hoanThien": 0
+    "hoanThien": 100
   },
   {
     "stt": 15,
@@ -168,7 +168,7 @@
     "thietKe": "Nguyễn Đình Tiến",
     "thucHien": "Nguyễn Đình Tiến",
     "thoiGian": "29/11/2022024",
-    "hoanThien": 0
+    "hoanThien": 100
   },
   {
     "stt": 20,
@@ -225,6 +225,14 @@
     "thoiGian": "6/1/2024",
     "hoanThien": 100
   }
-  
+  {
+    "stt": 26,
+    "trang": "Trang Email",
+    "deXuat": "Nguyễn Đình Tiến",
+    "thietKe": "Nguyễn Đình Tiến",
+    "thucHien": "Nguyễn Đình Tiến",
+    "thoiGian": "6/1/2024",
+    "hoanThien": 100
+  }
   
 ]
