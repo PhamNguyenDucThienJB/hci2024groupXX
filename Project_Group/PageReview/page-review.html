@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Eatio - Restaurant Food Order Bootstrap Admin Dashboard</title>
+	<title>Eatio - Quản lý bán hàng</title>
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon.png">
     <link href="../vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet">
@@ -1231,86 +1231,9 @@
 	<script src="../js/custom.min.js"></script>
 	<script src="../js/deznav-init.js"></script>
 	<script src="../vendor/owl-carousel/owl.carousel.js"></script>
-	
-	<script>
-		function widgetCarousel()
-		{
-		
-			/*  testimonial one function by = owl.carousel.js */
-			jQuery('.widget-carousel').owlCarousel({
-				loop:false,
-				margin:30,
-				nav:true,
-				autoplaySpeed: 3000,
-				navSpeed: 3000,
-				paginationSpeed: 3000,
-				slideSpeed: 3000,
-				smartSpeed: 3000,
-				autoplay: false,
-				dots: false,
-				navText: ['<i class="fa fa-caret-left"></i>', '<i class="fa fa-caret-right"></i>'],
-				responsive:{
-					0:{
-						items:1
-					},
-					
-					480:{
-						items:2
-					},			
-					
-					1200:{
-						items:3
-					},
-					1750:{
-						items:4
-					}
-				}
-			})
-		}
-		function carouselReview(){
-			/*  testimonial one function by = owl.carousel.js */
-			jQuery('.testimonial-one').owlCarousel({
-				loop:true,
-				autoplay:true,
-				margin:0,
-				nav:false,
-				dots: false,
-				navText: [''],
-				responsive:{
-					0:{
-						items:1
-					},
-					
-					480:{
-						items:1
-					},			
-					
-					767:{
-						items:1
-					},
-					1000:{
-						items:1
-					}
-				}
-			})		
-			/*Custom Navigation work*/
-			jQuery('#next-slide').on('click', function(){
-			   $('.testimonial-one').trigger('next.owl.carousel');
-			});
+	<script src="../js/main.js"></script>
 
-			jQuery('#prev-slide').on('click', function(){
-			   $('.testimonial-one').trigger('prev.owl.carousel');
-			});
-			/*Custom Navigation work*/
-		}
-		
-		jQuery(window).on('load',function(){
-			setTimeout(function(){
-				widgetCarousel();
-				carouselReview();
-			}, 1000); 
-		});
-	</script>
+
 	
 </body>
 </html>
