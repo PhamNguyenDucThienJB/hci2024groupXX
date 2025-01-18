@@ -2325,31 +2325,3 @@ section {
               }
 
               
-
-.tab-pane.active.show {
-  position: fixed; /* Đảm bảo tab luôn cố định khi cuộn */
-  top: 60%; /* Đặt phần tử ở vị trí giữa chiều cao màn hình */
-  left: 57%; /* Đặt phần tử ở vị trí giữa chiều rộng màn hình */
-  transform: translate(-50%, -50%); /* Di chuyển phần tử để căn giữa */
-  width: 100%; /* Chiều rộng của tab, thay đổi theo nhu cầu */
-  max-width: 600px; /* Giới hạn chiều rộng tối đa */
-  max-height: 80vh; /* Chiều cao tối đa là 80% chiều cao màn hình */
-  overflow-y: auto; /* Kích hoạt thanh cuộn dọc nếu cần */
-  z-index: 9999; /* Đảm bảo tab luôn hiển thị trên các phần tử khác */
-  background-color: white; /* Nền trắng cho tab */
-  padding: 20px; /* Thêm khoảng cách bên trong */
-  border-radius: 8px; /* Góc bo tròn */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Hiệu ứng bóng mờ nhẹ */
-  transition: all 0.3s ease; /* Hiệu ứng chuyển động khi thay đổi */
-}
-
-/* Điều chỉnh padding nếu bạn muốn tab có nội dung thoải mái hơn */
-.tab-pane.active.show .content {
-  padding: 50px;
-}
-
-/* Tùy chỉnh các tab menu */
-.nav-tabs .nav-link {
-  font-size: 18px;
-  padding: 10px 20px; /* Khoảng cách bên trong cho các tab */
-}
