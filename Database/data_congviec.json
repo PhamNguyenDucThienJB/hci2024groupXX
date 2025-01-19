@@ -78,7 +78,7 @@
     "thietKe": "Nguyễn Đình Tiến",
     "thucHien": "Nguyễn Đình Tiến",
     "thoiGian": "29/11/2024",
-    "hoanThien": 100
+    "hoanThien": 50
   },
   {
     "stt": 10,
@@ -159,7 +159,7 @@
     "thietKe": "Bùi Nguyễn Thiên Tài",
     "thucHien": "Bùi Nguyễn Thiên Tài",
     "thoiGian": "29/11/2024",
-    "hoanThien": 100
+    "hoanThien": 0
   },
   {
     "stt": 19,
@@ -177,7 +177,7 @@
     "thietKe": "Nguyễn Quang Trực",
     "thucHien": "Nguyễn Quang Trực",
     "thoiGian": "29/11/2024",
-    "hoanThien": 100
+    "hoanThien": 0
   },
   {
     "stt": 21,
@@ -186,7 +186,7 @@
     "thietKe": "Lê Đăng Tuấn Phát",
     "thucHien": "Lê Đăng Tuấn Phát",
     "thoiGian": "29/11/2024",
-    "hoanThien": 100
+    "hoanThien": 0
   },
   {
     "stt": 22,
@@ -234,5 +234,14 @@
     "thoiGian": "6/1/2024",
     "hoanThien": 100
   }
-  
+  ,
+  {
+    "stt": 27,
+    "trang": "Trang About Group",
+    "deXuat": "Nguyễn Đình Tiến",
+    "thietKe": "Nguyễn Đình Tiến",
+    "thucHien": "Nguyễn Đình Tiến",
+    "thoiGian": "6/1/2024",
+    "hoanThien": 50
+  }
 ]
