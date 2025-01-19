@@ -69,8 +69,7 @@
     {
       "tabId": "tab-10",
       "title": "Trang danh sách đơn hàng",
-      "image": "assets/img/design/order2.jpg",
-      "image": "assets/img/design/order1.jpg",
+      "image": ["assets/img/design/order2.jpg", "assets/img/design/order1.jpg"],
       "download": "assets/img/design/order2.jpg"
     },
     {
@@ -154,7 +153,7 @@
       "title": "Trang Error",
       "image": "assets/img/design/error_design.jpg",
       "download": "assets/img/design/error_design.jpg"
-    }
+    },
     {
       "tabId": "tab-78",
       "title": "------Web-Project-User------",
@@ -162,7 +161,7 @@
       "download": "assets/img/design/"
     },
     {
-      "tabId": "tab-77",
+      "tabId": "tab-79",
       "title": "Trang Home ",
       "image": "assets/img/design/HomeUser.jpg",
       "download": "assets/img/design/HomeUser.jpg"
