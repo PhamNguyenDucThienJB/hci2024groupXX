@@ -38,7 +38,7 @@
     },
     {
       "tabId": "tab-02",
-      "title": "------Web-Project------",
+      "title": "------Web-Project-Admin------",
       "image": "assets/img/design/",
       "download": "assets/img/design/"
     },
@@ -155,7 +155,18 @@
       "image": "assets/img/design/error_design.jpg",
       "download": "assets/img/design/error_design.jpg"
     }
-   
+    {
+      "tabId": "tab-78",
+      "title": "------Web-Project-User------",
+      "image": "assets/img/design/",
+      "download": "assets/img/design/"
+    },
+    {
+      "tabId": "tab-77",
+      "title": "Trang Home ",
+      "image": "assets/img/design/HomeUser.jpg",
+      "download": "assets/img/design/HomeUser.jpg"
+    }
  
     
   ]
