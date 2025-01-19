@@ -1497,6 +1497,46 @@
 	   
 	})(jQuery);
 	</script>
-	
+	<script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Lấy tất cả các nút "Chấp nhận đơn hàng" và "Từ chối đơn hàng"
+        const acceptButtons = document.querySelectorAll(
+          ".dropdown-item:nth-child(1)"
+        );
+        const rejectButtons = document.querySelectorAll(
+          ".dropdown-item:nth-child(2)"
+        );
+
+        acceptButtons.forEach((button) => {
+          button.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            // Tìm dòng (tr) chứa nút được nhấn
+            const orderRow = this.closest("tr");
+
+            // Thay đổi trạng thái đơn hàng thành "Đang giao hàng"
+            const statusCell = orderRow.querySelector("td:nth-child(6) span");
+            if (statusCell) {
+              statusCell.textContent = "Đang giao hàng";
+              statusCell.className = "btn btn-sm light btn-success"; // Thay đổi màu sắc
+            }
+          });
+        });
+
+        rejectButtons.forEach((button) => {
+          button.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            // Tìm dòng (tr) chứa nút được nhấn
+            const orderRow = this.closest("tr");
+
+            // Xóa dòng đơn hàng khỏi bảng
+            if (orderRow) {
+              orderRow.remove();
+            }
+          });
+        });
+      });
+    </script>
 </body>
 </html>
