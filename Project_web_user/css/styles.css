@@ -149,6 +149,28 @@ button:hover {
   margin: 10px 0;
 }
 /* Modal cho form thanh toán */
+#cart-modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 27%; /* Adjust as needed */
+  max-height: 100vh; /* Adjust as needed */
+  overflow-y: auto; /* Add this line */
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+}
+/* Modal cho form thanh toán */
 #checkout-modal {
   display: none;
   position: fixed;

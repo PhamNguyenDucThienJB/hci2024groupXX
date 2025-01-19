@@ -9,7 +9,7 @@
     {
       "tabId": "tab-1",
       "title": "Home",
-      "image": "assets/img/design/Groupdiary.jpg",
+      "image": "assets/img/design/homepage.PNG",
       "download": "assets/img/design/Groupdiary.jpg"
     },
     {
@@ -38,7 +38,7 @@
     },
     {
       "tabId": "tab-02",
-      "title": "------Web-Project------",
+      "title": "------Web-Project-Admin------",
       "image": "assets/img/design/",
       "download": "assets/img/design/"
     },
@@ -69,8 +69,7 @@
     {
       "tabId": "tab-10",
       "title": "Trang danh sách đơn hàng",
-      "image": "assets/img/design/order2.jpg",
-      "image": "assets/img/design/order1.jpg",
+      "image": ["assets/img/design/order2.jpg", "assets/img/design/order1.jpg"],
       "download": "assets/img/design/order2.jpg"
     },
     {
@@ -82,8 +81,8 @@
     {
       "tabId": "tab-12",
       "title": "Trang danh sách nhân viên",
-      "image": "assets/img/design/quenmatkhau.jpg",
-      "download": "assets/img/design/quenmatkhau.jpg"
+      "image": "assets/img/dsnv_design.jpg",
+      "download": "assets/img/dsnv_design.jpg"
     },
     {
       "tabId": "tab-13",
@@ -154,8 +153,19 @@
       "title": "Trang Error",
       "image": "assets/img/design/error_design.jpg",
       "download": "assets/img/design/error_design.jpg"
+    },
+    {
+      "tabId": "tab-78",
+      "title": "------Web-Project-User------",
+      "image": "assets/img/design/",
+      "download": "assets/img/design/"
+    },
+    {
+      "tabId": "tab-79",
+      "title": "Trang Home ",
+      "image": "assets/img/design/HomeUser.jpg",
+      "download": "assets/img/design/HomeUser.jpg"
     }
-   
  
     
   ]

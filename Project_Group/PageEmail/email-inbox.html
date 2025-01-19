@@ -7,13 +7,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Eatio - Restaurant Food Order Bootstrap Admin Dashboard</title>
     <!-- Favicon icon -->
-	<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon.png">
-    <link href="../vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="../vendor/chartist/css/chartist.min.css">
-    <link href="../vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
-    <link href="../css/style.css" rel="stylesheet">
-	<link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
+    	<link href="./vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+
+</head>
 
 <body>
 
@@ -40,11 +38,11 @@
         <!--**********************************
             Nav header start
         ***********************************-->
-		<div class="nav-header">
+        <div class="nav-header">
             <a href="index.html" class="brand-logo">
-                <img class="logo-abbr" src="../images/logo.png" alt="">
-                <img class="logo-compact" src="../images/logo-text.png" alt="">
-                <img class="brand-title" src="../images/logo-text.png" alt="">
+                <img class="logo-abbr" src="./images/logo.png" alt="">
+                <img class="logo-compact" src="./images/logo-text.png" alt="">
+                <img class="brand-title" src="./images/logo-text.png" alt="">
             </a>
 
             <div class="nav-control">
@@ -570,21 +568,16 @@
                 <nav class="navbar navbar-expand">
                     <div class="collapse navbar-collapse justify-content-between">
                         <div class="header-left">
-							<div class="search_bar dropdown show">
-								<div class="dropdown-menu p-0 m-0 show">
-									<form>
-										<!-- Added 'onkeyup' event to trigger the filterProducts function on every keystroke -->
-										<input class="form-control" type="search" id="searchBar" placeholder="Search Here" aria-label="Search" onkeyup="filterProducts()">
-									</form>
-								</div>
-								<span class="search_icon p-3 c-pointer" data-toggle="dropdown" aria-expanded="true">
-									<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M23.7871 22.7761L17.9548 16.9437C19.5193 15.145 20.4665 12.7982 20.4665 10.2333C20.4665 4.58714 15.8741 0 10.2333 0C4.58714 0 0 4.59246 0 10.2333C0 15.8741 4.59246 20.4665 10.2333 20.4665C12.7982 20.4665 15.145 19.5193 16.9437 17.9548L22.7761 23.7871C22.9144 23.9255 23.1007 24 23.2816 24C23.4625 24 23.6488 23.9308 23.7871 23.7871C24.0639 23.5104 24.0639 23.0528 23.7871 22.7761ZM1.43149 10.2333C1.43149 5.38004 5.38004 1.43681 10.2279 1.43681C15.0812 1.43681 19.0244 5.38537 19.0244 10.2333C19.0244 15.0812 15.0812 19.035 10.2279 19.035C5.38004 19.035 1.43149 15.0865 1.43149 10.2333Z" fill="#A4A4A4"></path>
-									</svg>
-								</span>
-							</div>								
+                            <div class="search_bar dropdown show">
+                                <div class="dropdown-menu p-0 m-0 show">
+                                    <form>
+                                        <input class="form-control" type="search" placeholder="Search Here" aria-label="Search">
+                                    </form>
+                                </div>
+								<span class="search_icon p-3 c-pointer" data-toggle="dropdown">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.7871 22.7761L17.9548 16.9437C19.5193 15.145 20.4665 12.7982 20.4665 10.2333C20.4665 4.58714 15.8741 0 10.2333 0C4.58714 0 0 4.59246 0 10.2333C0 15.8741 4.59246 20.4665 10.2333 20.4665C12.7982 20.4665 15.145 19.5193 16.9437 17.9548L22.7761 23.7871C22.9144 23.9255 23.1007 24 23.2816 24C23.4625 24 23.6488 23.9308 23.7871 23.7871C24.0639 23.5104 24.0639 23.0528 23.7871 22.7761ZM1.43149 10.2333C1.43149 5.38004 5.38004 1.43681 10.2279 1.43681C15.0812 1.43681 19.0244 5.38537 19.0244 10.2333C19.0244 15.0812 15.0812 19.035 10.2279 19.035C5.38004 19.035 1.43149 15.0865 1.43149 10.2333Z" fill="#A4A4A4"/></svg>
+                                </span>
                             </div>
-	
                         </div>
 
                         <ul class="navbar-nav header-right">
@@ -674,7 +667,6 @@
 											</li>
 										</ul>
 									</div>
-									
                                     <a class="all-notification" href="#">See all notifications <i class="ti-arrow-right"></i></a>
                                 </div>
                             </li>
@@ -712,7 +704,7 @@
         <!--**********************************
             Sidebar start
         ***********************************-->
-	<div class="deznav">
+        <div class="deznav">
             <div class="deznav-scroll">
 				<ul class="metismenu" id="menu">
 					<li>
@@ -749,12 +741,12 @@
 								<i class="lni lni-dropbox"></i>
 
 
-									<span class="nav-text">Sản phẩm </span> <!-- Dịch: Email -->
+									<span class="nav-text">Sản Phẩm </span> <!-- Dịch: Email -->
 							</a>
 							<ul aria-expanded="false">
-								<li><a href="../PageProduct/ecom-product-grid.html">Danh sách sản phẩm</a></li> <!-- Dịch: Compose -->
-								<li><a href="../PageProduct/ecom-product-detail.html">Chi tiết sản phẩm</a></li> <!-- Dịch: Inbox -->
-								<li><a href="../PageProduct/ecom-product-list.html">Giỏ hàng</a></li> <!-- Dịch: Read -->
+                <li><a href="../PageProduct/23130228_LeDangTuanPhat_DanhSachSanPham_ThemXoaSanPham.html">Danh Sách Sản Phẩm</a></li> <!-- Dịch: Compose -->
+								<li><a href="../PageProduct/23130228_LeDangTuanPhat_ChiTietSanPham.html">Chi tiết sản phẩm</a></li> <!-- Dịch: Inbox -->
+								<li><a href="../PageProduct/23130228_LeDangTuanPhat_GioHang.html">Giỏ Hàng</a></li> <!-- Dịch: Read -->
 								
 							</ul>
 					</li>
@@ -834,52 +826,772 @@
         <!--**********************************
             Content body start
         ***********************************-->
-	
-	
-		<div class="content-body">
-			
-			<div class="container-fluid">
-				
-				<div class="flex-container">
-					
-					<p>Add a product
-						<form id="add-product-form" style="display: flex;flex-direction: row;gap:20px;">
-							<input type="text" id="product-name" placeholder="Product Name" required style="text-align: center;">
-							<input type="number" id="product-price" placeholder="Price" required style="text-align: center;">
-							<input id="product-description" placeholder="Description" required style="text-align: center;width: 200px;height: 51.62px;"></input>
-							<input type="url" id="product-image" placeholder="Image URL" required style="text-align: center;">
-							<button type="submit"  style="text-align:center;width: 200px;height: 51.62px;">Add Product</button>
-						  </form>
-					</p>
-				<div class="row" id="product-container">
-					<!-- All Product Cards Here -->
-					<div class="row" id="new-products">
-						
-			
-	
-					<!-- Product Cards as shown in your example -->
-				</div>
-				<!-- Pagination Controls -->
-			<!-- Pagination Controls -->
-			
-			
-		
+        <div class="content-body">
+        <div class="container-fluid">
+          <div class="row page-titles mx-0">
+            <div class="col-sm-6 p-md-0">
+              <div class="welcome-text">
+                <h4>Chào bạn, chào mừng trở lại!</h4>
+                <span>Email</span>
+              </div>
+            </div>
+            <div
+              class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex"
+            >
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="javascript:void(0)">Email</a>
+                </li>
+                <li class="breadcrumb-item active">
+                  <a href="javascript:void(0)">Hộp thư đến</a>
+                </li>
+              </ol>
+            </div>
+          </div>
+          <!-- row -->
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="card">
+                <div class="card-body">
+                  <div class="email-left-box px-0 mb-3">
+                    <div class="p-0">
+                      <a
+                        href="email-compose.html"
+                        class="btn btn-primary btn-block"
+                        >Soạn thư</a
+                      >
+                    </div>
+                    <div class="mail-list mt-4">
+                      <a href="email-inbox.html" class="list-group-item active">
+                        <i class="fa fa-inbox font-18 align-middle mr-2"></i>
+                        Hộp thư đến
+                        <span class="badge badge-primary badge-sm float-right"
+                          >198</span
+                        >
+                      </a>
+                      <a href="javascript:void()" class="list-group-item">
+                        <i
+                          class="fa fa-paper-plane font-18 align-middle mr-2"
+                        ></i>
+                        Đã gửi
+                      </a>
+                      <a href="javascript:void()" class="list-group-item">
+                        <i class="fa fa-star font-18 align-middle mr-2"></i>
+                        Quan trọng
+                        <span
+                          class="badge badge-danger text-white badge-sm float-right"
+                          >47</span
+                        >
+                      </a>
+                      <a href="javascript:void()" class="list-group-item">
+                        <i
+                          class="mdi mdi-file-document-box font-18 align-middle mr-2"
+                        ></i>
+                        Bản nháp
+                      </a>
+                      <a href="javascript:void()" class="list-group-item">
+                        <i class="fa fa-trash font-18 align-middle mr-2"></i>
+                        Thùng rác
+                      </a>
+                    </div>
+                    <div class="intro-title d-flex justify-content-between">
+                      <h5>Danh mục</h5>
+                      <i class="icon-arrow-down" aria-hidden="true"></i>
+                    </div>
+                    <div class="mail-list mt-4">
+                      <a href="email-inbox.html" class="list-group-item">
+                        <span class="icon-warning">
+                          <i class="fa fa-circle" aria-hidden="true"></i>
+                        </span>
+                        Công việc
+                      </a>
+                      <a href="email-inbox.html" class="list-group-item">
+                        <span class="icon-primary">
+                          <i class="fa fa-circle" aria-hidden="true"></i>
+                        </span>
+                        Cá nhân
+                      </a>
+                      <a href="email-inbox.html" class="list-group-item">
+                        <span class="icon-success">
+                          <i class="fa fa-circle" aria-hidden="true"></i>
+                        </span>
+                        Hỗ trợ
+                      </a>
+                      <a href="email-inbox.html" class="list-group-item">
+                        <span class="icon-dpink">
+                          <i class="fa fa-circle" aria-hidden="true"></i>
+                        </span>
+                        Mạng xã hội
+                      </a>
+                    </div>
+                  </div>
+                  <div class="email-right-box ml-0 ml-sm-4 ml-sm-0">
+                    <div role="toolbar" class="toolbar ml-1 ml-sm-0">
+                      <div class="btn-group mb-1">
+                        <div class="custom-control custom-checkbox pl-2">
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="checkbox1"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="checkbox1"
+                          ></label>
+                        </div>
+                      </div>
+                      <div class="btn-group mb-1">
+                        <button
+                          class="btn btn-primary light px-3"
+                          type="button"
+                        >
+                          <i class="ti-reload"></i>
+                        </button>
+                      </div>
+                      <div class="btn-group mb-1">
+                        <button
+                          aria-expanded="false"
+                          data-toggle="dropdown"
+                          class="btn btn-primary px-3 light dropdown-toggle"
+                          type="button"
+                        >
+                          Thêm <span class="caret"></span>
+                        </button>
+                        <div class="dropdown-menu">
+                          <a href="javascript: void(0);" class="dropdown-item"
+                            >Đánh dấu là chưa đọc</a
+                          >
+                          <a href="javascript: void(0);" class="dropdown-item"
+                            >Thêm vào công việc</a
+                          >
+                          <a href="javascript: void(0);" class="dropdown-item"
+                            >Thêm sao</a
+                          >
+                          <a href="javascript: void(0);" class="dropdown-item"
+                            >Tắt tiếng</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+      <div class="email-list mt-3">
+        <div class="message">
+          <div>
+            <div class="d-flex message-single">
+              <div class="pl-1 align-self-center">
+                <div class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="checkbox2"
+                  />
+                  <label class="custom-control-label" for="checkbox2"></label>
+                </div>
+              </div>
+              <div class="ml-2">
+                <button class="border-0 bg-transparent align-middle p-0">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <a href="email-read.html" class="col-mail col-mail-2">
+              <div class="subject">
+                Ingredia Nutrisha, Một bộ sưu tập các mẫu vải được trải ra trên
+                bàn - Samsa là một người bán hàng du lịch - và trên đó có một
+                bức tranh treo
+              </div>
+              <div class="date">11:49 sáng</div>
+            </a>
+          </div>
+        </div>
+        <div class="message">
+          <div>
+            <div class="d-flex message-single">
+              <div class="pl-1 align-self-center">
+                <div class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="checkbox3"
+                  />
+                  <label class="custom-control-label" for="checkbox3"></label>
+                </div>
+              </div>
+              <div class="ml-2">
+                <button class="border-0 bg-transparent align-middle p-0">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <a href="email-read.html" class="col-mail col-mail-2">
+              <div class="subject">
+                Cuộc sống gần như vô nghĩa Một ngày nào đó một dòng chữ mù mờ có
+                tên là Lorem Ipsum quyết định rời bỏ thế giới Ngữ pháp xa xôi.
+              </div>
+              <div class="date">11:49 sáng</div>
+            </a>
+          </div>
+        </div>
+        <div class="message">
+          <div>
+            <div class="d-flex message-single">
+              <div class="pl-1 align-self-center">
+                <div class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="checkbox4"
+                  />
+                  <label class="custom-control-label" for="checkbox4"></label>
+                </div>
+              </div>
+              <div class="ml-2">
+                <button class="border-0 bg-transparent align-middle p-0">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <a href="email-read.html" class="col-mail col-mail-2">
+              <div class="subject">
+                Chỉ có sự chỉ đạo không kiểm soát được những văn bản mù, đó là
+                một cuộc sống gần như vô nghĩa Một ngày nào đó một dòng chữ mù
+                mờ có tên là
+              </div>
+              <div class="date">11:49 sáng</div>
+            </a>
+          </div>
+        </div>
+        <div class="message">
+          <div>
+            <div class="d-flex message-single">
+              <div class="pl-1 align-self-center">
+                <div class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="checkbox5"
+                  />
+                  <label class="custom-control-label" for="checkbox5"></label>
+                </div>
+              </div>
+              <div class="ml-2">
+                <button class="border-0 bg-transparent align-middle p-0">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <a href="email-read.html" class="col-mail col-mail-2">
+              <div class="subject">
+                Ngay cả Pointing mạnh mẽ nhất cũng không kiểm soát được những
+                văn bản mù, đó là một cuộc sống gần như vô nghĩa Một ngày nào đó
+                một dòng chữ mù mờ có tên là
+              </div>
+              <div class="date">11:49 sáng</div>
+            </a>
+          </div>
+        </div>
+        <div class="message">
+          <div>
+            <div class="d-flex message-single">
+              <div class="pl-1 align-self-center">
+                <div class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="checkbox6"
+                  />
+                  <label class="custom-control-label" for="checkbox6"></label>
+                </div>
+              </div>
+              <div class="ml-2">
+                <button class="border-0 bg-transparent align-middle p-0">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <a href="email-read.html" class="col-mail col-mail-2">
+              <div class="subject">
+                Ingredia Nutrisha, Một bộ sưu tập các mẫu vải được trải ra trên
+                bàn - Samsa là một người bán hàng du lịch - và trên đó có một
+                bức tranh treo
+              </div>
+              <div class="date">11:49 sáng</div>
+            </a>
+          </div>
+        </div>
+        <div class="message">
+          <div>
+            <div class="d-flex message-single">
+              <div class="pl-1 align-self-center">
+                <div class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="checkbox7"
+                  />
+                  <label class="custom-control-label" for="checkbox7"></label>
+                </div>
+              </div>
+              <div class="ml-2">
+                <button class="border-0 bg-transparent align-middle p-0">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <a href="email-read.html" class="col-mail col-mail-2">
+              <div class="subject">
+                Cuộc sống gần như vô nghĩa Một ngày nào đó một dòng chữ mù mờ có
+                tên là Lorem Ipsum quyết định rời bỏ thế giới Ngữ pháp xa xôi.
+              </div>
+              <div class="date">11:49 sáng</div>
+            </a>
+          </div>
+        </div>
+        <div class="message">
+          <div>
+            <div class="d-flex message-single">
+              <div class="pl-1 align-self-center">
+                <div class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="checkbox8"
+                  />
+                  <label class="custom-control-label" for="checkbox8"></label>
+                </div>
+              </div>
+              <div class="ml-2">
+                <button class="border-0 bg-transparent align-middle p-0">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <a href="email-read.html" class="col-mail col-mail-2">
+              <div class="subject">
+                Chỉ có sự chỉ đạo không kiểm soát được những văn bản mù, đó là
+                một cuộc sống gần như vô nghĩa Một ngày nào đó một dòng chữ mù
+                mờ có tên là
+              </div>
+              <div class="date">11:49 sáng</div>
+            </a>
+          </div>
+        </div>
+        <div class="message unread">
+          <div>
+            <div class="d-flex message-single">
+              <div class="pl-1 align-self-center">
+                <div class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="checkbox9"
+                  />
+                  <label class="custom-control-label" for="checkbox9"></label>
+                </div>
+              </div>
+              <div class="ml-2">
+                <button class="border-0 bg-transparent align-middle p-0">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <a href="email-read.html" class="col-mail col-mail-2">
+              <div class="subject">
+                Ngay cả Pointing mạnh mẽ nhất cũng không kiểm soát được những
+                văn bản mù, đó là một cuộc sống gần như vô nghĩa Một ngày nào đó
+                một dòng chữ mù mờ có tên là
+              </div>
+              <div class="date">11:49 sáng</div>
+            </a>
+          </div>
+        </div>
+        <div class="message unread">
+          <div>
+            <div class="d-flex message-single">
+              <div class="pl-1 align-self-center">
+                <div class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="checkbox10"
+                  />
+                  <label class="custom-control-label" for="checkbox10"></label>
+                </div>
+              </div>
+              <div class="ml-2">
+                <button class="border-0 bg-transparent align-middle p-0">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <a href="email-read.html" class="col-mail col-mail-2">
+              <div class="subject">
+                Ingredia Nutrisha, Một bộ sưu tập mẫu vải nằm rải rác trên bàn -
+                Samsa là một người bán hàng du lịch - và phía trên nó treo một
+                bức tranh
+              </div>
+              <div class="date">11:49 sáng</div>
+            </a>
+          </div>
+        </div>
+        <div class="message">
+          <div>
+            <div class="d-flex message-single">
+              <div class="pl-1 align-self-center">
+                <div class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="checkbox11"
+                  />
+                  <label class="custom-control-label" for="checkbox11"></label>
+                </div>
+              </div>
+              <div class="ml-2">
+                <button class="border-0 bg-transparent align-middle p-0">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <a href="email-read.html" class="col-mail col-mail-2">
+              <div class="subject">
+                Hầu như cuộc sống vô nghĩa Một ngày nào đó, một dòng văn bản mù
+                quáng tên là Lorem Ipsum quyết định rời đi đến Thế giới ngữ pháp
+                xa xôi.
+              </div>
+              <div class="date">11:49 sáng</div>
+            </a>
+          </div>
+        </div>
+        <div class="message">
+          <div>
+            <div class="d-flex message-single">
+              <div class="pl-1 align-self-center">
+                <div class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="checkbox12"
+                  />
+                  <label class="custom-control-label" for="checkbox12"></label>
+                </div>
+              </div>
+              <div class="ml-2">
+                <button class="border-0 bg-transparent align-middle p-0">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <a href="email-read.html" class="col-mail col-mail-2">
+              <div class="subject">
+                Việc chỉ trỏ không kiểm soát được các văn bản mù quáng, đó là
+                một cuộc sống gần như vô nghĩa Một ngày nào đó, một dòng văn bản
+                mù quáng tên là
+              </div>
+              <div class="date">11:49 sáng</div>
+            </a>
+          </div>
+        </div>
+        <div class="message">
+          <div>
+            <div class="d-flex message-single">
+              <div class="pl-1 align-self-center">
+                <div class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="checkbox13"
+                  />
+                  <label class="custom-control-label" for="checkbox13"></label>
+                </div>
+              </div>
+              <div class="ml-2">
+                <button class="border-0 bg-transparent align-middle p-0">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <a href="email-read.html" class="col-mail col-mail-2">
+              <div class="subject">
+                Ngay cả Pointing quyền lực nhất cũng không kiểm soát được các
+                văn bản mù quáng nó là một cuộc sống gần như vô nghĩa Một ngày
+                nào đó, một dòng văn bản mù quáng tên là
+              </div>
+              <div class="date">11:49 sáng</div>
+            </a>
+          </div>
+        </div>
+        <div class="message">
+          <div>
+            <div class="d-flex message-single">
+              <div class="pl-1 align-self-center">
+                <div class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="checkbox14"
+                  />
+                  <label class="custom-control-label" for="checkbox14"></label>
+                </div>
+              </div>
+              <div class="ml-2">
+                <button class="border-0 bg-transparent align-middle p-0">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <a href="email-read.html" class="col-mail col-mail-2">
+              <div class="subject">
+                Ingredia Nutrisha, Một bộ sưu tập mẫu vải nằm rải rác trên bàn -
+                Samsa là một người bán hàng du lịch - và phía trên nó treo một
+                bức tranh
+              </div>
+              <div class="date">11:49 sáng</div>
+            </a>
+          </div>
+        </div>
+        <div class="message unread">
+          <div>
+            <div class="d-flex message-single">
+              <div class="pl-1 align-self-center">
+                <div class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="checkbox15"
+                  />
+                  <label class="custom-control-label" for="checkbox15"></label>
+                </div>
+              </div>
+              <div class="ml-2">
+                <button class="border-0 bg-transparent align-middle p-0">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <a href="email-read.html" class="col-mail col-mail-2">
+              <div class="subject">
+                Hầu như cuộc sống vô nghĩa Một ngày nào đó, một dòng văn bản mù
+                quáng tên là Lorem Ipsum quyết định rời đi đến Thế giới ngữ pháp
+                xa xôi.
+              </div>
+              <div class="date">11:49 sáng</div>
+            </a>
+          </div>
+        </div>
+        <div class="message">
+          <div>
+            <div class="d-flex message-single">
+              <div class="pl-1 align-self-center">
+                <div class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="checkbox16"
+                  />
+                  <label class="custom-control-label" for="checkbox16"></label>
+                </div>
+              </div>
+              <div class="ml-2">
+                <button class="border-0 bg-transparent align-middle p-0">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <a href="email-read.html" class="col-mail col-mail-2">
+              <div class="subject">
+                Việc chỉ trỏ không kiểm soát được các văn bản mù quáng, đó là
+                một cuộc sống gần như vô nghĩa Một ngày nào đó, một dòng văn bản
+                mù quáng tên là
+              </div>
+              <div class="date">11:49 sáng</div>
+            </a>
+          </div>
+        </div>
+        <div class="message">
+          <div>
+            <div class="d-flex message-single">
+              <div class="pl-1 align-self-center">
+                <div class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="checkbox17"
+                  />
+                  <label class="custom-control-label" for="checkbox17"></label>
+                </div>
+              </div>
+              <div class="ml-2">
+                <button class="border-0 bg-transparent align-middle p-0">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <a href="email-read.html" class="col-mail col-mail-2">
+              <div class="subject">
+                Ngay cả Pointing mạnh mẽ cũng không kiểm soát được những văn bản
+                mù là một cuộc sống gần như vô nghĩa. Một ngày nào đó, một dòng
+                văn bản mù có tên là
+              </div>
+              <div class="date">11:49 sáng</div>
+            </a>
+          </div>
+        </div>
+        <div class="message">
+          <div>
+            <div class="d-flex message-single">
+              <div class="pl-1 align-self-center">
+                <div class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="checkbox18"
+                  />
+                  <label class="custom-control-label" for="checkbox18"></label>
+                </div>
+              </div>
+              <div class="ml-2">
+                <button class="border-0 bg-transparent align-middle p-0">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <a href="email-read.html" class="col-mail col-mail-2">
+              <div class="subject">
+                Ingredia Nutrisha, Một bộ sưu tập mẫu vải được trải ra trên bàn
+                - Samsa là một người bán hàng du lịch - và trên đó treo một bức
+                tranh
+              </div>
+              <div class="date">11:49 sáng</div>
+            </a>
+          </div>
+        </div>
+        <div class="message">
+          <div>
+            <div class="d-flex message-single">
+              <div class="pl-1 align-self-center">
+                <div class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="checkbox19"
+                  />
+                  <label class="custom-control-label" for="checkbox19"></label>
+                </div>
+              </div>
+              <div class="ml-2">
+                <button class="border-0 bg-transparent align-middle p-0">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <a href="email-read.html" class="col-mail col-mail-2">
+              <div class="subject">
+                Cuộc sống gần như vô nghĩa, một ngày nào đó, một dòng văn bản mù
+                có tên là Lorem Ipsum đã quyết định rời đi cho thế giới ngữ pháp
+                xa xôi.
+              </div>
+              <div class="date">11:49 sáng</div>
+            </a>
+          </div>
+        </div>
+        <div class="message unread">
+          <div>
+            <div class="d-flex message-single">
+              <div class="pl-1 align-self-center">
+                <div class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="checkbox20"
+                  />
+                  <label class="custom-control-label" for="checkbox20"></label>
+                </div>
+              </div>
+              <div class="ml-2">
+                <button class="border-0 bg-transparent align-middle p-0">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <a href="email-read.html" class="col-mail col-mail-2">
+              <div class="subject">
+                Pointing không kiểm soát được những văn bản mù, đó là một cuộc
+                sống gần như vô nghĩa. Một ngày nào đó, một dòng văn bản mù có
+                tên là
+              </div>
+              <div class="date">11:49 sáng</div>
+            </a>
+          </div>
+        </div>
+        <div class="message">
+          <div>
+            <div class="d-flex message-single">
+              <div class="pl-1 align-self-center">
+                <div class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="checkbox21"
+                  />
+                  <label class="custom-control-label" for="checkbox21"></label>
+                </div>
+              </div>
+              <div class="ml-2">
+                <button class="border-0 bg-transparent align-middle p-0">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <a href="email-read.html" class="col-mail col-mail-2">
+              <div class="subject">
+                Ngay cả Pointing mạnh mẽ cũng không kiểm soát được những văn bản
+                mù là một cuộc sống gần như vô nghĩa. Một ngày nào đó, một dòng
+                văn bản mù có tên là
+              </div>
+              <div class="date">11:49 sáng</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- panel -->
+      <div class="row mt-4">
+        <div class="col-12 pl-3">
+          <nav>
+            <ul
+              class="pagination pagination-gutter pagination-primary pagination-sm no-bg"
+            >
+              <li class="page-item page-indicator">
+                <a class="page-link" href="javascript:void()">
+                  <i class="la la-angle-left"></i>
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="javascript:void()">1</a>
+              </li>
+              <li class="page-item active">
+                <a class="page-link" href="javascript:void()">2</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="javascript:void()">3</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="javascript:void()">4</a>
+              </li>
+              <li class="page-item page-indicator">
+                <a class="page-link" href="javascript:void()">
+                  <i class="la la-angle-right"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
         <!--**********************************
             Content body end
         ***********************************-->
 
-		
         
-
     </div>
-	<div class="pagination-controls-wrapper">
-		<div class="pagination-controls">
-			<button id="prevPage" class="btn btn-secondary mr-3">Previous</button>
-			<span id="pageNumber" class="mx-3">Page 1</span>
-			<button id="nextPage" class="btn btn-secondary ml-3">Next</button>
-		</div>
-	</div>
-	
     <!--**********************************
         Main wrapper end
     ***********************************-->
@@ -895,403 +1607,6 @@
 	<script src="./js/deznav-init.js"></script>
 	<!-- Apex Chart -->
 	<script src="./vendor/apexchart/apexchart.js"></script>
-
-    <script src="./vendor/highlightjs/highlight.pack.min.js"></script>
-    <!-- Circle progress -->
-	<script>
-	document.addEventListener("DOMContentLoaded", function () {
-  const productsPerPage = 8;  // Number of products per page
-  let currentPage = 1;
-
-  // The product details object (includes all products)
-  const productDetails = {
-    "Delicious Pizza": {
-      description: "Pizza, dish of Italian origin consisting of a flattened disk of bread dough topped with some combination of olive oil, oregano, tomato, olives, mozzarella or other cheese, and many other ingredients, baked quickly—usually, in a commercial setting, using a wood-fired oven heated to a very high temperature—and served hot.",
-      price: 20.00,
-      availability: "In stock",
-      code: "0405689",
-      brand: "Eatio Pizza",
-      tags: ["fragrance", "pizza", "delicious"],
-      images: [
-        "Product images/f1.png",
-        "Product images/f1(1).jpg",
-        "Product images/f1(2).jpg"
-      ]
-    },
-    "Delicious Burger": {
-      description: "What is a burger? Burger is short for a hamburger. It's a fast food sandwich made with a ground beef patty, grilled, between a split seeded hamburger bun, often optionally also layered with lettuce, tomato, pickles, onions, and a variety of sauces such as mayonnaise, mustard, or ketchup.",
-      price: 15.00,
-      availability: "In stock",
-      code: "0412345",
-      brand: "Eatio Burger",
-      tags: ["Delicious", "Burger", "2-Layer"],
-      images: [
-        "Product images/f2.png",
-        "Product images/f2.webp",
-        "Product images/f2(1).jpg"
-      ]
-    },
-    "Mozzarella Original Pizza": {
-      description: "A thin crust Mega Meat Pizza with Our Original Mozzarella cheese blend and it comes topped with sausage, pepperoni, and bacon.",
-      price: 17.00,
-      availability: "In stock",
-      code: "0512345",
-      brand: "Eatio Pizza",
-      tags: ["Mozzarella", "Original", "Pizza"],
-      images: [
-        "Product images/f3.png",
-        "Product images/f3.avif",
-        "Product images/f3(1).avif"
-      ]
-    },
-    "Delicious Pasta": {
-      description: "Pasta is a traditional Italian dish made from durum wheat and water, often mixed with eggs. It comes in various shapes, such as spaghetti, penne, fusilli, and farfalle, and can be paired with a wide range of sauces, including marinara, pesto, Alfredo, and bolognese.",
-      price: 18.00,
-      availability: "Out of stock",
-      code: "0512346",
-      brand: "Eatio Pasta",
-      tags: ["Macaroni", "Pasta", "Delicious"],
-      images: [
-        "Product images/f4.jpg",
-        "Product images/f4.png",
-        "Product images/f4.webp"
-      ]
-    },
-    "French Fries": {
-      description: "French fries, also known as chips in some regions, are crispy, golden-brown strips of deep-fried potato. Typically served as a side dish or snack, they are enjoyed worldwide for their delicious crunch and savory taste.",
-      price: 10.00,
-      availability: "In stock",
-      code: "0512347",
-      brand: "Eatio Fries",
-      tags: ["Fries", "Ketchup", "Hot Sauce"],
-      images: [
-        "Product images/f5.jpg",
-        "Product images/f5.png",
-        "Product images/f5.webp"
-      ]
-    },
-    "Multiple Layers Pizza": {
-      description: "A delightful and customizable pizza experience, this pie offers a unique twist on the classic. Each slice features a different topping, allowing everyone to enjoy a variety of flavors in one meal.",
-      price: 40.00,
-      availability: "In stock",
-      code: "0412348",
-      brand: "Eatio Pizza",
-      tags: ["Multiple Slices", "Best Seller", "Pizza"],
-      images: [
-        "Product images/f6.jpg",
-        "Product images/f6.webp",
-        "Product images/f6.png"
-      ]
-    },
-    "Tasty Chicken Burger": {
-      description: "A mouthwatering chicken burger made with a tender, perfectly seasoned chicken patty, grilled to perfection. Nestled in a soft, toasted bun, this burger is topped with crisp lettuce, juicy tomatoes, and a flavorful sauce.",
-      price: 60.00,
-      availability: "In stock",
-      code: "0512349",
-      brand: "Eatio Burger",
-      tags: ["Burger", "Best Seller", "Tasty"],
-      images: [
-        "Product images/f7.png",
-        "Product images/f7(1).jpg",
-        "Product images/f7(2).jpg"
-      ]
-    },
-    "Tasty Steak Burger": {
-      description: "Indulge in a juicy, tender steak burger made with a high-quality, perfectly grilled beef patty. This burger is served in a soft, toasted bun and complemented by fresh, crisp lettuce, juicy tomatoes, and a rich, smoky sauce.",
-      price: 25.00,
-      availability: "In stock",
-      code: "0512350",
-      brand: "Eatio Burger",
-      tags: ["Burger", "Tasty"],
-      images: [
-        "Product images/f8.png",
-        "Product images/f8.jpg",
-        "Product images/f8(1).jpg"
-      ]
-    },
-    "Macaroni Cheese": {
-      description: "A comforting classic, our Mac n Cheese features tender elbow macaroni smothered in a rich and creamy cheese sauce. The perfect blend of sharp cheddar and smooth cream creates a velvety texture.",
-      price: 20.00,
-      availability: "In stock",
-      code: "0712345",
-      brand: "Eatio Pasta",
-      tags: ["Pasta", "Mac n Cheese", "Best Seller"],
-      images: [
-        "Product images/f8.png",
-        "Product images/f8.jpg",
-        "Product images/f8(1).jpg"
-      ]
-    },
-    "Cheese French Fries": {
-      description: "French Fries coated with cheese powder",
-      price: 32.80,
-      availability: "In stock",
-      code: "0712346",
-      brand: "SmartTech",
-      tags: ["cheese", "frenchfries", "Eatio Fries"],
-      images: [
-        "Product images/f9.png",
-        "Product images/f9.jpg",
-        "Product images/f9(1).jpg"
-      ]
-    },
-    "Tasty Thursday 20% Off": {
-      description: "A Combo of 3 Burgers.",
-      price: 33.60,
-      availability: "In stock",
-      code: "0712347",
-      brand: "Eatio Burger",
-      tags: ["Combo", "Burgers"],
-      images: [
-        "Product images/f2.png",
-        "Product images/f7.png",
-        "Product images/f8.png"
-      ]
-    },
-    "Pizza Days": {
-      description: "A Combo of 3 Pizzas.",
-      price: 33.60,
-      availability: "In stock",
-      code: "0712348",
-      brand: "Eatio Pizzas",
-      tags: ["Pizza", "Best Seller", "Combo"],
-      images: [
-        "Product images/f3.png",
-        "Product images/f1(2).jpg",
-        "Product images/f5.webp"
-      ]
-    }
-  };
-
-  // Function to render products dynamically
-  function renderProducts() {
-    const productContainer = document.getElementById('product-container');
-    productContainer.innerHTML = '';  // Clear previous products
-
-    // Calculate the start and end index for pagination
-    const startIndex = (currentPage - 1) * productsPerPage;
-    const endIndex = startIndex + productsPerPage;
-
-    // Slice the productDetails object to get the products for the current page
-    const productsToRender = Object.keys(productDetails).slice(startIndex, endIndex);
-
-    productsToRender.forEach(productName => {
-      const details = productDetails[productName];
-
-      // Create product card
-      const productCard = document.createElement('div');
-      productCard.classList.add('col-xl-3', 'col-lg-6', 'col-md-4', 'col-sm-6');
-      productCard.innerHTML = `
-        <div class="card">
-          <div class="card-body">
-            <div class="new-arrival-product">
-              <div class="new-arrivals-img-contnent">
-                <img class="img-fluid product-image" src="${details.images[0]}" alt="${productName}">
-              </div>
-              <div class="new-arrival-content text-center mt-3">
-                <h4 class="product-name">${productName}</h4>
-                <ul class="star-rating">
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star-half-empty"></i></li>
-                  <li><i class="fa fa-star-half-empty"></i></li>
-                </ul>
-                <span class="price">$${details.price.toFixed(2)}</span>
-                <a class="btn btn-primary btn-lg add-to-cart" href="#">Add to Cart</a>
-                <button class="btn btn-danger btn-sm delete-product" data-product="${productName}">X</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      `;
-      productContainer.appendChild(productCard);
-    });
-
-    // Add event listeners to the "Add to Cart" buttons
-    document.querySelectorAll('.add-to-cart').forEach(button => {
-      button.addEventListener('click', function (event) {
-        event.preventDefault();
-
-        const productContainer = button.closest('.new-arrival-product');
-        const productName = productContainer.querySelector('.product-name').textContent.trim();
-        const details = productDetails[productName];
-
-        if (details) {
-          // Store the product details in localStorage
-          localStorage.setItem('cartProduct', JSON.stringify({
-            name: productName,
-            image: details.images[0],
-            description: details.description,
-            price: details.price,
-            availability: details.availability,
-            code: details.code,
-            brand: details.brand,
-            tags: details.tags,
-            images: details.images
-          }));
-
-          // Navigate to the product detail page
-          window.location.href = 'ecom-product-detail.html';
-        }
-      });
-    });
-
-    // Add event listeners to the "X" delete buttons
-    document.querySelectorAll('.delete-product').forEach(button => {
-      button.addEventListener('click', function (event) {
-        const productName = button.getAttribute('data-product');
-        delete productDetails[productName];
-        renderProducts();  // Re-render after deletion
-      });
-    });
-
-    // Update page number display
-    const totalPages = Math.ceil(Object.keys(productDetails).length / productsPerPage);
-    document.getElementById('pageNumber').textContent = `Page ${currentPage} of ${totalPages}`;
-  }
-
-  // Event listeners for pagination buttons
-  document.getElementById('prevPage').addEventListener('click', function () {
-    if (currentPage > 1) {
-      currentPage--;
-      renderProducts();
-    }
-  });
-
-  document.getElementById('nextPage').addEventListener('click', function () {
-    const totalPages = Math.ceil(Object.keys(productDetails).length / productsPerPage);
-    if (currentPage < totalPages) {
-      currentPage++;
-      renderProducts();
-    }
-  });
-
-  // Initial render of products
-  renderProducts();
-// Add the necessary styles for the "Add to Cart" button
-const styles = `
-		.add-to-cart {
-		position: absolute;
-		bottom: 0;  /* Pin the button to the bottom of the card */
-		left: 0;
-		width: 100%;  /* Ensure the button spans the width of the card */
-		padding: 10px;
-		background-color: #007bff;
-		color: white;
-		text-align: center;
-		cursor: pointer;
-		border-radius: 4px;
-		text-decoration: none;
-		}
-
-		.add-to-cart:hover {
-		background-color: #0056b3;
-		}
-
-		.card {
-		display: flex;
-		flex-direction: column;
-		height: 100%;
-		}
-
-		.card-body {
-		flex-grow: 1; /* Make the card body take up available space */
-		}
-		.delete-product {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      background-color: red;
-      color: white;
-      border: none;
-      width: 30px;
-      height: 30px;
-      font-size: 18px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    .delete-product:hover {
-      background-color: darkred;
-    }
-
-    .delete-product:focus {
-      outline: none;
-    }
-	`;
-
-	// Inject styles into the document head
-	const styleSheet = document.createElement("style");
-	styleSheet.type = "text/css";
-	styleSheet.innerText = styles;
-	document.head.appendChild(styleSheet);
-
-  // Adding a New Product through Input Fields
-  const addProductForm = document.getElementById('add-product-form');
-  const nameInput = document.getElementById('product-name');
-  const priceInput = document.getElementById('product-price');
-  const descriptionInput = document.getElementById('product-description');
-  const imageInput = document.getElementById('product-image');
-
-  // Function to handle adding the new product
-  addProductForm.addEventListener('submit', function (event) {
-    event.preventDefault();
-
-    const name = nameInput.value.trim();
-    const price = parseFloat(priceInput.value);
-    const description = descriptionInput.value.trim();
-    const image = imageInput.value.trim();
-
-    if (name && price && description && image) {
-      const newProduct = {
-        description: description,
-        price: price,
-        availability: "In stock",
-        code: "newCode", // You can generate dynamic codes if needed
-        brand: "Eatio Brand", // You can adjust this based on your product's details
-        tags: ["New", "Product"],
-        images: [image]
-      };
-
-      // Add the new product to the productDetails object
-      productDetails[name] = newProduct;
-
-      // Re-render the products with the newly added item
-      renderProducts();
-
-      // Clear the input fields
-      nameInput.value = '';
-      priceInput.value = '';
-      descriptionInput.value = '';
-      imageInput.value = '';
-    } else {
-      alert("Please fill out all fields!");
-    }
-  });
-});
-
-	
-	
-	</script>
-	
-
- <script src="../vendor/global/global.min.js"></script>
-	<script src="../vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-    <script src="../vendor/chart.js/Chart.bundle.min.js"></script>
-    <script src="../js/custom.min.js"></script>
-	<script src="../js/deznav-init.js"></script>
-	<!-- Apex Chart -->
-	<script src="../vendor/apexchart/apexchart.js"></script>
-    
-
-
-
-    <!-- Jquery Validation -->
-    <script src="../vendor/jquery-validation/jquery.validate.min.js"></script>
-    <!-- Form validate init -->
-    <script src="../js/plugins-init/jquery.validate-init.js"></script>
-
 </body>
 
 </html>
