@@ -6,7 +6,7 @@
   { "id": "tab-23", "title": "Project", "images": ["assets/img/design/Project_Requirement.png", "assets/img/design/Project_Design.png", "assets/img/design/Project_Implement.png"] },
   { "id": "tab-24", "title": "Contact", "images": ["assets/img/design/contact.png","assets/img/design/"] },
   { "id": "tab", "title": "------Web-ProJect-Admin----", "images": [] },
-  { "id": "tab-26", "title": "Login", "images": ["assets/img/design/login_1."] },
+  { "id": "tab-26", "title": "Login", "images": ["assets/img/design/login_1.png"] },
   { "id": "tab-27", "title": "Register-Passwword", "images": ["assets/img/design/Register_picture_2.jpg"] },
   { "id": "tab-28", "title": "Forget-Password", "images": ["assets/img/design/quenmk_1.png","assets/img/design/quenmk_2.png"] },
   { "id": "tab-29", "title": "Trang Tổng Quát", "images": ["assets/img/design/dashbroad_01.png","assets/img/design/dashbroad_02.png"] },
@@ -22,7 +22,7 @@
   { "id": "tab-55", "title": "Trang Lịch", "images": ["assets/img/design/calender.png"] },
   { "id": "tab-52", "title": "Thêm Lịch hẹn", "images": ["assets/img/design/addcalender.png"] },
   { "id": "tab-51", "title": "Trang Profile", "images": ["assets/img/design/profile_01.png","assets/img/design/profile-02.png"] },
-  { "id": "tab-50", "title": "Trang Error", "images": ["assets/img/design/error.png","assets/img/design/error_404.png","assets/img/design/error_500.png"] }
-  { "id": "tab", "title": "------Web-ProJect-User----", "images": [] },
-  { "id": "tab-59", "title": "Trang Home", "images": ["assets/img/design/HomeUser.png"] },
+  { "id": "tab-50", "title": "Trang Error", "images": ["assets/img/design/error.png","assets/img/design/error_404.png","assets/img/design/error_500.png"] },
+  { "id": "tab-99", "title": "------Web-ProJect-User----", "images": [] },
+  { "id": "tab-59", "title": "Trang Home", "images": ["assets/img/design/HomeUser.png"] }
 ] 
