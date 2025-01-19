@@ -5,14 +5,19 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Eatio - Restaurant Food Order Bootstrap Admin Dashboard</title>
+	<title>Eatio - Quản lý bán hàng</title>
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon.png">
     	<link href="../vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
 	<link href="https://cdn.jsdelivr.net/npm/flaticon/flaticon.css" rel="stylesheet">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-
+<!-- Custom Stylesheet -->
+	<link href="../vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+	<link href="../css/style.css" rel="stylesheet">
+	<link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
 
 </head>
 
@@ -704,31 +709,53 @@
         <!--**********************************
             Sidebar start
         ***********************************-->
-        <div class="deznav">
+		<div class="deznav">
             <div class="deznav-scroll">
 				<ul class="metismenu" id="menu">
 					<li>
-						<a href="/Project_Group/PageDashBroad/index.html" class="ai-icon mm-active" aria-expanded="false">
+						<a href="../PageDashBroad/index.html" class="ai-icon mm-active" aria-expanded="false">
 							<i class="flaticon-381-networking"></i>
-							<span class="nav-text">Bảng Tổng Quát</span>
-						</a>
-                       
-
-						<!-- customers -->
-						<li>
-						<a href="../PageCostumer/ecom-customers.html" style="color: #969ba0;" class="ai-icon mm-active bg-white" aria-expanded="false">
-							<i style="color: #969ba0;" class="flaticon-381-television"></i>
-							<span class="nav-text">Khách Hàng</span>
-						</a>
-						</li>
-							<!-- Staff  -->
-					<li>
-						<a href="../PageStaff/page_staff.html" class="ai-icon mm-active" aria-expanded="false">
-							<i class="flaticon-381-work"></i> 
-							<span class="nav-text">Nhân viên</span>
+							<span class="nav-text">Bảng tổng quát</span>
 						</a>
 					</li>
 
+					  <!-- Khách Hàng -->
+					  <li>
+						<a href="../PageCostumer/ecom-customers.html" style="color: #969ba0;" class="ai-icon mm-active " aria-expanded="false">
+							<i style="color: #969ba0;" class="flaticon-381-user"></i>
+							<span class="nav-text">Khách hàng</span>
+						</a>
+					</li>
+		
+					<!-- Nhân Viên -->
+					<li>
+						<a href="../PageStaff/page_staff.html" style="color: #969ba0;" class="ai-icon mm-active " aria-expanded="false">
+							<i class="fas fa-user-tie"></i>
+							<span class="nav-text">Nhân viên</span>
+						</a>
+					</li>
+					<li>
+						<a href="../PageOrder/page-order-list.html" class="ai-icon mm-active" aria-expanded="false">
+							<i class="lni lni-cart"></i> <!-- Hoặc sử dụng các icon khác từ thư viện khác -->
+							<span class="nav-text">Đơn hàng</span>
+						</a>
+						
+					</li>
+						<li>
+							<a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+								<i class="lni lni-dropbox"></i>
+
+
+									<span class="nav-text">Sản phẩm </span> <!-- Dịch: Email -->
+							</a>
+							<ul aria-expanded="false">
+								<li><a href="../PageProduct/ecom-product-grid.html">Danh sách sản phẩm</a></li> <!-- Dịch: Compose -->
+								<li><a href="../PageProduct/ecom-product-detail.html">Chi tiết sản phẩm</a></li> <!-- Dịch: Inbox -->
+								<li><a href="../PageProduct/ecom-product-list.html">Giỏ hàng</a></li> <!-- Dịch: Read -->
+								
+							</ul>
+					</li>
+						
                                      <!-- Mục Email -->
                                         <li>
                                                 <a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
@@ -736,13 +763,13 @@
                                                         <span class="nav-text">Email</span> <!-- Dịch: Email -->
                                                 </a>
                                                 <ul aria-expanded="false">
-                                                    <li><a href="./email-compose.html">Soạn Thư</a></li> <!-- Dịch: Compose -->
-                                                    <li><a href="./email-inbox.html">Hộp Thư Đến</a></li> <!-- Dịch: Inbox -->
-                                                    <li><a href="./email-read.html">Đọc Thư</a></li> <!-- Dịch: Read -->
+                                                    <li><a href="../email-inbox.html">Hộp thư đến</a></li> <!-- Dịch: Inbox -->
+                                                    <li><a href="../email-read.html">Đọc thư</a></li> <!-- Dịch: Read -->
+						    <li><a href="../email-compose.html">Soạn thư</a></li> <!-- Dịch: Compose -->
                                                 </ul>
                                         </li>
  
-                    <li><a href="/Project_Group/PageCalender/app-calender.html" class="ai-icon" aria-expanded="false">
+                    <li><a href="../PageCalender/app-calender.html" class="ai-icon mm-active " aria-expanded="false">
 							<i class="flaticon-381-controls-3"></i>
 							<span class="nav-text">Lịch</span>
 						</a>
@@ -750,14 +777,14 @@
                     </li>  
                     
                   
-                    <li><a href="/Project_Group/PageMaterial/table-Meterial-datatable.html" class="ai-icon" aria-expanded="false">
-							<i class="flaticon-381-settings-2"></i>
-							<span class="nav-text">Nguyên Liệu</span>
+                    <li><a href="../PageMaterial/table-Meterial-datatable.html" class="ai-icon mm-active " aria-expanded="false">
+						<i class="lni lni-leaf"></i> 
+							<span class="nav-text">Nguyên liệu</span>
 						</a>
 					</li>
-                    <li><a class="" href="/Project_Group/PageReview/page-review.html" aria-expanded="false">
+                    <li><a class="ai-icon mm-active " href="../PageReview/page-review.html" aria-expanded="false">
 							<i class="flaticon-381-notepad"></i>
-							<span class="nav-text">Trang Đánh Giá</span>
+							<span class="nav-text">Trang đánh giá</span>
 						</a>
                 
                     <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
@@ -769,25 +796,30 @@
                             <li><a href="./page-login.html">Login</a></li>
                             <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Error</a>
                                 <ul aria-expanded="false">
-                                    <li><a href="/Project_Group/PageError/page-error-400.html">Error 400</a></li>
-                                    <li><a href="/Project_Group/PageError/page-error-403.html">Error 403</a></li>
-                                    <li><a href="/Project_Group/PageError/page-error-404.html">Error 404</a></li>
-                                    <li><a href="/Project_Group/PageError/page-error-500.html">Error 500</a></li>
-                                    <li><a href="/Project_Group/PageError/page-error-503.html">Error 503</a></li>
+                                    <li><a href="../PageError/page-error-400.html">Error 400</a></li>
+                                    <li><a href="../PageError/page-error-403.html">Error 403</a></li>
+                                    <li><a href="../PageError/page-error-404.html">Error 404</a></li>
+                                    <li><a href="../PageError/page-error-500.html">Error 500</a></li>
+                                    <li><a href="../PageError/page-error-503.html">Error 503</a></li>
                                 </ul>
                             </li>
-                            <li><a href="/Project_Group/PageError/page-lock-screen.html">Lock Screen</a></li>
+                            <li><a href="../PageError/page-lock-screen.html">Lock Screen</a></li>
                         </ul> 
                     </li> 
-                </ul>  
+					<li>
+						<a href="../logout.html" class="ai-icon logout-link" aria-expanded="false">
+							<i class="fas fa-sign-out-alt"></i>
+							<span class="nav-text">Out User-Page</span>
+						</a>
+						
+					</li>
+					
+					
+				</ul>  
             
-				<div class="add-menu-sidebar">
-					<img src="images/icon1.png" alt=""/>
-					<p>Organize your menus through button bellow</p>
-					<a href="javascript:void(0);" class="btn btn-primary btn-block light">+ Add Menus</a>
-				</div>
+				
 				<div class="copyright">
-					<p><strong>Eatio - Restaurant Admin Dashboard</strong> © 2024 All Rights Reserved</p>
+					<p><strong>Eatio - Restaurant Admin Dashboard</strong> Group08 © 2024 All Rights Reserved</p>
 					
 				</div>
 			</div>
@@ -825,7 +857,7 @@
                                 </div>
                                 <div class="profile-info">
 									<div class="profile-photo">
-										<img src="./images/profile/profile.png" class="img-fluid rounded-circle" alt="">
+										<img src="/Project_Group/images/profile/profile.png" class="img-fluid rounded-circle" alt="">
 									</div>
 									<div class="profile-details">
 										<div class="profile-name px-3 pt-2">
@@ -876,7 +908,7 @@
                                 </div>
                                 <div class="profile-blog mb-5">
                                     <h5 class="text-primary d-inline">Today Highlights</h5><a href="javascript:void()" class="pull-right f-s-16">More</a>
-                                    <img src="./images/profile/1.jpg" alt="" class="img-fluid mt-4 mb-4 w-100">
+                                    <img src="/Project_Group/images/profile/1.jpg" alt="" class="img-fluid mt-4 mb-4 w-100">
                                     <h4>Darwin Creative Agency Theme</h4>
                                     <p class="mb-0">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
                                 </div>
@@ -885,37 +917,37 @@
                                     <div class="row mt-4">
                                         <div class="col-lg-4 col-xl-4 col-sm-4 col-6 int-col">
                                             <a href="javascript:void()" class="interest-cat">
-                                                <img src="./images/profile/2.jpg" alt="" class="img-fluid">
+                                                <img src="/Project_Group/images/profile/2.jpg" alt="" class="img-fluid">
                                                 <p>Shopping Mall</p>
                                             </a>
                                         </div>
                                         <div class="col-lg-4 col-xl-4 col-sm-4 col-6 int-col">
                                             <a href="javascript:void()" class="interest-cat">
-                                                <img src="./images/profile/3.jpg" alt="" class="img-fluid">
+                                                <img src="/Project_Group/images/profile/3.jpg" alt="" class="img-fluid">
                                                 <p>Photography</p>
                                             </a>
                                         </div>
                                         <div class="col-lg-4 col-xl-4 col-sm-4 col-6 int-col">
                                             <a href="javascript:void()" class="interest-cat">
-                                                <img src="images/profile/4.jpg" alt="" class="img-fluid">
+                                                <img src="/Project_Group/images/profile/4.jpg" alt="" class="img-fluid">
                                                 <p>Art &amp; Gallery</p>
                                             </a>
                                         </div>
                                         <div class="col-lg-4 col-xl-4 col-sm-4 col-6 int-col">
                                             <a href="javascript:void()" class="interest-cat">
-                                                <img src="images/profile/2.jpg" alt="" class="img-fluid">
+                                                <img src="/Project_Group/images/profile/2.jpg" alt="" class="img-fluid">
                                                 <p>Visiting Place</p>
                                             </a>
                                         </div>
                                         <div class="col-lg-4 col-xl-4 col-sm-4 col-6 int-col">
                                             <a href="javascript:void()" class="interest-cat">
-                                                <img src="images/profile/3.jpg" alt="" class="img-fluid">
+                                                <img src="/Project_Group/images/profile/3.jpg" alt="" class="img-fluid">
                                                 <p>Shopping</p>
                                             </a>
                                         </div>
                                         <div class="col-lg-4 col-xl-4 col-sm-4 col-6 int-col">
                                             <a href="javascript:void()" class="interest-cat">
-                                                <img src="images/profile/4.jpg" alt="" class="img-fluid">
+                                                <img src="/Project_Group/images/profile/4.jpg" alt="" class="img-fluid">
                                                 <p>Biking</p>
                                             </a>
                                         </div>
@@ -924,21 +956,21 @@
                                 <div class="profile-news">
                                     <h5 class="text-primary d-inline">Our Latest News</h5>
                                     <div class="media pt-3 pb-3">
-                                        <img src="./images/profile/5.jpg" alt="image" class="mr-3 rounded" width="75">
+                                        <img src="/Project_Group/images/profile/5.jpg" alt="image" class="mr-3 rounded" width="75">
                                         <div class="media-body">
                                             <h5 class="m-b-5">Collection of textile samples</h5>
                                             <p class="mb-0">I shared this on my fb wall a few months back, and I thought.</p>
                                         </div>
                                     </div>
                                     <div class="media pt-3 pb-3">
-                                        <img src="images/profile/6.jpg" alt="image" class="mr-3 rounded" width="75">
+                                        <img src="/Project_Group/images/profile/6.jpg" alt="image" class="mr-3 rounded" width="75">
                                         <div class="media-body">
                                             <h5 class="m-b-5">Collection of textile samples</h5>
                                             <p class="mb-0">I shared this on my fb wall a few months back, and I thought.</p>
                                         </div>
                                     </div>
                                     <div class="media pt-3 pb-3">
-                                        <img src="images/profile/7.jpg" alt="image" class="mr-3 rounded" width="75">
+                                        <img src="/Project_Group/images/profile/7.jpg" alt="image" class="mr-3 rounded" width="75">
                                         <div class="media-body">
                                             <h5 class="m-b-5">Collection of textile samples</h5>
                                             <p class="mb-0">I shared this on my fb wall a few months back, and I thought.</p>
@@ -970,7 +1002,7 @@
                                                         <a href="javascript:void()" class="btn btn-primary light mr-1 px-3"><i class="fa fa-camera"></i> </a><a href="javascript:void()" class="btn btn-primary">Post</a>
                                                     </div>
                                                     <div class="profile-uoloaded-post border-bottom-1 pb-5">
-                                                        <img src="images/profile/8.jpg" alt="" class="img-fluid">
+                                                        <img src="/Project_Group/images/profile/8.jpg" alt="" class="img-fluid">
                                                         <a class="post-title" href="javascript:void()">
                                                             <h4>Collection of textile samples lay spread</h4>
                                                         </a>

@@ -61,7 +61,7 @@
           "ma_sv": "21130643",
           "ho_ten": "Bùi Nguyễn Thiên Tài",
           "cong_viec": "Trang danh sách nhân viên (staff), menu (web-project)",
-          "ket_qua": "",
+          "ket_qua": "Hoàn thành",
           "tien_do": 100
         },
         {
@@ -69,8 +69,8 @@
           "ma_sv": "23130330",
           "ho_ten": "Nguyễn Đình Tiến",
           "cong_viec": "Trang danh sách order, header (web-project)",
-          "ket_qua": "",
-          "tien_do": 0
+          "ket_qua": "Hoàn thành",
+          "tien_do": 100
         },
         {
           "stt": 4,
@@ -97,7 +97,7 @@
           "stt": 1,
           "ma_sv": "2013410",
           "ho_ten": "Phạm Nguyễn Đức Thiện (NT)",
-          "cong_viec": "Trang review, trang about (web-group), csdl, lập kế hoạch, trang Calender",
+          "cong_viec": "Trang review, trang Result (web-group), csdl, lập kế hoạch, trang Calender",
           "ket_qua": "Hoàn thành",
           "tien_do": 100
         },
@@ -106,16 +106,16 @@
           "ma_sv": "21130643",
           "ho_ten": "Bùi Nguyễn Thiên Tài",
           "cong_viec": "Trang thêm, sửa, xóa, danh sách nhân viên (staff)",
-          "ket_qua": "",
-          "tien_do": 50
+          "ket_qua": "Hoàn thành",
+          "tien_do": 100
         },
         {
           "stt": 3,
           "ma_sv": "23130330",
           "ho_ten": "Nguyễn Đình Tiến",
-          "cong_viec": "Trang thêm, sửa, xóa, danh sách order",
-          "ket_qua": "",
-          "tien_do": 0
+          "cong_viec": "Trang thêm, sửa, xóa, danh sách order, trang email",
+          "ket_qua": "Hoàn thành",
+          "tien_do": 100
         },
         {
           "stt": 4,
@@ -151,16 +151,16 @@
           "ma_sv": "21130643",
           "ho_ten": "Bùi Nguyễn Thiên Tài",
           "cong_viec": "Trang Book_Table (USER)",
-          "ket_qua": "",
-          "tien_do": 50
+          "ket_qua": "Hoàn thành",
+          "tien_do": 100
         },
         {
           "stt": 3,
           "ma_sv": "23130330",
           "ho_ten": "Nguyễn Đình Tiến",
           "cong_viec": "Trang HOME (USER)",
-          "ket_qua": "",
-          "tien_do": 0
+          "ket_qua": "Hoàn thành",
+          "tien_do": 100
         },
         {
           "stt": 4,

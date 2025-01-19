@@ -12,6 +12,7 @@
     <link href="../vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
 	<link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
 </head>
 <body>
@@ -705,37 +706,46 @@
             <div class="deznav-scroll">
 				<ul class="metismenu" id="menu">
 					<li>
-						<a href="/Project_Group/PageDashBroad/index.html" class="ai-icon mm-active" aria-expanded="false">
+						<a href="../PageDashBroad/index.html" class="ai-icon mm-active" aria-expanded="false">
 							<i class="flaticon-381-networking"></i>
 							<span class="nav-text">Bảng Tổng Quát</span>
 						</a>
-                       
+					</li>
 
-						<!-- customers -->
-						<li>
-						<a href="../PageCostumer/ecom-customers.html" style="color: #969ba0;" class="ai-icon mm-active bg-white" aria-expanded="false">
+					  <!-- Khách Hàng -->
+					  <li>
+						<a href="../PageCostumer/ecom-customers.html" style="color: #969ba0;" class="ai-icon mm-active " aria-expanded="false">
 							<i style="color: #969ba0;" class="flaticon-381-user"></i>
 							<span class="nav-text">Khách Hàng</span>
 						</a>
-						</li>
-							<!-- Staff  -->
+					</li>
+		
+					<!-- Nhân Viên -->
 					<li>
-						<a href="../PageStaff/page_staff.html" class="ai-icon mm-active" aria-expanded="false">
-							<i class="flaticon-381-work"></i> 
-				
+						<a href="../PageStaff/page_staff.html" style="color: #969ba0;" class="ai-icon mm-active " aria-expanded="false">
+							<i class="fas fa-user-tie"></i>
 							<span class="nav-text">Nhân viên</span>
 						</a>
 					</li>
+					<li>
+						<a href="../PageOrder/page-order-list.html" class="ai-icon mm-active" aria-expanded="false">
+							<i class="lni lni-cart"></i> <!-- Hoặc sử dụng các icon khác từ thư viện khác -->
+							<span class="nav-text">Đơn Hàng</span>
+						</a>
+						
+					</li>
 						<li>
 							<a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-									<i class="flaticon-381-internet"></i> <!-- Biểu tượng Email -->
-									<span class="nav-text">Ứng dụng bán hàng</span> <!-- Dịch: Email -->
+								<i class="lni lni-dropbox"></i>
+
+
+									<span class="nav-text">Sản phẩm </span> <!-- Dịch: Email -->
 							</a>
 							<ul aria-expanded="false">
 								<li><a href="../PageProduct/ecom-product-grid.html">Danh sách sản phẩm</a></li> <!-- Dịch: Compose -->
 								<li><a href="../PageProduct/ecom-product-detail.html">Chi tiết sản phẩm</a></li> <!-- Dịch: Inbox -->
 								<li><a href="../PageProduct/ecom-product-list.html">Giỏ hàng</a></li> <!-- Dịch: Read -->
-								<li><a href="../PageOrder/page-order-list.html">Đơn hàng</a></li> 
+								
 							</ul>
 					</li>
 						
@@ -746,13 +756,13 @@
                                                         <span class="nav-text">Email</span> <!-- Dịch: Email -->
                                                 </a>
                                                 <ul aria-expanded="false">
-                                                  <!--  <li><a href="./email-compose.html">Soạn Thư</a></li>--> <!-- Dịch: Compose -->
-                                                    <li><a href="./email-inbox.html">Hộp Thư Đến</a></li> <!-- Dịch: Inbox -->
-                                                   <!-- <li><a href="../email-read.html">Đọc Thư</a></li>--> <!-- Dịch: Read -->
+                                                    <li><a href="../email-inbox.html">Hộp Thư Đến</a></li> <!-- Dịch: Inbox -->
+                                                    <li><a href="../email-read.html">Đọc Thư</a></li> <!-- Dịch: Read -->
+						    <li><a href="../email-compose.html">Soạn Thư</a></li> <!-- Dịch: Compose -->
                                                 </ul>
                                         </li>
  
-                    <li><a href="/Project_Group/PageCalender/app-calender.html" class="ai-icon" aria-expanded="false">
+                    <li><a href="../PageCalender/app-calender.html" class="ai-icon mm-active " aria-expanded="false">
 							<i class="flaticon-381-controls-3"></i>
 							<span class="nav-text">Lịch</span>
 						</a>
@@ -760,12 +770,12 @@
                     </li>  
                     
                   
-                    <li><a href="/Project_Group/PageMaterial/table-Meterial-datatable.html" class="ai-icon" aria-expanded="false">
+                    <li><a href="../PageMaterial/table-Meterial-datatable.html" class="ai-icon mm-active " aria-expanded="false">
 						<i class="lni lni-leaf"></i> 
 							<span class="nav-text">Nguyên Liệu</span>
 						</a>
 					</li>
-                    <li><a class="" href="/Project_Group/PageReview/page-review.html" aria-expanded="false">
+                    <li><a class="ai-icon mm-active " href="../PageReview/page-review.html" aria-expanded="false">
 							<i class="flaticon-381-notepad"></i>
 							<span class="nav-text">Trang Đánh Giá</span>
 						</a>
@@ -779,25 +789,30 @@
                             <li><a href="./page-login.html">Login</a></li>
                             <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Error</a>
                                 <ul aria-expanded="false">
-                                    <li><a href="/Project_Group/PageError/page-error-400.html">Error 400</a></li>
-                                    <li><a href="/Project_Group/PageError/page-error-403.html">Error 403</a></li>
-                                    <li><a href="/Project_Group/PageError/page-error-404.html">Error 404</a></li>
-                                    <li><a href="/Project_Group/PageError/page-error-500.html">Error 500</a></li>
-                                    <li><a href="/Project_Group/PageError/page-error-503.html">Error 503</a></li>
+                                    <li><a href="../PageError/page-error-400.html">Error 400</a></li>
+                                    <li><a href="../PageError/page-error-403.html">Error 403</a></li>
+                                    <li><a href="../PageError/page-error-404.html">Error 404</a></li>
+                                    <li><a href="../PageError/page-error-500.html">Error 500</a></li>
+                                    <li><a href="../PageError/page-error-503.html">Error 503</a></li>
                                 </ul>
                             </li>
-                            <li><a href="/Project_Group/PageError/page-lock-screen.html">Lock Screen</a></li>
+                            <li><a href="../PageError/page-lock-screen.html">Lock Screen</a></li>
                         </ul> 
                     </li> 
-                </ul>  
+					<li>
+						<a href="../logout.html" class="ai-icon logout-link" aria-expanded="false">
+							<i class="fas fa-sign-out-alt"></i>
+							<span class="nav-text">Out User-Page</span>
+						</a>
+						
+					</li>
+					
+					
+				</ul>  
             
-				<div class="add-menu-sidebar">
-					<img src="images/icon1.png" alt=""/>
-					<p>Organize your menus through button bellow</p>
-					<a href="javascript:void(0);" class="btn btn-primary btn-block light">+ Add Menus</a>
-				</div>
+				
 				<div class="copyright">
-					<p><strong>Eatio - Restaurant Admin Dashboard</strong> © 2024 All Rights Reserved</p>
+					<p><strong>Eatio - Restaurant Admin Dashboard</strong> Group08 © 2024 All Rights Reserved</p>
 					
 				</div>
 			</div>
@@ -814,13 +829,13 @@
 			<div class="container-fluid">
 				<div class="form-head d-flex mb-3 align-items-start">
 					<div class="mr-auto d-none d-lg-block">
-						<h2 class="text-black font-w600 mb-0">Orders</h2>
-						<p class="mb-0">Here is your order list data</p>
+						<h2 class="text-black font-w600 mb-0">Đơn hàng</h2>
+						<p class="mb-0">Dữ liệu danh sách đơn hàng</p>
 					</div>
 					<div class="dropdown custom-dropdown">
 						<button type="button" class="btn btn-primary light d-flex align-items-center svg-btn" data-toggle="dropdown" aria-expanded="false">
 							<svg width="16" class="scale5" height="16" viewBox="0 0 22 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.16647 27.9558C9.25682 27.9856 9.34946 28.0001 9.44106 28.0001C9.71269 28.0001 9.97541 27.8732 10.1437 27.6467L21.5954 12.2248C21.7926 11.9594 21.8232 11.6055 21.6746 11.31C21.526 11.0146 21.2236 10.8282 20.893 10.8282H13.1053V0.874999C13.1053 0.495358 12.8606 0.15903 12.4993 0.042327C12.1381 -0.0743215 11.7428 0.0551786 11.5207 0.363124L0.397278 15.7849C0.205106 16.0514 0.178364 16.403 0.327989 16.6954C0.477614 16.9878 0.77845 17.1718 1.10696 17.1718H8.56622V27.125C8.56622 27.5024 8.80816 27.8373 9.16647 27.9558ZM2.81693 15.4218L11.3553 3.58389V11.7032C11.3553 12.1865 11.7471 12.5782 12.2303 12.5782H19.1533L10.3162 24.479V16.2968C10.3162 15.8136 9.92444 15.4218 9.44122 15.4218H2.81693Z" fill="#2F4CDD"/></svg>
-							<span class="fs-16 ml-3">All Status</span>
+							<span class="fs-16 ml-3">Tất cả trạng thái</span>
 							<i class="fa fa-angle-down scale5 ml-3"></i>
 						</button>
 						<div class="dropdown-menu dropdown-menu-right">
@@ -834,17 +849,17 @@
 					<div class="dropdown custom-dropdown ml-3">
 						<button type="button" class="btn btn-primary light d-flex align-items-center svg-btn" data-toggle="dropdown" aria-expanded="false">
 							<svg width="16" height="16" class="scale5" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.4281 2.856H21.8681V1.428C21.8681 0.56 21.2801 0 20.4401 0C19.6001 0 19.0121 0.56 19.0121 1.428V2.856H9.71606V1.428C9.71606 0.56 9.15606 0 8.28806 0C7.42006 0 6.86006 0.56 6.86006 1.428V2.856H5.57206C2.85606 2.856 0.560059 5.152 0.560059 7.868V23.016C0.560059 25.732 2.85606 28.028 5.57206 28.028H22.4281C25.1441 28.028 27.4401 25.732 27.4401 23.016V7.868C27.4401 5.152 25.1441 2.856 22.4281 2.856ZM5.57206 5.712H22.4281C23.5761 5.712 24.5841 6.72 24.5841 7.868V9.856H3.41606V7.868C3.41606 6.72 4.42406 5.712 5.57206 5.712ZM22.4281 25.144H5.57206C4.42406 25.144 3.41606 24.136 3.41606 22.988V12.712H24.5561V22.988C24.5841 24.136 23.5761 25.144 22.4281 25.144Z" fill="#2F4CDD"/></svg>
-							<span class="fs-16 ml-3">Today</span>
+							<span class="fs-16 ml-3">Hôm nay</span>
 							<i class="fa fa-angle-down scale5 ml-3"></i>
 						</button>
 						<div class="dropdown-menu dropdown-menu-right">
-							<a class="dropdown-item" href="#">Monday</a>
-							<a class="dropdown-item" href="#">Tuesday</a>
-							<a class="dropdown-item" href="#">Wednesday</a>
-							<a class="dropdown-item" href="#">Thursday</a>
-							<a class="dropdown-item" href="#">Friday</a>
-							<a class="dropdown-item" href="#">Saturday</a>
-							<a class="dropdown-item" href="#">Sunday</a>
+							<a class="dropdown-item" href="#">Thứ hai</a>
+							<a class="dropdown-item" href="#">Thứ ba</a>
+							<a class="dropdown-item" href="#">Thứ tư</a>
+							<a class="dropdown-item" href="#">Thứ năm</a>
+							<a class="dropdown-item" href="#">Thứ sáu</a>
+							<a class="dropdown-item" href="#">Thứ bảy</a>
+							<a class="dropdown-item" href="#">Chủ nhật</a>
 						</div>
 					</div>
 				</div>
@@ -866,570 +881,570 @@
 								<tbody>
 									<tr>
 										<td>#5552351</td>
-										<td>26 March 2020, 12:42 AM</td>
+										<td>26/03/2020, 12:42 AM</td>
 										<td>James WItcwicky</td>
-										<td>Corner Street 5th London</td>
+										<td>Đường Corner Street 5 London</td>
 										<td>$164.52</td>
-										<td><span class="btn btn-sm light btn-warning fs-16">New Order</span></td>
+										<td><span class="btn btn-sm light btn-warning fs-16">Đơn hàng mới</span></td>
 										<td>
 											<div class="dropdown ml-auto text-right">
 												<div class="btn-link" data-toggle="dropdown">
 													<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
 												</div>
 												<div class="dropdown-menu dropdown-menu-right">
-													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Accept Order</a>
-													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Reject Order</a>
+													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Chấp nhận đơn hàng</a>
+													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Từ chối đơn hàng</a>
 												</div>
 											</div>
 										</td>												
 									</tr>
 									<tr>
 										<td>#5552397</td>
-										<td>26 March 2020, 12:42 AM</td>
+										<td>26/03/2020, 12:42 AM</td>
 										<td>David Horison</td>
-										<td>981 St. John’s Road London</td>
+										<td>981 Đường St. John London</td>
 										<td>$24.55</td>
-										<td><span class="btn btn-sm light btn-primary">On Delivery</span></td>
+										<td><span class="btn btn-sm light btn-primary">Đang giao hàng</span></td>
 										<td>
 											<div class="dropdown ml-auto text-right">
 												<div class="btn-link" data-toggle="dropdown">
 													<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
 												</div>
 												<div class="dropdown-menu dropdown-menu-right">
-													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Accept Order</a>
-													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Reject Order</a>
+													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Chấp nhận đơn hàng</a>
+													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Từ chối đơn hàng</a>
 												</div>
 											</div>
 										</td>												
 									</tr>
 									<tr>
 										<td>#5552351</td>
-										<td>26 March 2020, 12:42 AM</td>
+										<td>26/03/2020, 12:42 AM</td>
 										<td>Emilia Johanson</td>
-										<td>67 St. John’s Road London</td>
+										<td>67 Đường St. John London</td>
 										<td>$251.16</td>
-										<td><span class="btn btn-sm light btn-primary">On Delivery</span></td>
+										<td><span class="btn btn-sm light btn-primary">Đang giao hàng</span></td>
 										<td>
 											<div class="dropdown ml-auto text-right">
 												<div class="btn-link" data-toggle="dropdown">
 													<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
 												</div>
 												<div class="dropdown-menu dropdown-menu-right">
-													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Accept Order</a>
-													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Reject Order</a>
+													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Chấp nhận đơn hàng</a>
+													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Từ chối đơn hàng</a>
 												</div>
 											</div>
 										</td>												
 									</tr>
 									<tr>
 										<td>#5552397</td>
-										<td>26 March 2020, 12:42 AM</td>
+										<td>26/03/2020, 12:42 AM</td>
 										<td>Rendy Greenlee</td>
 										<td>32 The Green London</td>
 										<td>$251.16</td>
-										<td><span class="btn btn-sm light btn-success">Delivered</span></td>
+										<td><span class="btn btn-sm light btn-success">Đã giao hàng</span></td>
 										<td>
 											<div class="dropdown ml-auto text-right">
 												<div class="btn-link" data-toggle="dropdown">
 													<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
 												</div>
 												<div class="dropdown-menu dropdown-menu-right">
-													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Accept Order</a>
-													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Reject Order</a>
+													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Chấp nhận đơn hàng</a>
+													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Từ chối đơn hàng</a>
 												</div>
 											</div>
 										</td>												
 									</tr>
 									<tr>
 										<td>#5552351</td>
-										<td>26 March 2020, 12:42 AM</td>
+										<td>26/03/2020, 12:42 AM</td>
 										<td>Jessica Wong</td>
 										<td>11 Church Road London</td>
 										<td>$24.17</td>
-										<td><span class="btn btn-sm light btn-warning">New Order</span></td>
+										<td><span class="btn btn-sm light btn-warning">Đơn hàng mới</span></td>
 										<td>
 											<div class="dropdown ml-auto text-right">
 												<div class="btn-link" data-toggle="dropdown">
 													<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
 												</div>
 												<div class="dropdown-menu dropdown-menu-right">
-													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Accept Order</a>
-													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Reject Order</a>
+													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Chấp nhận đơn hàng</a>
+													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Từ chối đơn hàng</a>
 												</div>
 											</div>
 										</td>												
 									</tr>
 									<tr>
 										<td>#5552397</td>
-										<td>26 March 2020, 12:42 AM</td>
+										<td>26/03/2020, 12:42 AM</td>
 										<td>Veronica</td>
 										<td>21 King Street London</td>
 										<td>$74.92</td>
-										<td><span class="btn btn-sm light btn-primary">On Delivery</span></td>
+										<td><span class="btn btn-sm light btn-primary">Đang giao hàng</span></td>
 										<td>
 											<div class="dropdown ml-auto text-right">
 												<div class="btn-link" data-toggle="dropdown">
 													<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
 												</div>
 												<div class="dropdown-menu dropdown-menu-right">
-													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Accept Order</a>
-													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Reject Order</a>
+													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Chấp nhận đơn hàng</a>
+													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Từ chối đơn hàng</a>
 												</div>
 											</div>
 										</td>												
 									</tr>
 									<tr>
 										<td>#7552397</td>
-										<td>26 March 2020, 12:42 AM</td>
+										<td>26/03/2020, 12:42 AM</td>
 										<td>Samantha Bake</td>
 										<td>79 The Drive London</td>
 										<td>$22.18</td>
-										<td><span class="btn btn-sm light btn-warning">New Order</span></td>
+										<td><span class="btn btn-sm light btn-warning">Đơn hàng mới</span></td>
 										<td>
 											<div class="dropdown ml-auto text-right">
 												<div class="btn-link" data-toggle="dropdown">
 													<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
 												</div>
 												<div class="dropdown-menu dropdown-menu-right">
-													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Accept Order</a>
-													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Reject Order</a>
+													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Chấp nhận đơn hàng</a>
+													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Từ chối đơn hàng</a>
 												</div>
 											</div>
 										</td>												
 									</tr>
 									<tr>
 										<td>#5552351</td>
-										<td>26 March 2020, 12:42 AM</td>
+										<td>26/03/2020, 12:42 AM</td>
 										<td>Olivia Shine</td>
 										<td>35 Station Road London</td>
 										<td>$82.46</td>
-										<td><span class="btn btn-sm light btn-success">Delivered</span></td>
+										<td><span class="btn btn-sm light btn-success">Đã giao hàng</span></td>
 										<td>
 											<div class="dropdown ml-auto text-right">
 												<div class="btn-link" data-toggle="dropdown">
 													<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
 												</div>
 												<div class="dropdown-menu dropdown-menu-right">
-													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Accept Order</a>
-													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Reject Order</a>
+													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Chấp nhận đơn hàng</a>
+													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Từ chối đơn hàng</a>
 												</div>
 											</div>
 										</td>												
 									</tr>
 									<tr>
 										<td>#4546563</td>
-										<td>26 March 2020, 12:42 AM</td>
+										<td>26/03/2020, 12:42 AM</td>
 										<td>Roberto Carlo</td>
 										<td>544 Manor Road London</td>
 										<td>$34.41</td>
-										<td><span class="btn btn-sm light btn-warning">New Order</span></td>
+										<td><span class="btn btn-sm light btn-warning">Đơn hàng mới</span></td>
 										<td>
 											<div class="dropdown ml-auto text-right">
 												<div class="btn-link" data-toggle="dropdown">
 													<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
 												</div>
 												<div class="dropdown-menu dropdown-menu-right">
-													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Accept Order</a>
-													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Reject Order</a>
+													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Chấp nhận đơn hàng</a>
+													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Từ chối đơn hàng</a>
 												</div>
 											</div>
 										</td>												
 									</tr>
 									<tr>
 										<td>#5552397</td>
-										<td>26 March 2020, 12:42 AM</td>
+										<td>26/03/2020, 12:42 AM</td>
 										<td>Franky Sihotang</td>
 										<td>6 The Avenue London</td>
 										<td>$164.52</td>
-										<td><span class="btn btn-sm light btn-warning">New Order</span></td>
+										<td><span class="btn btn-sm light btn-warning">Đơn hàng mới</span></td>
 										<td>
 											<div class="dropdown ml-auto text-right">
 												<div class="btn-link" data-toggle="dropdown">
 													<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
 												</div>
 												<div class="dropdown-menu dropdown-menu-right">
-													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Accept Order</a>
-													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Reject Order</a>
+													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Chấp nhận đơn hàng</a>
+													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Từ chối đơn hàng</a>
 												</div>
 											</div>
 										</td>												
 									</tr>
 									<tr>
 										<td>#5552351</td>
-										<td>26 March 2020, 12:42 AM</td>
+										<td>26/03/2020, 12:42 AM</td>
 										<td>James WItcwicky</td>
 										<td>Corner Street 5th London</td>
 										<td>$164.52</td>
-										<td><span class="btn btn-sm light btn-warning fs-16">New Order</span></td>
+										<td><span class="btn btn-sm light btn-warning fs-16">Đơn hàng mới</span></td>
 										<td>
 											<div class="dropdown ml-auto text-right">
 												<div class="btn-link" data-toggle="dropdown">
 													<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
 												</div>
 												<div class="dropdown-menu dropdown-menu-right">
-													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Accept Order</a>
-													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Reject Order</a>
+													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Chấp nhận đơn hàng</a>
+													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Từ chối đơn hàng</a>
 												</div>
 											</div>
 										</td>												
 									</tr>
 									<tr>
 										<td>#5552397</td>
-										<td>26 March 2020, 12:42 AM</td>
+										<td>26/03/2020, 12:42 AM</td>
 										<td>David Horison</td>
 										<td>981 St. John’s Road London</td>
 										<td>$24.55</td>
-										<td><span class="btn btn-sm light btn-primary">On Delivery</span></td>
+										<td><span class="btn btn-sm light btn-primary">Đang giao hàng</span></td>
 										<td>
 											<div class="dropdown ml-auto text-right">
 												<div class="btn-link" data-toggle="dropdown">
 													<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
 												</div>
 												<div class="dropdown-menu dropdown-menu-right">
-													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Accept Order</a>
-													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Reject Order</a>
+													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Chấp nhận đơn hàng</a>
+													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Từ chối đơn hàng</a>
 												</div>
 											</div>
 										</td>												
 									</tr>
 									<tr>
 										<td>#5552351</td>
-										<td>26 March 2020, 12:42 AM</td>
+										<td>26/03/2020, 12:42 AM</td>
 										<td>Emilia Johanson</td>
 										<td>67 St. John’s Road London</td>
 										<td>$251.16</td>
-										<td><span class="btn btn-sm light btn-primary">On Delivery</span></td>
+										<td><span class="btn btn-sm light btn-primary">Đang giao hàng</span></td>
 										<td>
 											<div class="dropdown ml-auto text-right">
 												<div class="btn-link" data-toggle="dropdown">
 													<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
 												</div>
 												<div class="dropdown-menu dropdown-menu-right">
-													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Accept Order</a>
-													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Reject Order</a>
+													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Chấp nhận đơn hàng</a>
+													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Từu chối đơn hàng</a>
 												</div>
 											</div>
 										</td>												
 									</tr>
 									<tr>
 										<td>#5552397</td>
-										<td>26 March 2020, 12:42 AM</td>
+										<td>26/03/2020, 12:42 AM</td>
 										<td>Rendy Greenlee</td>
 										<td>32 The Green London</td>
 										<td>$251.16</td>
-										<td><span class="btn btn-sm light btn-success">Delivered</span></td>
+										<td><span class="btn btn-sm light btn-success">Đã giao hàng</span></td>
 										<td>
 											<div class="dropdown ml-auto text-right">
 												<div class="btn-link" data-toggle="dropdown">
 													<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
 												</div>
 												<div class="dropdown-menu dropdown-menu-right">
-													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Accept Order</a>
-													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Reject Order</a>
+													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Chấp nhận đơn hàng</a>
+													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Từ chối đơn hàng</a>
 												</div>
 											</div>
 										</td>												
 									</tr>
 									<tr>
 										<td>#5552351</td>
-										<td>26 March 2020, 12:42 AM</td>
+										<td>26/03/2020, 12:42 AM</td>
 										<td>Jessica Wong</td>
 										<td>11 Church Road London</td>
 										<td>$24.17</td>
-										<td><span class="btn btn-sm light btn-warning">New Order</span></td>
+										<td><span class="btn btn-sm light btn-warning">Đơn hàng mới</span></td>
 										<td>
 											<div class="dropdown ml-auto text-right">
 												<div class="btn-link" data-toggle="dropdown">
 													<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
 												</div>
 												<div class="dropdown-menu dropdown-menu-right">
-													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Accept Order</a>
-													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Reject Order</a>
+													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Chấp nhận đơn hàng</a>
+													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Từ chối đơn hàng</a>
 												</div>
 											</div>
 										</td>												
 									</tr>
 									<tr>
 										<td>#5552397</td>
-										<td>26 March 2020, 12:42 AM</td>
+										<td>26/03/2020, 12:42 AM</td>
 										<td>Veronica</td>
 										<td>21 King Street London</td>
 										<td>$74.92</td>
-										<td><span class="btn btn-sm light btn-primary">On Delivery</span></td>
+										<td><span class="btn btn-sm light btn-primary">Đang giao hàng</span></td>
 										<td>
 											<div class="dropdown ml-auto text-right">
 												<div class="btn-link" data-toggle="dropdown">
 													<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
 												</div>
 												<div class="dropdown-menu dropdown-menu-right">
-													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Accept Order</a>
-													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Reject Order</a>
+													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Chấp nhận đơn hàng</a>
+													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Từ chối đơn hàng</a>
 												</div>
 											</div>
 										</td>												
 									</tr>
 									<tr>
 										<td>#7552397</td>
-										<td>26 March 2020, 12:42 AM</td>
+										<td>26/03/2020, 12:42 AM</td>
 										<td>Samantha Bake</td>
 										<td>79 The Drive London</td>
 										<td>$22.18</td>
-										<td><span class="btn btn-sm light btn-warning">New Order</span></td>
+										<td><span class="btn btn-sm light btn-warning">Đơn hàng mới</span></td>
 										<td>
 											<div class="dropdown ml-auto text-right">
 												<div class="btn-link" data-toggle="dropdown">
 													<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
 												</div>
 												<div class="dropdown-menu dropdown-menu-right">
-													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Accept Order</a>
-													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Reject Order</a>
+													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Chấp nhận đơn hàng</a>
+													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Từ chối đơn hàng</a>
 												</div>
 											</div>
 										</td>												
 									</tr>
 									<tr>
 										<td>#5552351</td>
-										<td>26 March 2020, 12:42 AM</td>
+										<td>26/03/2020, 12:42 AM</td>
 										<td>Olivia Shine</td>
 										<td>35 Station Road London</td>
 										<td>$82.46</td>
-										<td><span class="btn btn-sm light btn-success">Delivered</span></td>
+										<td><span class="btn btn-sm light btn-success">Đã giao hàng</span></td>
 										<td>
 											<div class="dropdown ml-auto text-right">
 												<div class="btn-link" data-toggle="dropdown">
 													<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
 												</div>
 												<div class="dropdown-menu dropdown-menu-right">
-													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Accept Order</a>
-													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Reject Order</a>
+													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Chấp nhận đơn hàng</a>
+													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Từ chối đơn hàng</a>
 												</div>
 											</div>
 										</td>												
 									</tr>
 									<tr>
 										<td>#4546563</td>
-										<td>26 March 2020, 12:42 AM</td>
+										<td>26/03/2020, 12:42 AM</td>
 										<td>Roberto Carlo</td>
 										<td>544 Manor Road London</td>
 										<td>$34.41</td>
-										<td><span class="btn btn-sm light btn-warning">New Order</span></td>
+										<td><span class="btn btn-sm light btn-warning">Đơn hàng mới</span></td>
 										<td>
 											<div class="dropdown ml-auto text-right">
 												<div class="btn-link" data-toggle="dropdown">
 													<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
 												</div>
 												<div class="dropdown-menu dropdown-menu-right">
-													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Accept Order</a>
-													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Reject Order</a>
+													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Chấp nhận đơn hàng</a>
+													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Từ chối đơn hàng</a>
 												</div>
 											</div>
 										</td>												
 									</tr>
 									<tr>
 										<td>#5552397</td>
-										<td>26 March 2020, 12:42 AM</td>
+										<td>26/03/2020, 12:42 AM</td>
 										<td>Franky Sihotang</td>
 										<td>6 The Avenue London</td>
 										<td>$164.52</td>
-										<td><span class="btn btn-sm light btn-warning">New Order</span></td>
+										<td><span class="btn btn-sm light btn-warning">Đơn hàng mới</span></td>
 										<td>
 											<div class="dropdown ml-auto text-right">
 												<div class="btn-link" data-toggle="dropdown">
 													<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
 												</div>
 												<div class="dropdown-menu dropdown-menu-right">
-													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Accept Order</a>
-													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Reject Order</a>
+													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Chấp nhận đơn hàng</a>
+													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Từ chối đơn hàng</a>
 												</div>
 											</div>
 										</td>												
 									</tr>
 									<tr>
 										<td>#5552351</td>
-										<td>26 March 2020, 12:42 AM</td>
+										<td>26/03/2020, 12:42 AM</td>
 										<td>James WItcwicky</td>
 										<td>Corner Street 5th London</td>
 										<td>$164.52</td>
-										<td><span class="btn btn-sm light btn-warning fs-16">New Order</span></td>
+										<td><span class="btn btn-sm light btn-warning fs-16">Đơn hàng mới</span></td>
 										<td>
 											<div class="dropdown ml-auto text-right">
 												<div class="btn-link" data-toggle="dropdown">
 													<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
 												</div>
 												<div class="dropdown-menu dropdown-menu-right">
-													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Accept Order</a>
-													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Reject Order</a>
+													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Chấp nhận đơn hàng</a>
+													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Từ chối đơn hàng</a>
 												</div>
 											</div>
 										</td>												
 									</tr>
 									<tr>
 										<td>#5552397</td>
-										<td>26 March 2020, 12:42 AM</td>
+										<td>26/03/2020, 12:42 AM</td>
 										<td>David Horison</td>
 										<td>981 St. John’s Road London</td>
 										<td>$24.55</td>
-										<td><span class="btn btn-sm light btn-primary">On Delivery</span></td>
+										<td><span class="btn btn-sm light btn-primary">Đang giao hàng</span></td>
 										<td>
 											<div class="dropdown ml-auto text-right">
 												<div class="btn-link" data-toggle="dropdown">
 													<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
 												</div>
 												<div class="dropdown-menu dropdown-menu-right">
-													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Accept Order</a>
-													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Reject Order</a>
+													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Chấp nhận đơn hàng</a>
+													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Tù chối đơn hàng</a>
 												</div>
 											</div>
 										</td>												
 									</tr>
 									<tr>
 										<td>#5552351</td>
-										<td>26 March 2020, 12:42 AM</td>
+										<td>26/03/2020, 12:42 AM</td>
 										<td>Emilia Johanson</td>
 										<td>67 St. John’s Road London</td>
 										<td>$251.16</td>
-										<td><span class="btn btn-sm light btn-primary">On Delivery</span></td>
+										<td><span class="btn btn-sm light btn-primary">Đang giao hàng</span></td>
 										<td>
 											<div class="dropdown ml-auto text-right">
 												<div class="btn-link" data-toggle="dropdown">
 													<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
 												</div>
 												<div class="dropdown-menu dropdown-menu-right">
-													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Accept Order</a>
-													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Reject Order</a>
+													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Chấp nhận đơn hàng</a>
+													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Từ chối đơn hàng</a>
 												</div>
 											</div>
 										</td>												
 									</tr>
 									<tr>
 										<td>#5552397</td>
-										<td>26 March 2020, 12:42 AM</td>
+										<td>26/03/2020, 12:42 AM</td>
 										<td>Rendy Greenlee</td>
 										<td>32 The Green London</td>
 										<td>$251.16</td>
-										<td><span class="btn btn-sm light btn-success">Delivered</span></td>
+										<td><span class="btn btn-sm light btn-success">Đã giao hàng</span></td>
 										<td>
 											<div class="dropdown ml-auto text-right">
 												<div class="btn-link" data-toggle="dropdown">
 													<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
 												</div>
 												<div class="dropdown-menu dropdown-menu-right">
-													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Accept Order</a>
-													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Reject Order</a>
+													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Chấp nhận đơn hàng</a>
+													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Từ chối đơn hàng</a>
 												</div>
 											</div>
 										</td>												
 									</tr>
 									<tr>
 										<td>#5552351</td>
-										<td>26 March 2020, 12:42 AM</td>
+										<td>26/03/2020, 12:42 AM</td>
 										<td>Jessica Wong</td>
 										<td>11 Church Road London</td>
 										<td>$24.17</td>
-										<td><span class="btn btn-sm light btn-warning">New Order</span></td>
+										<td><span class="btn btn-sm light btn-warning">Đơn hàng mới</span></td>
 										<td>
 											<div class="dropdown ml-auto text-right">
 												<div class="btn-link" data-toggle="dropdown">
 													<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
 												</div>
 												<div class="dropdown-menu dropdown-menu-right">
-													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Accept Order</a>
-													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Reject Order</a>
+													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Chấp nhận đơn hàng</a>
+													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Từ chối đơn hàng</a>
 												</div>
 											</div>
 										</td>												
 									</tr>
 									<tr>
 										<td>#5552397</td>
-										<td>26 March 2020, 12:42 AM</td>
+										<td>26/03/2020, 12:42 AM</td>
 										<td>Veronica</td>
 										<td>21 King Street London</td>
 										<td>$74.92</td>
-										<td><span class="btn btn-sm light btn-primary">On Delivery</span></td>
+										<td><span class="btn btn-sm light btn-primary">Đang giao hàng</span></td>
 										<td>
 											<div class="dropdown ml-auto text-right">
 												<div class="btn-link" data-toggle="dropdown">
 													<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
 												</div>
 												<div class="dropdown-menu dropdown-menu-right">
-													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Accept Order</a>
-													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Reject Order</a>
+													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Chấp nhận đơn hàng</a>
+													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Từ chối đơn hàng</a>
 												</div>
 											</div>
 										</td>												
 									</tr>
 									<tr>
 										<td>#7552397</td>
-										<td>26 March 2020, 12:42 AM</td>
+										<td>26/03/2020, 12:42 AM</td>
 										<td>Samantha Bake</td>
 										<td>79 The Drive London</td>
 										<td>$22.18</td>
-										<td><span class="btn btn-sm light btn-warning">New Order</span></td>
+										<td><span class="btn btn-sm light btn-warning">Đơn hàng mới</span></td>
 										<td>
 											<div class="dropdown ml-auto text-right">
 												<div class="btn-link" data-toggle="dropdown">
 													<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
 												</div>
 												<div class="dropdown-menu dropdown-menu-right">
-													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Accept Order</a>
-													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Reject Order</a>
+													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Chấp nhận đơn hàng</a>
+													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Từ chối đơn hàng</a>
 												</div>
 											</div>
 										</td>												
 									</tr>
 									<tr>
 										<td>#5552351</td>
-										<td>26 March 2020, 12:42 AM</td>
+										<td>26/03/2020, 12:42 AM</td>
 										<td>Olivia Shine</td>
 										<td>35 Station Road London</td>
 										<td>$82.46</td>
-										<td><span class="btn btn-sm light btn-success">Delivered</span></td>
+										<td><span class="btn btn-sm light btn-success">Đã giao hàng</span></td>
 										<td>
 											<div class="dropdown ml-auto text-right">
 												<div class="btn-link" data-toggle="dropdown">
 													<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
 												</div>
 												<div class="dropdown-menu dropdown-menu-right">
-													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Accept Order</a>
-													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Reject Order</a>
+													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Chấp nhận đơn hàng</a>
+													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Từ chối đơn hàng</a>
 												</div>
 											</div>
 										</td>												
 									</tr>
 									<tr>
 										<td>#4546563</td>
-										<td>26 March 2020, 12:42 AM</td>
+										<td>26/03/2020, 12:42 AM</td>
 										<td>Roberto Carlo</td>
 										<td>544 Manor Road London</td>
 										<td>$34.41</td>
-										<td><span class="btn btn-sm light btn-warning">New Order</span></td>
+										<td><span class="btn btn-sm light btn-warning">Đơn hàng mới</span></td>
 										<td>
 											<div class="dropdown ml-auto text-right">
 												<div class="btn-link" data-toggle="dropdown">
 													<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
 												</div>
 												<div class="dropdown-menu dropdown-menu-right">
-													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Accept Order</a>
-													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Reject Order</a>
+													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Chấp nhận đơn hàng</a>
+													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Từ chối đơn hàng</a>
 												</div>
 											</div>
 										</td>												
 									</tr>
 									<tr>
 										<td>#5552397</td>
-										<td>26 March 2020, 12:42 AM</td>
+										<td>26/03/2020, 12:42 AM</td>
 										<td>Franky Sihotang</td>
 										<td>6 The Avenue London</td>
 										<td>$164.52</td>
-										<td><span class="btn btn-sm light btn-warning">New Order</span></td>
+										<td><span class="btn btn-sm light btn-warning">Đơn hàng mới</span></td>
 										<td>
 											<div class="dropdown ml-auto text-right">
 												<div class="btn-link" data-toggle="dropdown">
 													<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
 												</div>
 												<div class="dropdown-menu dropdown-menu-right">
-													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Accept Order</a>
-													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Reject Order</a>
+													<a class="dropdown-item" href="#"><i class="las la-check-square scale5 text-primary mr-2"></i> Chấp nhận đơn hàng</a>
+													<a class="dropdown-item" href="#"><i class="las la-times-circle scale5 text-danger mr-2"></i> Từ chối đơn hàng</a>
 												</div>
 											</div>
 										</td>												
@@ -1482,6 +1497,46 @@
 	   
 	})(jQuery);
 	</script>
-	
+	<script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Lấy tất cả các nút "Chấp nhận đơn hàng" và "Từ chối đơn hàng"
+        const acceptButtons = document.querySelectorAll(
+          ".dropdown-item:nth-child(1)"
+        );
+        const rejectButtons = document.querySelectorAll(
+          ".dropdown-item:nth-child(2)"
+        );
+
+        acceptButtons.forEach((button) => {
+          button.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            // Tìm dòng (tr) chứa nút được nhấn
+            const orderRow = this.closest("tr");
+
+            // Thay đổi trạng thái đơn hàng thành "Đang giao hàng"
+            const statusCell = orderRow.querySelector("td:nth-child(6) span");
+            if (statusCell) {
+              statusCell.textContent = "Đang giao hàng";
+              statusCell.className = "btn btn-sm light btn-success"; // Thay đổi màu sắc
+            }
+          });
+        });
+
+        rejectButtons.forEach((button) => {
+          button.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            // Tìm dòng (tr) chứa nút được nhấn
+            const orderRow = this.closest("tr");
+
+            // Xóa dòng đơn hàng khỏi bảng
+            if (orderRow) {
+              orderRow.remove();
+            }
+          });
+        });
+      });
+    </script>
 </body>
 </html>
