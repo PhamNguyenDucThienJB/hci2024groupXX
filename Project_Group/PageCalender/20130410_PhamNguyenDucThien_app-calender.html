@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>Eatio - Quản lý bán hàng</title>
+    <title>Eatio - Restaurant Food Order Bootstrap Admin Dashboard</title>
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon.png">
-    <!-- Datatable -->
-    <link href="../vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
-    <!-- Custom Stylesheet -->
-    <link href="../vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+
+    <link href="../vendor/fullcalendar/css/fullcalendar.min.css" rel="stylesheet">
+    	<link href="../vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/icomoon.css" rel="stylesheet">
 	<link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
@@ -43,8 +43,8 @@
         <!--**********************************
             Nav header start
         ***********************************-->
-        <div class="nav-header">
-            <a href="../PageDashBroad/index.html" class="brand-logo">
+		<div class="nav-header">
+            <a href="../PageDashBroad/20130410_PhamNguyenDucThien_index.html" class="brand-logo">
                 <img class="logo-abbr" src="../images/logo.png" alt="">
                 <img class="logo-compact" src="../images/logo-text.png" alt="">
                 <img class="brand-title" src="../images/logo-text.png" alt="">
@@ -98,8 +98,8 @@
 												<span class="online_icon"></span>
 											</div>
 											<div class="user_info">
-												<span>Archie Parker</span>
-												<p>Kalid is online</p>
+												<span>Kelvin Conrad</span>
+												<p>Donald is online</p>
 											</div>
 										</div>
 									</li>
@@ -155,7 +155,7 @@
 									<li class="dz-chat-user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="images/avatar/1.jpg" class="rounded-circle user_img" alt=""/>
+												<img src="./images/avatar/1.jpg" class="rounded-circle user_img" alt=""/>
 												<span class="online_icon"></span>
 											</div>
 											<div class="user_info">
@@ -167,7 +167,7 @@
 									<li class="dz-chat-user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="images/avatar/2.jpg" class="rounded-circle user_img" alt=""/>
+												<img src="./images/avatar/2.jpg" class="rounded-circle user_img" alt=""/>
 												<span class="online_icon offline"></span>
 											</div>
 											<div class="user_info">
@@ -561,11 +561,8 @@
 		<!--**********************************
             Chat box End
         ***********************************-->
-
-
 		
-		
-        <!--**********************************
+		<!--**********************************
             Header start
         ***********************************-->
 		<div class="header">
@@ -713,9 +710,9 @@
             <div class="deznav-scroll">
 				<ul class="metismenu" id="menu">
 					<li>
-						<a href="../PageDashBroad/index.html" class="ai-icon mm-active" aria-expanded="false">
+						<a href="../PageDashBroad/20130410_PhamNguyenDucThien_index.html" class="ai-icon mm-active" aria-expanded="false">
 							<i class="flaticon-381-networking"></i>
-							<span class="nav-text">Bảng tổng quát</span>
+							<span class="nav-text">Bảng Tổng Quát</span>
 						</a>
 					</li>
 
@@ -723,7 +720,7 @@
 					  <li>
 						<a href="../PageCostumer/ecom-customers.html" style="color: #969ba0;" class="ai-icon mm-active " aria-expanded="false">
 							<i style="color: #969ba0;" class="flaticon-381-user"></i>
-							<span class="nav-text">Khách hàng</span>
+							<span class="nav-text">Khách Hàng</span>
 						</a>
 					</li>
 		
@@ -737,7 +734,7 @@
 					<li>
 						<a href="../PageOrder/page-order-list.html" class="ai-icon mm-active" aria-expanded="false">
 							<i class="lni lni-cart"></i> <!-- Hoặc sử dụng các icon khác từ thư viện khác -->
-							<span class="nav-text">Đơn hàng</span>
+							<span class="nav-text">Đơn Hàng</span>
 						</a>
 						
 					</li>
@@ -746,13 +743,15 @@
 								<i class="lni lni-dropbox"></i>
 
 
-									<span class="nav-text">Sản Phẩm  </span> <!-- Dịch: Email -->
+									<span class="nav-text">Sản Phẩm</span> <!-- Dịch: Email -->
+
+							
+
 							</a>
 							<ul aria-expanded="false">
-								<li><a href="../PageProduct/23130228_LeDangTuanPhat_DanhSachSanPham_ThemXoaSanPham.html">Danh Sách Sản Phẩm</a></li> <!-- Dịch: Compose -->
+								<li><a href="../PageProduct/23130228_LeDangTuanPhat_DanhSachSanPham_ThemXoaSanPham.html">Danh sách sản phẩm.</a></li> <!-- Dịch: Compose -->
 								<li><a href="../PageProduct/23130228_LeDangTuanPhat_ChiTietSanPham.html">Chi tiết sản phẩm</a></li> <!-- Dịch: Inbox -->
-								<li><a href="../PageProduct/23130228_LeDangTuanPhat_GioHang.html">Giỏ Hàng</a></li> <!-- Dịch: Read -->
-								
+								<li><a href="../PageProduct/23130228_LeDangTuanPhat_GioHang.html">Giỏ hàng</a></li> <!-- Dịch: Read -->
 								
 							</ul>
 					</li>
@@ -770,7 +769,7 @@
                                                 </ul>
                                         </li>
  
-                    <li><a href="../PageCalender/app-calender.html" class="ai-icon mm-active " aria-expanded="false">
+                    <li><a href="../PageCalender/20130410_PhamNguyenDucThien_app-calender.html" class="ai-icon mm-active " aria-expanded="false">
 							<i class="flaticon-381-controls-3"></i>
 							<span class="nav-text">Lịch</span>
 						</a>
@@ -778,14 +777,14 @@
                     </li>  
                     
                   
-                    <li><a href="../PageMaterial/table-Meterial-datatable.html" class="ai-icon mm-active " aria-expanded="false">
+                    <li><a href="../PageMaterial/20130410_PhamNguyenDucThien_table-Meterial-datatable.html" class="ai-icon mm-active " aria-expanded="false">
 						<i class="lni lni-leaf"></i> 
-							<span class="nav-text">Nguyên liệu</span>
+							<span class="nav-text">Nguyên Liệu</span>
 						</a>
 					</li>
-                    <li><a class="ai-icon mm-active " href="../PageReview/page-review.html" aria-expanded="false">
+                    <li><a class="ai-icon mm-active " href="../PageReview/20130410_PhamNguyenDucThien_page-review.html" aria-expanded="false">
 							<i class="flaticon-381-notepad"></i>
-							<span class="nav-text">Trang đánh giá</span>
+							<span class="nav-text">Trang Đánh Giá</span>
 						</a>
                 
                     <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
@@ -837,14 +836,14 @@
                 <div class="row page-titles mx-0">
                     <div class="col-sm-6 p-md-0">
                         <div class="welcome-text">
-                            <h4>Chào mừng đã quay trở lại</h4>
-                            <span>Datatable</span>
+                            <h4>Xin chào, chào mừng quay trở lại!</h4>
+                            <p class="mb-0">Your business dashboard template</p>
                         </div>
                     </div>
                     <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="javascript:void(0)">Menu</a></li>
-                            <li class="breadcrumb-item active"><a href="javascript:void(0)">Quản lý nguyên liệu</a></li>
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Trang chủ</a></li>
+                            <li class="breadcrumb-item active"><a href="javascript:void(0)">Lịch</a></li>
                         </ol>
                     </div>
                 </div>
@@ -852,261 +851,94 @@
 
 
                 <div class="row">
-                 
-					<div class="col-12">
+                    <div class="col-xl-3">
                         <div class="card">
-							<div>
-                            <div class="card-header">
-                                <h4 class="card-title">Quản lý nguyên liệu</h4>
-								<button type="button" class="btn btn-rounded btn-info"><span
-									class="btn-icon-left text-info"><i class="fa fa-plus color-info"></i>
-								</span><a href="add_meterial.html" style="text-decoration: none; color: white; ">Nhập thêm nguyên liệu</a></button>
-							</div>
-							
-						</div>
                             <div class="card-body">
-                                <div class="table-responsive">
-                                    <table id="example3" class="display" style="min-width: 845px">
-                                        <thead>
-                                            <tr>
-                                                <th>STT</th>
-                                                <th>Tên</th>
-                                                <th>Loại</th>
-                                                <th>Tồn kho (Kg)</th>
-                                                <th>Giá cũ</th>
-                                                <th>Giá mới</th>
-                                                <th>Ngày nhập hàng gần nhất</th>
-                                                <th>Tiêu thụ</th>
-                                                <th>Action</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-												<td><img class="rounded-circle" width="35" src="../images/product/rauthom.png" alt=""></td>
-                                                <td>Rau thơm</td>
-                                                <td>Rau củ</td>
-                                                <td>10</td>
-                                                <td>2,000 VND</td>
-                                                <td><a href="javascript:void(0);"><strong>5,000 VND</strong></a></td>
-                                                <td><a href="javascript:void(0);"><strong>12/7/2024</strong></a></td>
-                                                <td>
-													<span class="badge light badge-success">
-														<i class="fa fa-circle text-success mr-1"></i>
-														Nhiều
-													</span>
-												</td>
-                                                <td>
-													<div class="d-flex">
-														<a href="edit_meterial.html" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
-													</div>												
-												</td>												
-                                            </tr>
-                                           
-											<tr>
-												<td><img class="rounded-circle" width="35" src="../images/product/rauthom.png" alt=""></td>
-                                                <td>Rau thơm</td>
-                                                <td>Rau củ</td>
-                                                <td>10</td>
-                                                <td>2,000 VND</td>
-                                                <td><a href="javascript:void(0);"><strong>5,000 VND</strong></a></td>
-                                                <td><a href="javascript:void(0);"><strong>12/7/2024</strong></a></td>
-                                                <td>
-													<span class="badge light badge-success">
-														<i class="fa fa-circle text-success mr-1"></i>
-														Nhiều
-													</span>
-												</td>
-                                                <td>
-													<div class="d-flex">
-														<a href="#" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
-													</div>												
-												</td>												
-                                            </tr>
-											<tr>
-												<td><img class="rounded-circle" width="35" src="../images/product/rauthom.png" alt=""></td>
-                                                <td>Rau thơm</td>
-                                                <td>Rau củ</td>
-                                                <td>10</td>
-                                                <td>2,000 VND</td>
-                                                <td><a href="javascript:void(0);"><strong>5,000 VND</strong></a></td>
-                                                <td><a href="javascript:void(0);"><strong>12/7/2024</strong></a></td>
-                                                <td>
-													<span class="badge light badge-success">
-														<i class="fa fa-circle text-success mr-1"></i>
-														Nhiều
-													</span>
-												</td>
-                                                <td>
-													<div class="d-flex">
-														<a href="#" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
-													</div>												
-												</td>												
-                                            </tr>
-											<tr>
-												<td><img class="rounded-circle" width="35" src="../images/product/rauthom.png" alt=""></td>
-                                                <td>Rau thơm</td>
-                                                <td>Rau củ</td>
-                                                <td>10</td>
-                                                <td>2,000 VND</td>
-                                                <td><a href="javascript:void(0);"><strong>5,000 VND</strong></a></td>
-                                                <td><a href="javascript:void(0);"><strong>12/7/2024</strong></a></td>
-                                                <td>
-													<span class="badge light badge-success">
-														<i class="fa fa-circle text-success mr-1"></i>
-														Nhiều
-													</span>
-												</td>
-                                                <td>
-													<div class="d-flex">
-														<a href="#" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
-													</div>												
-												</td>												
-                                            </tr>
+                                <h4 class="card-intro-title">Lịch</h4>
 
-											<tr>
-												<td><img class="rounded-circle" width="35" src="../images/product/rauthom.png" alt=""></td>
-                                                <td>Rau thơm</td>
-                                                <td>Rau củ</td>
-                                                <td>10</td>
-                                                <td>2,000 VND</td>
-                                                <td><a href="javascript:void(0);"><strong>5,000 VND</strong></a></td>
-                                                <td><a href="javascript:void(0);"><strong>12/7/2024</strong></a></td>
-                                                <td>
-													<span class="badge light badge-success">
-														<i class="fa fa-circle text-success mr-1"></i>
-														Nhiều
-													</span>
-												</td>
-                                                <td>
-													<div class="d-flex">
-														<a href="#" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
-													</div>												
-												</td>												
-                                            </tr>
-											<tr>
-                                                <td><img class="rounded-circle" width="35" src="images/product/rauthom.png" alt=""></td>
-                                                <td>Rau thơm</td>
-                                                <td>Rau củ</td>
-                                                <td>10</td>
-                                                <td>2,000 VND</td>
-                                                <td><a href="javascript:void(0);"><strong>5,000 VND</strong></a></td>
-                                                <td><a href="javascript:void(0);"><strong>12/7/2024</strong></a></td>
-                                                <td>
-													<span class="badge light badge-success">
-														<i class="fa fa-circle text-success mr-1"></i>
-														Nhiều
-													</span>
-												</td>
-                                                <td>
-													<div class="d-flex">
-														<a href="#" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
-													</div>												
-												</td>												
-                                            </tr>
-											<tr>
-												<td><img class="rounded-circle" width="35" src="images/product/rauthom.png" alt=""></td>
-                                                <td>Rau thơm</td>
-                                                <td>Rau củ</td>
-                                                <td>10</td>
-                                                <td>2,000 VND</td>
-                                                <td><a href="javascript:void(0);"><strong>5,000 VND</strong></a></td>
-                                                <td><a href="javascript:void(0);"><strong>12/7/2024</strong></a></td>
-                                                <td>
-													<span class="badge light badge-success">
-														<i class="fa fa-circle text-success mr-1"></i>
-														Nhiều
-													</span>
-												</td>
-                                                <td>
-													<div class="d-flex">
-														<a href="#" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
-													</div>												
-												</td>												
-                                            </tr>
-
-											<tr>
-                                                <td><img class="rounded-circle" width="35" src="images/product/rauthom.png" alt=""></td>
-                                                <td>Rau thơm</td>
-                                                <td>Rau củ</td>
-                                                <td>10</td>
-                                                <td>2,000 VND</td>
-                                                <td><a href="javascript:void(0);"><strong>5,000 VND</strong></a></td>
-                                                <td><a href="javascript:void(0);"><strong>12/7/2024</strong></a></td>
-                                                <td>
-													<span class="badge light badge-success">
-														<i class="fa fa-circle text-success mr-1"></i>
-														Nhiều
-													</span>
-												</td>
-                                                <td>
-													<div class="d-flex">
-														<a href="#" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
-													</div>												
-												</td>												
-                                            </tr>
-											<tr>
-												<td><img class="rounded-circle" width="35" src="images/product/rauthom.png" alt=""></td>
-                                                <td>Rau thơm</td>
-                                                <td>Rau củ</td>
-                                                <td>10</td>
-                                                <td>2,000 VND</td>
-                                                <td><a href="javascript:void(0);"><strong>5,000 VND</strong></a></td>
-                                                <td><a href="javascript:void(0);"><strong>12/7/2024</strong></a></td>
-                                                <td>
-													<span class="badge light badge-success">
-														<i class="fa fa-circle text-success mr-1"></i>
-														Nhiều
-													</span>
-												</td>
-                                                <td>
-													<div class="d-flex">
-														<a href="#" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
-													</div>												
-												</td>												
-                                            </tr>
-											<tr>
-												<td><img class="rounded-circle" width="35" src="images/product/rauthom.png" alt=""></td>
-                                                <td>Rau thơm</td>
-                                                <td>Rau củ</td>
-                                                <td>10</td>
-                                                <td>2,000 VND</td>
-                                                <td><a href="javascript:void(0);"><strong>6,000 VND</strong></a></td>
-                                                <td><a href="javascript:void(0);"><strong>12/7/2024</strong></a></td>
-                                                <td>
-													<span class="badge light badge-success">
-														<i class="fa fa-circle text-success mr-1"></i>
-														Nhiều
-													</span>
-												</td>
-                                                <td>
-													<div class="d-flex">
-														<a href="#" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
-													</div>												
-												</td>												
-                                            </tr>
-                                           
-                                         
-                                          
-                                           
-                                           
-                                        </tbody>
-                                    </table>
+                                <div class="">
+                                    <div id="external-events" class="my-3">
+                                        <p>Kéo và thả sự kiện của bạn hoặc nhấp vào lịch</p>
+                                        <div class="external-event" data-class="bg-primary"><i class="fa fa-move"></i>Bận</div>
+                                        <div class="external-event" data-class="bg-success"><i class="fa fa-move"></i>Công việc
+                                        </div>
+                                        <div class="external-event" data-class="bg-warning"><i class="fa fa-move"></i>Họp Quản Lý</div>
+                                        <div class="external-event" data-class="bg-dark"><i class="fa fa-move"></i>Món ăn</div>
+                                    </div>
+                                    <!-- checkbox -->
+									<div class="checkbox custom-control checkbox-event custom-checkbox pt-3 pb-5">
+										<input type="checkbox" class="custom-control-input" id="drop-remove">
+										<label class="custom-control-label" for="drop-remove">Xóa sau khi kéo thả</label>
+									</div>
+                                    <a href="javascript:void()" data-toggle="modal" data-target="#add-category" class="btn btn-primary btn-event w-100">
+                                        <span class="align-middle"><i class="ti-plus"></i></span> Tạo Lịch
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-				
-				</div>
+                    <div class="col-xl-9">
+                        <div class="card">
+                            <div class="card-body">
+                                <div id="calendar" class="app-fullcalendar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- BEGIN MODAL -->
+                    <div class="modal fade none-border" id="event-modal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title"><strong>Thêm sự kiện</strong></h4>
+                                </div>
+                                <div class="modal-body"></div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">Đóng</button>
+                                    <button type="button" class="btn btn-success save-event waves-effect waves-light">Tạo
+                                        sự kiện</button>
+
+                                    <button type="button" class="btn btn-danger delete-event waves-effect waves-light" data-dismiss="modal">Xóa</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal Add Category -->
+                    <div class="modal fade none-border" id="add-category">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title"><strong>Thêm mục</strong></h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label class="control-label">Tên Mục</label>
+                                                <input class="form-control form-white" placeholder="Enter name" type="text" name="category-name">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="control-label">Chọn màu</label>
+                                                <select class="form-control form-white" data-placeholder="Choose a color..." name="category-color">
+                                                    <option value="success">Success</option>
+                                                    <option value="danger">Danger</option>
+                                                    <option value="info">Info</option>
+                                                    <option value="pink">Pink</option>
+                                                    <option value="primary">Primary</option>
+                                                    <option value="warning">Warning</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">Đóng</button>
+                                    <button type="button" class="btn btn-danger waves-effect waves-light save-category" data-dismiss="modal">Lưu</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
         <!--**********************************
@@ -1114,9 +946,9 @@
         ***********************************-->
 
 
-
-
         
+
+
     </div>
     <!--**********************************
         Main wrapper end
@@ -1128,12 +960,20 @@
     <!-- Required vendors -->
     <script src="../vendor/global/global.min.js"></script>
 	<script src="../vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="../vendor/chart.js/Chart.bundle.min.js"></script>
     <script src="../js/custom.min.js"></script>
 	<script src="../js/deznav-init.js"></script>
-	
-    <!-- Datatable -->
-    <script src="../vendor/datatables/js/jquery.dataTables.min.js"></script>
-    <script src="../js/plugins-init/datatables.init.js"></script>
+	<!-- Apex Chart -->
+	<script src="../vendor/apexchart/apexchart.js"></script>
+    <!--removeIf(production)-->
 
+
+
+	
+    <script src="../vendor/jqueryui/js/jquery-ui.min.js"></script>
+    <script src="../vendor/moment/moment.min.js"></script>
+
+    <script src="../vendor/fullcalendar/js/fullcalendar.min.js"></script>
+    <script src="../js/plugins-init/fullcalendar-init.js"></script>
 </body>
 </html>
